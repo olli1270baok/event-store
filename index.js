@@ -107,6 +107,58 @@ const PRODUCTS = [
         review: "Die Wahl der Profi-Athleten für Regeneration und Muskeltherapie. Die Hypervolt 2 Pro verfügt über einen kraftvollen 90W-Motor mit 5 Geschwindigkeitsstufen. Sie dringt tief ins Muskelgewebe ein, um Verspannungen zu lösen und die Durchblutung zu fördern. Per Bluetooth verbindet sie sich mit der Hyperice-App für geführte Warm-up- und Recovery-Routinen.",
         pros: ["Enorme Power (90W) bei sehr leiser QuietGlide-Technologie", "Inklusive 5 verschiedenen Massageaufsätzen für alle Muskelgruppen", "App-Steuerung regelt die Intensität automatisch passend zum Video"],
         cons: ["Sehr hoher Preis im Vergleich zu No-Name-Produkten", "Mit ca. 1,1 kg Eigengewicht bei längerer Nutzung etwas schwer in der Hand"]
+    },
+    {
+        id: "chopper",
+        name: "Fullstar Gemüseschneider 12-in-1",
+        category: "kitchen",
+        priceRange: "24 - 34 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/chopper.png",
+        amazonLink: "https://www.amazon.de/s?k=Fullstar+Gemueseschneider&tag=baokmedia21-21",
+        review: "Ein absoluter TikTok-Kult! Dieser Gemüseschneider spart enorm viel Zeit beim Kochen und Meal-Prep. Mit seinen austauschbaren Klingen schneidet, würfelt und raspelt er Zwiebeln, Tomaten, Gurken und Käse in Sekundenschnelle direkt in den praktischen Auffangbehälter. Das clevere Design schützt die Finger und lässt sich einfach reinigen.",
+        pros: ["Enorme Zeitersparnis bei der Essenszubereitung", "Viele verschiedene Aufsätze und Klingen im Set enthalten", "Kompakter Auffangbehälter hält die Küche sauber"],
+        cons: ["Die Klingen sind extrem scharf (Verletzungsgefahr beim Reinigen)", "Nicht alle Teile sind für die Spülmaschine geeignet"]
+    },
+    {
+        id: "sunsetlamp",
+        name: "RGB Sunset Projection Lamp",
+        category: "living",
+        priceRange: "15 - 25 €",
+        rating: 4.6,
+        stars: "★★★★☆",
+        image: "assets/sunsetlamp.png",
+        amazonLink: "https://www.amazon.de/s?k=Sunset+Lamp+RGB&tag=baokmedia21-21",
+        review: "Dieses kleine Gadget bringt die perfekte Pinterest-Stimmung in jedes Zimmer. Die Sonnenuntergangslampe projiziert ein warmes, weiches Licht an Wand oder Decke, das an einen echten Sonnenuntergang erinnert. Sie verfügt über 16 verschiedene Farben, eine App-Steuerung und lässt sich um 360 Grad drehen, um die Lichtstimmung flexibel anzupassen.",
+        pros: ["Wunderschöne, gemütliche Lichteffekte für Fotos und Videos", "16 Farben und diverse Modi bequem per Fernbedienung steuerbar", "Sehr energiesparend dank LED-Technik"],
+        cons: ["Das Gehäuse wird bei längerem Betrieb spürbar warm", "Die Standfestigkeit des Stativs könnte stabiler sein"]
+    },
+    {
+        id: "miniprojector",
+        name: "Magcubic Mini Beamer HY300",
+        category: "gadgets",
+        priceRange: "60 - 85 €",
+        rating: 4.5,
+        stars: "★★★★☆",
+        image: "assets/miniprojector.png",
+        amazonLink: "https://www.amazon.de/s?k=Mini+Beamer+HY300&tag=baokmedia21-21",
+        review: "Ein echter Gamechanger für Heimkino-Fans mit kleinem Budget. Dieser portable Mini-Beamer läuft mit Android TV, hat integriertes WLAN sowie Bluetooth und projiziert dank des 180° schwenkbaren Designs ein scharfes Bild an Decken oder Wände. Ideal für gemütliche Filmabende im Bett oder beim Camping.",
+        pros: ["Sehr kompakt und flexibel um 180 Grad schwenkbar", "Integriertes Android-Betriebssystem für direktes Streaming (Netflix, YouTube)", "Automatischer Trapezkorrektur-Ausgleich"],
+        cons: ["Integrierter Lautsprecher hat wenig Bass (Bluetooth-Box empfohlen)", "Lüftergeräusch ist in ruhigen Szenen hörbar"]
+    },
+    {
+        id: "walkingpad",
+        name: "Citysports Walking Pad (Mobiles Laufband)",
+        category: "fitness",
+        priceRange: "199 - 249 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/walkingpad.png",
+        amazonLink: "https://www.amazon.de/s?k=Citysports+Walking+Pad&tag=baokmedia21-21",
+        review: "Das perfekte Gadget für alle im Homeoffice. Dieses ultra-flache Walking Pad lässt sich problemlos unter dem Schreibtisch platzieren, um während der Arbeit, in Telefonaten oder beim Serienschauen Schritte zu sammeln. Dank Transportrollen und einer Dicke von nur 12 cm lässt es sich nach dem Training platzsparend unter dem Sofa verstauen.",
+        pros: ["Sehr flaches Design, lässt sich einfach unter Möbeln verstauen", "Einfache Steuerung per Fernbedienung oder App", "Sehr leiser Motor, stört nicht bei Video-Calls"],
+        cons: ["Nur zum Gehen geeignet (Geschwindigkeit meist bis 6 km/h begrenzt)", "Keine Steigungsfunktion einstellbar"]
     }
 ];
 
