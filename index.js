@@ -1,23 +1,125 @@
 /* ==========================================================================
-   Sport-EventStore - Interactive Client Application Logic
+   Checkbude24 - Interactive Client Application Logic (Amazon Affiliate)
    ========================================================================== */
 
-let ignoreNextShopHashChange = (window.location.hash === '' || window.location.hash === '#' || window.location.hash === '#home' || window.location.hash === '#about' || window.location.hash === '#collections' || window.location.hash === '#sustainability' || window.location.hash === '#values' || window.location.hash === '#contact' || window.location.hash === '#imprint' || window.location.hash === '#privacy' || window.location.hash === '#terms');
+// --- Curated Products Dataset ---
+const PRODUCTS = [
+    {
+        id: "airfryer",
+        name: "Cosori XXL Heißluftfritteuse 5,5L",
+        category: "kitchen",
+        priceRange: "89 - 119 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/airfryer.png",
+        amazonLink: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21",
+        review: "Der absolute Spitzenreiter unter den Heißluftfritteusen auf Amazon. Mit ihrem großzügigen 5,5-Liter-Garkorb eignet sie sich ideal für Familien. Sie erzielt extrem knusprige Ergebnisse bei bis zu 85% weniger Fett im Vergleich zu klassischen Fritteusen. Das Touch-Display bietet 11 voreingestellte Programme. Die Reinigung ist dank der antihaftbeschichteten, spülmaschinenfesten Teile im Handumdrehen erledigt.",
+        pros: ["Sehr gleichmäßiges Garergebnis dank 360° Luftzirkulation", "Spülmaschinenfeste Antihaft-Teile", "Großes Fassungsvermögen für bis zu 5 Personen"],
+        cons: ["Relativ große Stellfläche in der Küche erforderlich", "Signalton am Ende des Garvorgangs ist recht laut"]
+    },
+    {
+        id: "diffuser",
+        name: "Asakuki 500ml Ultraschall Diffuser",
+        category: "living",
+        priceRange: "25 - 35 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/diffuser.png",
+        amazonLink: "https://www.amazon.de/s?k=ASAKUKI+500ml+Aroma+Diffuser&tag=baokmedia21-21",
+        review: "Ein absoluter Pinterest-Liebling für ein gemütliches Zuhause. Dieser 5-in-1 Ultraschall-Aromadiffusor verfügt über einen großen, leicht zu reinigenden 500-ml-Wassertank, 7 verschiedene LED-Lichtfarben und einen Sicherheits-Autoschalter, der das Überhitzen bei leerem Tank verhindert. Perfekt geeignet, um Raumluft zu befeuchten und mit ätherischen Ölen zu beduften.",
+        pros: ["Großer Wassertank für bis zu 16 Stunden Betrieb", "Sehr leiser Betrieb, ideal fürs Schlafzimmer", "Stimmungsvolle, dimmbare LED-Beleuchtung"],
+        cons: ["Netzkabel könnte etwas länger sein", "Besteht hauptsächlich aus Kunststoff (Holzoptik-Sockel)"]
+    },
+    {
+        id: "headphones",
+        name: "Sony WH-1000XM4 ANC Kopfhörer",
+        category: "gadgets",
+        priceRange: "199 - 249 €",
+        rating: 4.9,
+        stars: "★★★★★",
+        image: "assets/headphones.png",
+        amazonLink: "https://www.amazon.de/s?k=Sony+WH-1000XM4&tag=baokmedia21-21",
+        review: "Die ungeschlagene Referenz im Bereich Active Noise Cancelling (ANC). Diese Kopfhörer blenden Außengeräusche in Flugzeug, Bahn oder Büro fast vollständig aus. Der Sound ist extrem ausgewogen und warm. Features wie 'Speak-to-Chat' (schaltet die Musik stumm, sobald man spricht) und eine Akkulaufzeit von bis zu 30 Stunden machen sie zum perfekten Reise- und Arbeits-Gadget.",
+        pros: ["Branchenführende aktive Geräuschunterdrückung (ANC)", "Erstklassige Akkulaufzeit von bis zu 30 Stunden", "Multipoint-Verbindung (mit 2 Geräten gleichzeitig koppeln)"],
+        cons: ["Touch-Steuerung an den Ohrmuscheln erfordert Eingewöhnung", "Nicht offiziell spritzwassergeschützt"]
+    },
+    {
+        id: "waterbottle",
+        name: "720°DGREE Edelstahl Trinkflasche",
+        category: "fitness",
+        priceRange: "22 - 29 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/waterbottle.png",
+        amazonLink: "https://www.amazon.de/s?k=720+degree+trinkflasche&tag=baokmedia21-21",
+        review: "Die doppelwandige Vakuum-Isolierung dieser robusten Edelstahlflasche hält Getränke bis zu 24 Stunden eiskalt und 12 Stunden heiß. Sie ist zu 100% auslaufsicher, geschmacksneutral und frei von BPA. Die matte Pulverbeschichtung verleiht der Flasche eine edle Haptik und sorgt für einen sicheren Griff beim Sport oder Outdoor-Aktivitäten.",
+        pros: ["Hervorragende Isolierleistung für Heiß- und Kaltgetränke", "Enorm robuste und kratzfeste Pulverbeschichtung", "Edles, minimalistisches Design in vielen Farben"],
+        cons: ["Durch die Doppelwand etwas schwerer als Plastikflaschen", "Reinigung des Flaschenhalses erfordert eine Bürste"]
+    },
+    {
+        id: "vacuum",
+        name: "Roborock Q Revo Saug-Wischroboter",
+        category: "living",
+        priceRange: "649 - 799 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/vacuum.png",
+        amazonLink: "https://www.amazon.de/s?k=Roborock+Q+Revo&tag=baokmedia21-21",
+        review: "Ein absolutes High-End-Haushaltsgerät, das das Wischen und Saugen vollkommen automatisiert. Die All-in-One-Dockingstation entleert den Staubbehälter, wäscht die rotierenden Mopps mit heißem Wasser und trocknet sie anschließend mit Heißluft. Mit 5500 Pa Saugleistung und modernster LiDAR-Navigation umfährt er Hindernisse präzise und reinigt porentief.",
+        pros: ["Vollautomatische Selbstreinigung und Trocknung der Mopps", "Hervorragende Hindernisvermeidung und präzise Kartierung", "Rotierende Mopps entfernen auch hartnäckige Flecken"],
+        cons: ["Die Reinigungsstation benötigt relativ viel Stellplatz", "Hohe Anschaffungskosten"]
+    },
+    {
+        id: "coffeemaker",
+        name: "Philips LatteGo 5400 Kaffeevollautomat",
+        category: "kitchen",
+        priceRange: "549 - 629 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/coffeemaker.png",
+        amazonLink: "https://www.amazon.de/s?k=Philips+LatteGo+5400&tag=baokmedia21-21",
+        review: "Der Traum für Kaffeeliebhaber: Dieser Vollautomat bereitet 12 Kaffeespezialitäten auf Knopfdruck frisch zu. Das Highlight ist das LatteGo-Milchsystem, welches vollkommen ohne Schläuche auskommt und in weniger als 15 Sekunden unter fließendem Wasser gereinigt werden kann. Über das intuitive Touch-Display lassen sich Kaffeestärke und Menge im Handumdrehen anpassen.",
+        pros: ["Das am einfachsten zu reinigende Milchsystem auf dem Markt", "Sehr intuitive Bedienung über farbige Symbole", "Speichert bis zu 4 persönliche Benutzerprofile"],
+        cons: ["Das Mahlwerk ist im Betrieb vergleichsweise laut", "Abtropfschale füllt sich durch Spülvorgänge recht schnell"]
+    },
+    {
+        id: "chargingstation",
+        name: "Anker 3-in-1 MagSafe Ladestation",
+        category: "gadgets",
+        priceRange: "119 - 149 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/chargingstation.png",
+        amazonLink: "https://www.amazon.de/s?k=Anker+3+in+1+MagSafe&tag=baokmedia21-21",
+        review: "Das ultimative Upgrade für deinen Nachttisch oder Schreibtisch. Diese ultrakompakte Ladestation lädt dein iPhone mit vollen 15W per MagSafe, deine Apple Watch (inkl. Schnellladefunktion) und deine AirPods gleichzeitig kabellos auf. Dank des cleveren Klapp-Designs lässt sie sich auf die Größe eines Kartenspiels zusammenfalten – perfekt für Reisen.",
+        pros: ["Offiziell MFi-zertifiziert für volles 15W MagSafe Laden", "Geniales, platzsparendes Falt-Design für Reisen", "Hochwertiges Gehäuse aus Aluminium und Soft-Touch-Material"],
+        cons: ["Netzteil ist im Lieferumfang enthalten, macht das Set aber teurer", "Nur für MagSafe-kompatible Apple-Geräte optimal"]
+    },
+    {
+        id: "massagegun",
+        name: "Hyperice Hypervolt 2 Pro Massagepistole",
+        category: "fitness",
+        priceRange: "279 - 329 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/massagegun.png",
+        amazonLink: "https://www.amazon.de/s?k=Hyperice+Hypervolt+2+Pro&tag=baokmedia21-21",
+        review: "Die Wahl der Profi-Athleten für Regeneration und Muskeltherapie. Die Hypervolt 2 Pro verfügt über einen kraftvollen 90W-Motor mit 5 Geschwindigkeitsstufen. Sie dringt tief ins Muskelgewebe ein, um Verspannungen zu lösen und die Durchblutung zu fördern. Per Bluetooth verbindet sie sich mit der Hyperice-App für geführte Warm-up- und Recovery-Routinen.",
+        pros: ["Enorme Power (90W) bei sehr leiser QuietGlide-Technologie", "Inklusive 5 verschiedenen Massageaufsätzen für alle Muskelgruppen", "App-Steuerung regelt die Intensität automatisch passend zum Video"],
+        cons: ["Sehr hoher Preis im Vergleich zu No-Name-Produkten", "Mit ca. 1,1 kg Eigengewicht bei längerer Nutzung etwas schwer in der Hand"]
+    }
+];
 
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher();
     initNavigation();
     initMobileMenu();
     initSearchOverlay();
-    initColorDots();
     initNewsletter();
-    setupShopLoadingState();
-    loadBestsellers();
     initLegalTabs();
-    
-    // Start syncing the shopping cart quantity badge
-    setInterval(syncCartCount, 1000);
-    document.addEventListener('click', () => setTimeout(syncCartCount, 200));
+    initProductCatalog();
+    loadBestsellers();
+    initProductModalCloseListeners();
 });
 
 /**
@@ -32,26 +134,18 @@ function initNavigation() {
             const href = link.getAttribute('href');
             
             if (targetId) {
-                // If it's a Spreadshop route (starts with #!), let the hash change naturally and ensure view transitions
-                if (href && href.startsWith('#!')) {
+                // Let the hash change naturally and ensure view transitions
+                if (href && (href.startsWith('#') || href.startsWith('#!'))) {
+                    e.preventDefault();
                     navigateToView(targetId);
-                    return;
-                }
-                
-                // Prevent default hash navigation to prevent Spreadshop script from hijacking
-                e.preventDefault();
-                navigateToView(targetId);
-                
-                // Update URL in address bar without triggering hashchange event
-                if (href) {
-                    history.pushState(null, null, href);
-                }
-                
-                // If it's a legal page link, switch to the correct tab directly
-                if (targetId === 'legal-view' && href) {
-                    const tabName = href.replace('#', '');
-                    if (tabName === 'imprint' || tabName === 'privacy' || tabName === 'terms') {
-                        switchLegalTab(tabName);
+                    history.pushState(null, null, href.replace('#!', '#'));
+                    
+                    // If it's a legal page link, switch to the correct tab directly
+                    const tabName = href.replace('#', '').replace('!', '/').split('/').pop();
+                    if (targetId === 'legal-view' && tabName) {
+                        if (tabName === 'imprint' || tabName === 'privacy' || tabName === 'terms') {
+                            switchLegalTab(tabName);
+                        }
                     }
                 }
             }
@@ -86,10 +180,6 @@ function handleUrlHash() {
         navigateToView('collections-view');
     } else if (hash === '#about' || hash === '#!/about') {
         navigateToView('about-view');
-    } else if (hash === '#sustainability' || hash === '#!/sustainability') {
-        navigateToView('sustainability-view');
-    } else if (hash === '#values' || hash === '#!/values') {
-        navigateToView('values-view');
     } else if (hash === '#contact' || hash === '#!/contact') {
         navigateToView('contact-view');
     } else if (hash === '#home' || hash === '#!/home') {
@@ -103,21 +193,9 @@ function handleUrlHash() {
     } else if (hash === '#terms' || hash === '#!/terms') {
         navigateToView('legal-view');
         switchLegalTab('terms');
-    } else if (hash === '#shop' || hash.startsWith('#!')) {
-        // If it's a default Spreadshop redirect on initial load of a non-shop page, ignore it.
-        if (ignoreNextShopHashChange && (hash === '#!' || hash === '#!/')) {
-            ignoreNextShopHashChange = false; // Reset the flag so future navigation works
-            if (activeViewId && activeViewId !== 'shop-view') {
-                const correctHash = activeViewId === 'home-view' ? '#home' : '#' + activeViewId.replace('-view', '');
-                history.pushState(null, null, correctHash);
-            }
-            return;
-        }
-        ignoreNextShopHashChange = false; // Any other hash change resets the ignore flag
+    } else if (hash === '#shop' || hash === '#!/shop' || hash.startsWith('#!')) {
         navigateToView('shop-view');
     } else if (hash === '' || hash === '#') {
-        // Only default to home on initial load or if we are already on home.
-        // Prevents Spreadshop state resets from kicking the user back to the home screen.
         if (activeViewId === '' || activeViewId === 'home-view') {
             navigateToView('home-view');
         }
@@ -128,7 +206,6 @@ function navigateToView(viewId) {
     const targetView = document.getElementById(viewId);
     if (!targetView) return;
 
-    // If the requested view is already active, don't perform transitions or scroll back to top
     if (targetView.classList.contains('active')) {
         return;
     }
@@ -136,20 +213,12 @@ function navigateToView(viewId) {
     const views = document.querySelectorAll('.view');
     const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
     
-    // Hide all views
     views.forEach(view => {
         view.classList.remove('active');
     });
     
-    // Show target view
     targetView.classList.add('active');
     
-    // Trigger a redraw/scroll for Spreadshop container if it is active
-    if (viewId === 'shop-view') {
-        window.dispatchEvent(new Event('resize'));
-    }
-    
-    // Update active nav link classes
     navLinks.forEach(link => {
         const target = link.getAttribute('data-target');
         if (target === viewId) {
@@ -159,42 +228,153 @@ function navigateToView(viewId) {
         }
     });
 
-    // Scroll to top smoothly when switching between main sections
     window.scrollTo({
         top: 0,
         behavior: 'smooth'
     });
 }
-
-// Global exposure for navigation actions
 window.navigateToView = navigateToView;
 
 /**
- * Handle Shop Category Navigation
+ * Custom Product Catalog Engine
  */
-function navigateToShopCategory(category) {
-    navigateToView('shop-view'); // Switch view first to ensure we display it
-    if (category === 't-shirts') {
-        window.location.hash = '#!/search?q=shirt';
-    } else if (category === 'hoodies') {
-        window.location.hash = '#!/search?q=hoodie';
-    } else if (category === 'accessories') {
-        window.location.hash = '#!/search?q=cap';
-    } else {
-        navigateToView('shop-view');
-    }
-    
-    console.log(`Navigating to Spreadshop category: ${category}`);
-    
-    // Scroll down to the shop container
-    const shopContainer = document.getElementById('myShop');
-    if (shopContainer) {
-        setTimeout(() => {
-            shopContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 300);
-    }
+function initProductCatalog() {
+    // Render initial catalog (All Products)
+    renderProductCatalog('all');
+
+    // Setup Category Filter Buttons
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const category = btn.getAttribute('data-category');
+            renderProductCatalog(category);
+        });
+    });
 }
-window.navigateToShopCategory = navigateToShopCategory;
+
+function renderProductCatalog(filter) {
+    const grid = document.getElementById('catalog-products-grid');
+    if (!grid) return;
+
+    grid.innerHTML = '';
+
+    const filtered = filter === 'all' 
+        ? PRODUCTS 
+        : PRODUCTS.filter(p => p.category === filter);
+
+    if (filtered.length === 0) {
+        grid.innerHTML = '<p class="no-products">Keine Produkte in dieser Kategorie gefunden.</p>';
+        return;
+    }
+
+    filtered.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card animate-fade-in';
+        card.addEventListener('click', () => openProductModal(product.id));
+
+        card.innerHTML = `
+            <div class="product-img-wrapper">
+                <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                <span class="badge">${product.category.toUpperCase()}</span>
+            </div>
+            <div class="product-details">
+                <h3 class="product-name">${product.name}</h3>
+                <div class="modal-rating" style="margin-bottom: 0.5rem;">
+                    <span style="color: var(--color-accent); font-size: 0.9rem;">${product.stars}</span>
+                    <span style="color: var(--color-text-secondary); font-size: 0.75rem; font-weight: 600;">${product.rating}</span>
+                </div>
+                <p class="product-price">Preis: ${product.priceRange}</p>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+/**
+ * Set Category Filter Programmatically
+ */
+function setCategoryFilter(category) {
+    navigateToView('shop-view');
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    filterButtons.forEach(btn => {
+        if (btn.getAttribute('data-category') === category) {
+            btn.click();
+        }
+    });
+}
+window.setCategoryFilter = setCategoryFilter;
+
+/**
+ * Product Detail Modal Logic
+ */
+function openProductModal(productId) {
+    const product = PRODUCTS.find(p => p.id === productId);
+    if (!product) return;
+
+    document.getElementById('modal-product-img').src = product.image;
+    document.getElementById('modal-product-img').alt = product.name;
+    document.getElementById('modal-product-cat').textContent = product.category;
+    document.getElementById('modal-product-title').textContent = product.name;
+    document.getElementById('modal-product-stars').textContent = product.stars;
+    document.getElementById('modal-product-rating-num').textContent = `${product.rating}/5`;
+    document.getElementById('modal-product-price').textContent = `Preisklasse: ${product.priceRange}`;
+    document.getElementById('modal-product-review').textContent = product.review;
+
+    // Render Pros
+    const prosList = document.getElementById('modal-product-pros');
+    prosList.innerHTML = '';
+    product.pros.forEach(pro => {
+        const li = document.createElement('li');
+        li.textContent = pro;
+        prosList.appendChild(li);
+    });
+
+    // Render Cons
+    const consList = document.getElementById('modal-product-cons');
+    consList.innerHTML = '';
+    product.cons.forEach(con => {
+        const li = document.createElement('li');
+        li.textContent = con;
+        consList.appendChild(li);
+    });
+
+    // Set Amazon CTA Link
+    document.getElementById('modal-product-link').href = product.amazonLink;
+
+    // Show Modal
+    const modal = document.getElementById('product-detail-modal');
+    modal.classList.add('open');
+    document.body.style.overflow = 'hidden'; // Stop background scrolling
+}
+window.openProductModal = openProductModal;
+
+function closeProductModal() {
+    const modal = document.getElementById('product-detail-modal');
+    modal.classList.remove('open');
+    document.body.style.overflow = ''; // Enable background scrolling
+}
+window.closeProductModal = closeProductModal;
+
+function initProductModalCloseListeners() {
+    const modal = document.getElementById('product-detail-modal');
+    if (!modal) return;
+
+    // Close on clicking outside the card
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeProductModal();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.classList.contains('open')) {
+            closeProductModal();
+        }
+    });
+}
 
 /**
  * Mobile Navigation Drawer Toggle
@@ -209,13 +389,11 @@ function initMobileMenu() {
             if (isOpen) {
                 drawer.classList.remove('open');
                 toggle.classList.remove('active');
-                // Animate hamburger lines back
                 toggle.children[0].style.transform = 'none';
                 toggle.children[1].style.transform = 'none';
             } else {
                 drawer.classList.add('open');
                 toggle.classList.add('active');
-                // Animate hamburger lines to X
                 toggle.children[0].style.transform = 'translateY(3.5px) rotate(45deg)';
                 toggle.children[1].style.transform = 'translateY(-3px) rotate(-45deg)';
             }
@@ -242,14 +420,12 @@ function initSearchOverlay() {
             overlay.classList.remove('open');
         });
         
-        // Close on Escape key
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && overlay.classList.contains('open')) {
                 overlay.classList.remove('open');
             }
         });
 
-        // Clickable search suggestions using event delegation
         const suggestionsContainer = document.querySelector('.search-suggestions');
         if (suggestionsContainer) {
             suggestionsContainer.addEventListener('click', (e) => {
@@ -265,51 +441,52 @@ function initSearchOverlay() {
     }
 }
 
-/**
- * Handle Search Form Submission
- */
 function handleSearchSubmit(event) {
     if (event) event.preventDefault();
     const input = document.querySelector('.search-input');
-    const query = input ? input.value.trim() : '';
+    const query = input ? input.value.trim().toLowerCase() : '';
     
-    // Close the search overlay
     const overlay = document.querySelector('.search-overlay');
     if (overlay) {
         overlay.classList.remove('open');
     }
     
     if (query) {
-        // Redirect to shop view with search query hash
-        window.location.hash = `#!/search?q=${encodeURIComponent(query)}`;
-    } else {
-        window.location.hash = '#!/';
+        navigateToView('shop-view');
+        // Search in local PRODUCTS
+        const matches = PRODUCTS.filter(p => p.name.toLowerCase().includes(query) || p.review.toLowerCase().includes(query));
+        const grid = document.getElementById('catalog-products-grid');
+        if (grid) {
+            grid.innerHTML = '';
+            if (matches.length === 0) {
+                grid.innerHTML = '<p class="no-products">Keine Produkte passend zu deiner Suche gefunden.</p>';
+                return;
+            }
+            matches.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card animate-fade-in';
+                card.addEventListener('click', () => openProductModal(product.id));
+
+                card.innerHTML = `
+                    <div class="product-img-wrapper">
+                        <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                        <span class="badge">${product.category.toUpperCase()}</span>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">${product.name}</h3>
+                        <div class="modal-rating" style="margin-bottom: 0.5rem;">
+                            <span style="color: var(--color-accent); font-size: 0.9rem;">${product.stars}</span>
+                            <span style="color: var(--color-text-secondary); font-size: 0.75rem; font-weight: 600;">${product.rating}</span>
+                        </div>
+                        <p class="product-price">Preis: ${product.priceRange}</p>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
     }
 }
 window.handleSearchSubmit = handleSearchSubmit;
-
-/**
- * Interactive Product Card Color Dot Selectors
- */
-function initColorDots() {
-    const dots = document.querySelectorAll('.color-dot');
-    dots.forEach(dot => {
-        dot.addEventListener('click', (e) => {
-            e.stopPropagation(); // Avoid triggering product card click event
-            
-            // Get all siblings in parent
-            const siblings = dot.parentNode.querySelectorAll('.color-dot');
-            siblings.forEach(s => s.classList.remove('active'));
-            
-            // Activate selected
-            dot.classList.add('active');
-            
-            // Interactive visual response: change image color tint (demonstration only)
-            const colorName = dot.getAttribute('title');
-            console.log(`Ausgewählte Farbe für Produkt: ${colorName}`);
-        });
-    });
-}
 
 /**
  * Newsletter Form Submission Handler
@@ -326,7 +503,7 @@ function initNewsletter() {
             parent.innerHTML = `
                 <div class="newsletter-success animate-fade-in" style="padding: 1rem 0; color: var(--color-accent);">
                     <h4 style="font-family: var(--font-heading); font-size: 1rem; margin-bottom: 0.5rem; text-transform: uppercase;">Vielen Dank!</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-text-secondary);">Wir haben deine E-Mail-Adresse (${email}) registriert. Freue dich auf exklusive Updates.</p>
+                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-text-secondary);">Wir haben deine E-Mail-Adresse (${email}) registriert. Du erhältst ab sofort unsere aktuellen Produkttrends.</p>
                 </div>
             `;
         }
@@ -357,189 +534,42 @@ window.handleContactSubmit = function(event) {
                 <p style="font-size: 0.95rem; line-height: 1.6; color: var(--color-text-secondary);">${bodyText}</p>
             </div>
         `;
-        console.log(`Kontakt-Nachricht von ${name} (${email}): ${message}`);
     }
 };
 
 /**
- * Setup Spreadshop Loading & Integration Handler
+ * Load 3 featured bestsellers on the homepage
  */
-function setupShopLoadingState() {
-    const shopContainer = document.getElementById('myShop');
-    
-    // Poll to check if Spreadshop loaded its content
-    let checkInterval = setInterval(() => {
-        const hasLoadedIFrameOrProducts = shopContainer && (shopContainer.querySelector('iframe') || shopContainer.querySelector('.sprd-app') || shopContainer.children.length > 1);
-        if (hasLoadedIFrameOrProducts) {
-            removeLoadingSpinner();
-        }
-    }, 500);
-
-    // Fallback to remove loader after 4 seconds
-    setTimeout(() => {
-        removeLoadingSpinner();
-    }, 4000);
-
-    function removeLoadingSpinner() {
-        clearInterval(checkInterval);
-        const spinner = document.querySelector('.shop-loading-spinner');
-        if (spinner) {
-            spinner.style.display = 'none';
-        }
-    }
-}
-
-/**
- * Sync custom basket quantity badge with Spreadshop's internal state
- */
-function syncCartCount() {
-    const shopContainer = document.getElementById('myShop');
-    if (!shopContainer) return;
-    
-    const customBadge = document.querySelector('.bag-count');
-    if (!customBadge) return;
-    
-    // Selectors for finding Spreadshop's quantity badges in the DOM
-    const selectors = [
-        '[class*="basket-amount"]',
-        '[class*="basket-count"]',
-        '[class*="cart-count"]',
-        '[class*="quantity-badge"]',
-        '.sprd-basket-amount',
-        '.sprd-basket-quantity',
-        '.sprd-cart-count'
-    ];
-    
-    let quantityText = '';
-    for (let selector of selectors) {
-        const el = shopContainer.querySelector(selector);
-        if (el) {
-            const text = el.textContent.trim().replace(/\D/g, '');
-            if (text !== '') {
-                quantityText = text;
-                break;
-            }
-        }
-    }
-    
-    // Fallback: search for numbers inside links or buttons pointing to the basket
-    if (quantityText === '') {
-        const cartLinks = shopContainer.querySelectorAll('a[href*="basket"], a[href*="cart"], button[class*="basket"], button[class*="cart"]');
-        for (let link of cartLinks) {
-            const badge = link.querySelector('[class*="badge"], [class*="count"], [class*="amount"]');
-            if (badge) {
-                const text = badge.textContent.trim().replace(/\D/g, '');
-                if (text !== '') {
-                    quantityText = text;
-                    break;
-                }
-            } else {
-                const text = link.textContent.trim().replace(/\D/g, '');
-                if (text !== '' && text.length <= 2) {
-                    quantityText = text;
-                    break;
-                }
-            }
-        }
-    }
-    
-    // Update parent badge
-    if (quantityText !== '') {
-        customBadge.textContent = quantityText;
-        customBadge.style.display = 'flex';
-    } else {
-        customBadge.textContent = '0';
-    }
-}
-
-/**
- * Dynamically load bestseller products from the Spreadshop API feed
- */
-async function loadBestsellers() {
+function loadBestsellers() {
     const grid = document.querySelector('.bestsellers-section .products-grid');
     if (!grid) return;
     
-    try {
-        const response = await fetch('https://sport-event-store.myspreadshop.de/api/v1/shops/1555258/sellables');
-        if (!response.ok) throw new Error('API fetch failed');
-        const data = await response.json();
-        const sellables = data.sellables || [];
+    grid.innerHTML = '';
+    
+    // Pick the first 3 products for the homepage highlight
+    const itemsToShow = PRODUCTS.slice(0, 3);
+    
+    itemsToShow.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card';
+        card.addEventListener('click', () => openProductModal(product.id));
         
-        if (sellables.length === 0) return; // Keep static placeholders if empty
-        
-        // Clear static placeholders if we actually have products from the feed
-        grid.innerHTML = '';
-        
-        // Slice the first 3 products for dynamic showcase
-        let itemsToShow = sellables.slice(0, 3);
-        
-        itemsToShow.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'product-card';
-            
-            // Generate deep link to Spreadshop product details page
-            card.onclick = () => {
-                navigateToView('shop-view'); // Ensure shop view is visible
-                window.location.hash = `#!/sellable/${item.sellableId}`;
-            };
-            
-            // Format price amount
-            const price = typeof item.price.amount === 'number' 
-                ? `${item.price.amount.toFixed(2).replace('.', ',')} €`
-                : '24,99 €';
-                
-            // Render color dots if appearances are available
-            let colorsHtml = '';
-            if (item.appearanceIds && item.appearanceIds.length > 0) {
-                colorsHtml = `<div class="product-colors">`;
-                
-                const colorMap = {
-                    '1': '#ffffff',     // White
-                    '1247': '#d7d0c5',  // Cream/Sand
-                    '1250': '#12141c',  // Charcoal
-                    '1265': '#000000',  // Black
-                    '270': '#6c7a6b',   // Sage Green
-                    '195': '#1c2d5a',   // Navy Blue
-                    '288': '#ccff00',   // Neon Volt Green
-                    '1254': '#b5a596'   // Muted Ochre
-                };
-                
-                item.appearanceIds.slice(0, 4).forEach((appId, idx) => {
-                    const hex = colorMap[appId] || '#ccff00';
-                    const isActive = appId === item.defaultAppearanceId ? 'active' : '';
-                    colorsHtml += `<span class="color-dot ${isActive}" style="background-color: ${hex};" title="Farbe ID ${appId}"></span>`;
-                });
-                colorsHtml += `</div>`;
-            }
-            
-            // Request dynamic preview image with color background matching secondary gray (#12141c)
-            let previewUrl = item.previewImage.url;
-            if (previewUrl.includes('backgroundColor=')) {
-                previewUrl = previewUrl.replace(/backgroundColor=[^&]+/, 'backgroundColor=12141c');
-            } else {
-                previewUrl += previewUrl.includes('?') ? '&backgroundColor=12141c' : '?backgroundColor=12141c';
-            }
-            
-            card.innerHTML = `
-                <div class="product-img-wrapper">
-                    <img src="${previewUrl}" alt="${item.name}" class="product-image" loading="lazy">
-                    <span class="badge">Official Gear</span>
+        card.innerHTML = `
+            <div class="product-img-wrapper">
+                <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                <span class="badge">TREND</span>
+            </div>
+            <div class="product-details">
+                <h3 class="product-name">${product.name}</h3>
+                <div class="modal-rating" style="margin-bottom: 0.5rem;">
+                    <span style="color: var(--color-accent); font-size: 0.9rem;">${product.stars}</span>
+                    <span style="color: var(--color-text-secondary); font-size: 0.75rem; font-weight: 600;">${product.rating}</span>
                 </div>
-                <div class="product-details">
-                    <h3 class="product-name">${item.name}</h3>
-                    <p class="product-price">${price}</p>
-                    ${colorsHtml}
-                </div>
-            `;
-            grid.appendChild(card);
-        });
-        
-        // Re-initialize color dots click listeners
-        initColorDots();
-        
-    } catch (err) {
-        console.warn('Could not load dynamic bestsellers from Spreadshop:', err);
-    }
+                <p class="product-price">Preis: ${product.priceRange}</p>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
 }
 
 /**
@@ -547,85 +577,65 @@ async function loadBestsellers() {
  */
 const translations = {
     de: {
-        announcement: "Kostenloser Versand für alle Bestellungen ab 99,99 €",
+        announcement: "Ehrliche Produkttests & aktuelle Amazon-Trends rund um die Uhr",
         nav_home: "Home",
-        nav_shop: "Shop",
+        nav_shop: "Empfehlungen",
         nav_collections: "Kollektionen",
         nav_about: "Über uns",
-        hero_tag: "Endurance & Performance",
-        hero_title: "DEINE LEIDENSCHAFT. DEIN DESIGN.",
-        hero_desc: "Kreative und unabhängige Fan-Designs für die größten Sportereignisse der Welt. Vom Fußball-Sommermärchen bis zur Königsklasse des Motorsports – finde dein perfektes Event-Shirt.",
-        hero_btn_shop: "Kollektion Entdecken",
+        hero_tag: "Ehrlich &amp; Unabhängig",
+        hero_title: "DEIN GUIDE FÜR DIE BESTEN DEALS.",
+        hero_desc: "Wir checken die angesagtesten Produkte, Gadgets und Haushalts-Hacks auf Amazon. Ehrlich bewertet, transparent verglichen und direkt für dich aufbereitet.",
+        hero_btn_shop: "Empfehlungen ansehen",
         hero_btn_about: "Unsere Story",
         cat_tag: "Kategorien",
-        cat_title: "Kollektionen durchstöbern",
-        cat_tshirt_desc: "Fankultur neu definiert. Unabhängige Designs.",
-        cat_tshirt_cta: "Jetzt Shoppen",
-        cat_hoodie_desc: "Stylische Hoodies für Spieltage und Rennwochenenden.",
-        cat_hoodie_cta: "Jetzt Shoppen",
-        cat_accessories_title: "Accessoires",
-        cat_accessories_desc: "Caps und Taschen passend zu deinem Lieblings-Event.",
-        cat_accessories_cta: "Entdecken",
+        cat_title: "Beliebte Themen",
+        cat_tshirt_desc: "Praktische Helfer, innovative Gadgets und clevere Lösungen.",
+        cat_tshirt_cta: "Küche durchstöbern",
+        cat_hoodie_desc: "Ästhetische Deko-Trends und stilvolle Einrichtungen.",
+        cat_hoodie_cta: "Wohnideen ansehen",
+        cat_accessories_title: "Gadgets & Gear",
+        cat_accessories_desc: "Technik, die den Alltag erleichtert, und nützliches Zubehör.",
+        cat_accessories_cta: "Technik entdecken",
         value_title_1: "100% Unabhängig",
-        value_desc_1: "Wir entwerfen eigene, kreative Artworks – komplett eigenständig und unter Beachtung bestehender Markenrechte.",
-        value_title_2: "Nachhaltigkeit",
-        value_desc_2: "Bedarfsgerechter On-Demand-Druck schont Umweltressourcen und vermeidet Textilmüll.",
-        value_title_3: "Premium Qualität",
-        value_desc_3: "Robuste Materialien und langlebiger Druck stehen für uns an oberster Stelle.",
-        value_title_4: "Faires Pricing",
-        value_desc_4: "Kreatives Fan-Merchandise zu fairen und transparenten Konditionen.",
+        value_desc_1: "Wir bewerten Produkte vollkommen eigenständig. Unsere Reviews basieren auf echtem Kundennutzen.",
+        value_title_2: "Aktuelle Trends",
+        value_desc_2: "Wir durchforsten Social Media & Pinterest nach den spannendsten Amazon-Neuheiten.",
+        value_title_3: "Ehrliche Reviews",
+        value_desc_3: "Keine geschönten Werbeversprechen. Wir listen klare Vorteile und reale Nachteile auf.",
+        value_title_4: "Transparenz",
+        value_desc_4: "Wir finanzieren uns durch Werbelinks – für dich bleibt der Preis zu 100% unverändert.",
         best_tag: "Auswahl",
-        best_title: "Beliebte Ausrüstung",
-        best_view_all: "Alle Produkte ansehen →",
+        best_title: "Top-Empfehlungen der Redaktion",
+        best_view_all: "Alle Empfehlungen ansehen →",
         badge_essential: "Essential",
         badge_premium: "Premium",
         badge_new: "Neu",
-        shop_tag: "Offizieller Store",
-        shop_title: "Sport-EventStore Shop",
-        shop_desc: "Bestelle deine offizielle Event-Ausrüstung sicher und direkt über unseren integrierten Partnershop. Schnell gedruckt und direkt geliefert.",
-        shop_loading: "Kollektionen werden geladen...",
-        shop_fallback_btn: "Direkt zu Spreadshop öffnen",
-        coll_tag: "Unsere Highlights",
-        coll_title: "Kollektionen",
-        coll_noe_tag: "New In",
-        coll_noe_title: "Velocity Performance",
-        coll_noe_desc: "Clean, dynamisch und kontrastreich. Mit unseren voltfarbenen Highlights bist du sowohl auf der Laufbahn als auch im Fitnessstudio unübersehbar.",
-        coll_noe_btn: "Kollektion shoppen",
-        coll_preview_title: "Highlights der Kollektion",
-        founders_tag: "Konzept & Vision",
-        founders_title: "Mit Herzblut &amp; Fokus im Sinn.",
-        founders_text: "Hinter dem Sport-EventStore steht kein unpersönlicher Großkonzern, sondern ein kleines Team von Sportenthusiasten, die die Fankultur feiern.<br><br>Wir lieben das Kribbeln vor einem großen Fußball-WM-Finale oder dem Start eines Formel-1-Rennens. Da offizielle Produkte oft einfallslos und überteuert sind, entwerfen wir eigene, kreative Fan-Kollektionen. Dabei respektieren wir stets bestehende Markenrechte – unsere Designs sind 100% unabhängig, originell und von Fans für Fans gemacht.<br><br>Jedes Kleidungsstück ist ein Statement für deine Leidenschaft. Danke, dass du Teil unserer Community bist!",
-        about_tag: "Unsere Philosophie",
-        about_heading: "Ausrüstung für Sieger.",
-        about_lead: "Der Sport-EventStore entstand aus der Liebe zum Sport und der Idee, kreative, markenrechtskonforme Fan-Ausrüstung für globale Sport-Highlights zu schaffen.",
-        about_story_title_1: "Originell & Markenkonform",
-        about_story_desc_1: "Wir kopieren keine geschützten Logos oder Markennamen. Stattdessen fangen wir die echte Emotion und Ästhetik von Sportereignissen in eigenen, kreativen Kunstwerken und cleverer Typografie ein.",
-        about_story_title_2: "Print-On-Demand Partnerschaft",
-        about_story_desc_2: "In Kooperation mit Spreadshop produzieren wir erst nach deiner Bestellung. Das spart Lagerfläche, senkt Transportwege und minimiert wertvollen Materialausschuss.",
-        sustain_tag: "Verantwortung",
-        sustain_title: "Nachhaltigkeit bei uns",
-        sustain_intro: "Unsere sportliche Leidenschaft lebt von der Natur und gesunden Ressourcen. Daher ist Umweltschutz ein fester Bestandteil unserer Philosophie.",
-        sustain_card_title_1: "Ressourceneffizienz",
-        sustain_card_desc_1: "Durch On-Demand-Herstellung reduzieren wir textile Überschüsse auf nahezu null Prozent.",
-        sustain_card_title_2: "GOTS-Bio-Materialien",
-        sustain_card_desc_2: "Wo immer möglich, wählen wir Bio-Baumwolle und recycelte Funktionsgarne für unsere Textilien.",
-        sustain_card_title_3: "Plastikfreier Versand",
-        sustain_card_desc_3: "Bestellungen werden klimaneutral in recyclebaren Papiertaschen und Kartons verpackt und versendet.",
-        values_view_tag: "Wofür wir stehen",
-        values_view_title: "Unsere Werte",
-        values_view_intro: "Bei Sport-EventStore stehen Fairness, Leistungsorientierung und Leidenschaft im Fokus.",
-        value_card_title_1: "Fairplay & Respekt",
-        value_card_desc_1: "Im Sport zählt Zusammenhalt. Wir setzen auf faire Produktionsbedingungen entlang der gesamten Lieferkette unserer Partner.",
-        value_card_title_2: "Unermüdlicher Fokus" ,
-        value_card_desc_2: "Erfolg erfordert Disziplin. Unsere Kollektionen sind auf maximale Langlebigkeit getestet und machen jede Session klaglos mit.",
-        value_card_title_3: "Dynamic Community",
-        value_card_desc_3: "Sport verbindet Menschen. Wir supporten Lauf-Events, lokale Turniere und sportlichen Zusammenhalt im Team.",
+        shop_tag: "Produkt-Finder",
+        shop_title: "Unsere Empfehlungen",
+        shop_desc: "Ehrlich getestete Produkte und aktuelle Gadgets. Wähle eine Kategorie, um die besten Deals und Reviews anzuzeigen.",
+        coll_tag: "Saison-Specials",
+        coll_title: "Kurationen",
+        coll_noe_tag: "Favoriten",
+        coll_noe_title: "Virale Alltagshelfer",
+        coll_noe_desc: "Diese Produkte gehen auf Pinterest und TikTok gerade viral. Wir haben sie genau unter die Lupe genommen und zeigen dir, ob sich die Anschaffung wirklich lohnt.",
+        coll_noe_btn: "Zu den Trends",
+        coll_preview_title: "Highlights der Kuration",
+        founders_tag: "Über uns",
+        founders_title: "Ehrlich geprüft. Einfach gekauft.",
+        founders_text: "Hinter Checkbude24 steht ein kleines Team von Produkt-Enthusiasten. Wir verbringen Stunden damit, das Internet nach echten Geheimtipps auf Amazon zu durchsuchen.<br><br>Wir wissen, wie schwer es ist, zwischen Tausenden gefälschten Bewertungen echte Qualität zu erkennen. Deshalb erstellen wir kurze, knackige Reviews mit den wichtigsten Pro & Contra Argumenten. Wir verlinken direkt auf Amazon – so kannst du sicher, schnell und unkompliziert shoppen. Danke, dass du uns unterstützt!",
+        about_tag: "Unsere Mission",
+        about_heading: "Dein Kompass im Dschungel der Online-Angebote.",
+        about_lead: "Checkbude24 hilft dir dabei, Fehlkäufe zu vermeiden und genau die Produkte zu finden, die dein Leben schöner oder leichter machen.",
+        about_story_title_1: "Unabhängige Bewertung",
+        about_story_desc_1: "Wir erhalten keine Bezahlung von Herstellern für bessere Bewertungen. Unser Fokus liegt auf der Wahrheit.",
+        about_story_title_2: "Kuration statt Masse",
+        about_story_desc_2: "Wir listen nicht alles, sondern nur das Beste. Jedes gelistete Produkt hat uns oder Hunderte Käufer nachweislich überzeugt.",
         contact_tag: "Schreib uns",
-        contact_heading: "Kontaktiere den Support",
-        contact_desc: "Hast du Fragen zu deiner Bestellung, Kooperationen für eigene Sportevents oder Feedback? Wir helfen dir gerne.",
+        contact_heading: "Fragen oder Vorschläge?",
+        contact_desc: "Du hast ein Produkt entdeckt, das wir unbedingt testen sollten? Oder hast du Anregungen zu unserer Seite? Schreib uns einfach!",
         contact_detail_label_email: "E-Mail",
-        contact_detail_label_hours: "Support-Zeiten",
-        contact_detail_val_hours: "Montag – Freitag: 09:00 – 17:00 Uhr",
+        contact_detail_label_hours: "Antwortzeit",
+        contact_detail_val_hours: "In der Regel innerhalb von 24-48 Stunden",
         contact_form_name: "Dein Name",
         contact_form_email: "Deine E-Mail",
         contact_form_msg: "Nachricht",
@@ -633,113 +643,91 @@ const translations = {
         contact_placeholder_name: "z.B. Anna Müller",
         contact_placeholder_email: "z.B. anna@email.de",
         contact_placeholder_msg: "Wie können wir dir helfen?",
-        search_placeholder: "Suche nach Produkten...",
+        search_placeholder: "Produkte durchsuchen...",
         search_btn: "Suchen",
-        search_suggestions: "Beliebte Suchanfragen: <span>Hoodies</span>, <span>T-Shirts</span>, <span>Caps</span>",
-        footer_title_shop: "Shop",
-        footer_shop_all: "Alle Produkte",
-        footer_shop_tshirts: "T-Shirts",
-        footer_shop_hoodies: "Hoodies",
-        footer_shop_accessories: "Caps & Accessoires",
+        search_suggestions: "Beliebte Suchen: <span>Heißluftfritteuse</span>, <span>Diffusor</span>, <span>Kopfhörer</span>",
+        footer_title_shop: "Kategorien",
+        footer_shop_all: "All Produkte",
+        footer_shop_kitchen: "Küche & Haushalt",
+        footer_shop_living: "Wohnen & Deko",
+        footer_shop_gadgets: "Technik & Gadgets",
         footer_title_company: "Unternehmen",
         footer_company_about: "Über uns",
-        footer_company_sustain: "Nachhaltigkeit",
-        footer_company_values: "Werte",
         footer_company_contact: "Kontakt",
         footer_title_newsletter: "Newsletter",
-        footer_newsletter_desc: "Melde dich für unseren Newsletter an, um exklusiven Vorabzugriff auf neue Drops und Angebote zu erhalten.",
+        footer_newsletter_desc: "Abonniere unseren Newsletter für die neuesten viralen Amazon-Trends und Testberichte.",
         footer_newsletter_placeholder: "Deine E-Mail-Adresse",
-        footer_copyright: "&copy; 2026 Sport-EventStore. Alle Rechte vorbehalten.",
+        footer_copyright: "&copy; 2026 Checkbude24. Alle Rechte vorbehalten. * Als Amazon-Partner verdiene ich an qualifizierten Verkäufen.",
         footer_privacy: "Datenschutz",
         footer_terms: "AGB",
         footer_imprint: "Impressum",
         legal_tab_imprint: "Impressum",
         legal_tab_privacy: "Datenschutz",
         legal_tab_terms: "AGB",
-        legal_imprint_content: `<h2>Impressum</h2><p><strong>Sport-EventStore / baokmedia</strong></p><p>c/o Impressumservice Dein-Impressum<br>Stettiner Straße 41<br>35410 Hungen</p><p><strong>Vertreten durch:</strong><br>O. Balko</p><p><strong>Kontakt:</strong><br>E-Mail: olli1270@gmail.com</p><p><strong>Haftungshinweis:</strong><br>Wir sind für die Inhalte unserer eigenen Seiten nach den allgemeinen Gesetzen verantwortlich. Alle Kaufverträge, Lieferungen und Kundenservice-Angelegenheiten der Spreadshop-Kollektionen werden ausschließlich von der sprd.net AG (Spreadshirt) abgewickelt.</p><p><strong>Online-Streitbeilegung (OS):</strong><br>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a> finden. Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>`,
-        legal_privacy_content: `<h2>Datenschutzerklärung</h2><h3>1. Datenschutz auf einen Blick</h3><p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Landingpage und dem eingebetteten Spreadshop-Bereich auf.</p><h3>2. Hosting durch Vercel</h3><p>Wir hosten unsere Website bei Vercel (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). Zur Bereitstellung der Website erfasst Vercel automatisiert Server-Logfiles (IP-Adresse, Browsertyp, Referrer-URL, Uhrzeit). Dies erfolgt auf Grundlage unserer berechtigten Interessen an einem sicheren und effizienten Betrieb unserer Website (Art. 6 Abs. 1 lit. f DSGVO).</p><h3>3. Eingebetteter Spreadshop (sprd.net AG)</h3><p>Auf dieser Website ist ein Online-Shop eingebettet, der technisch und rechtlich von der <strong>sprd.net AG (Spreadshirt)</strong>, Gießerstraße 27, 04229 Leipzig, Deutschland, betrieben wird. Wenn Sie den Shop-Bereich aufrufen oder eine Bestellung tätigen, verarbeitet Spreadshirt Ihre Daten (inkl. IP-Adresse, Browser-Details, Cookies und Bestelldaten) eigenverantwortlich für die Zahlungsabwicklung, Produktion und Lieferung. Weitere Informationen finden Sie in der <a href="https://www.spreadshirt.de/datenschutz-C3858" target="_blank">Datenschutzerklärung von Spreadshirt</a>.</p><h3>4. Lokaler Speicher (LocalStorage)</h3><p>Wir speichern Ihre ausgewählte Sprache (DE/EN) in Ihrem Browser (LocalStorage), um Ihnen die Seite beim nächsten Aufruf direkt in Ihrer Wunschsprache anzuzeigen. Dies stellt ein berechtigtes Interesse dar (Art. 6 Abs. 1 lit. f DSGVO).</p>`,
-        legal_terms_content: `<h2>Allgemeine Geschäftsbedingungen (AGB)</h2><h3>1. Geltungsbereich</h3><p>Diese Bedingungen gelten für die Nutzung der Landingpage. Für Bestellungen im Online-Shop gelten gesonderte Bedingungen.</p><h3>2. Vertragspartner für Bestellungen</h3><p>Alle Verträge, Lieferungen und Serviceleistungen, die über den auf dieser Website eingebetteten Online-Shop getätigt werden, kommen ausschließlich zwischen dem Besteller und der <strong>sprd.net AG (Spreadshirt)</strong>, Gießerstraße 27, 04229 Leipzig, Deutschland zustande. Es gelten die allgemeinen Geschäftsbedingungen und Widerrufsbelehrungen von sprd.net AG, die im integrierten Shop-Widget einsehbar sind.</p><h3>3. Haftungsbeschränkung für Inhalte</h3><p>Wir erstellen die redaktionellen Inhalte dieser Landingpage mit größter Sorgfalt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte von verlinkten Spreadshirt-Produkten oder Preisen können wir jedoch keine Gewähr übernehmen, da diese direkt und dynamisch von Spreadshirt bereitgestellt werden.</p>`
+        legal_imprint_content: `<h2>Impressum</h2><p><strong>Checkbude24 / baokmedia</strong></p><p>c/o Impressumservice Dein-Impressum<br>Stettiner Straße 41<br>35410 Hungen</p><p><strong>Vertreten durch:</strong><br>O. Balko</p><p><strong>Kontakt:</strong><br>E-Mail: olli1270@gmail.com</p><p><strong>Haftungshinweis:</strong><br>Wir erstellen Testberichte und Vergleiche nach bestem Wissen. Für Verträge, Lieferungen und Serviceleistungen, die über externe Links (z.B. Amazon) zustande kommen, übernehmen wir keine Haftung. Es gelten die Bedingungen des jeweiligen Verkäufers.</p><p><strong>Teilnahme am Partnerprogramm:</strong><br>Checkbude24 ist Teilnehmer des Partnerprogramms von Amazon EU, das zur Bereitstellung eines Mediums für Websites konzipiert wurde, mittels dessen durch die Platzierung von Werbeanzeigen und Links zu Amazon.de Werbekostenerstattung verdient werden kann.</p>`,
+        legal_privacy_content: `<h2>Datenschutzerklärung</h2><h3>1. Datenschutz auf einen Blick</h3><p>Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten auf unserer Test- und Empfehlungsseite auf.</p><h3>2. Hosting durch Vercel</h3><p>Wir hosten unsere Website bei Vercel (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). Zur Bereitstellung der Website erfasst Vercel automatisiert Server-Logfiles (IP-Adresse, Browsertyp, Referrer-URL, Uhrzeit). Dies erfolgt auf Grundlage unserer berechtigten Interessen an einem sicheren und effizienten Betrieb (Art. 6 Abs. 1 lit. f DSGVO).</p><h3>3. Amazon Partnerprogramm & Cookies</h3><p>Diese Website enthält Partnerlinks (Affiliate-Links) zu Amazon. Wenn Sie auf einen dieser Links klicken und ein Produkt erwerben, erhalten wir eine kleine Provision. Amazon verwendet Cookies, um die Herkunft der Bestellungen nachzuvollziehen. Dadurch kann Amazon erkennen, dass Sie den Partnerlink auf unserer Website geklickt haben. Weitere Details zur Datennutzung finden Sie in der Datenschutzerklärung von Amazon.</p><h3>4. Lokaler Speicher (LocalStorage)</h3><p>Wir speichern Ihre ausgewählte Sprache (DE/EN) im LocalStorage Ihres Browsers, um Ihnen die Seite beim nächsten Aufruf direkt in Ihrer Wunschsprache anzuzeigen. (Art. 6 Abs. 1 lit. f DSGVO).</p>`,
+        legal_terms_content: `<h2>Nutzungsbedingungen (AGB)</h2><h3>1. Geltungsbereich</h3><p>Diese Bedingungen regeln die Nutzung des Informationsangebots auf Checkbude24.</p><h3>2. Haftung für externe Links</h3><p>Alle Verlinkungen zu Amazon oder anderen Marktplätzen sind reine Empfehlungen. Verträge kommen ausschließlich zwischen Ihnen und dem jeweiligen Shopbetreiber bzw. Amazon-Verkäufer zustande. Wir übernehmen keine Haftung für die Richtigkeit der dortigen Produktpreise, Beschreibungen oder Lieferkonditionen.</p><h3>3. Urheberrecht</h3><p>Die auf dieser Website erstellten Inhalte, Testberichte und erzeugten Produktbilder unterliegen dem Urheberrecht und dürfen nicht ohne vorherige Zustimmung kopiert oder anderweitig genutzt werden.</p>`
     },
     en: {
-        announcement: "Free shipping on all orders over 99.99 €",
+        announcement: "Honest product reviews & trending Amazon finds 24/7",
         nav_home: "Home",
-        nav_shop: "Shop",
+        nav_shop: "Recommendations",
         nav_collections: "Collections",
         nav_about: "About Us",
-        hero_tag: "Endurance & Performance",
-        hero_title: "YOUR PASSION. YOUR GEAR.",
-        hero_desc: "Creative and independent fan designs for the world's biggest sporting events. From global football tournaments to elite motorsports – find your perfect event gear.",
-        hero_btn_shop: "Explore Collection",
+        hero_tag: "Honest & Independent",
+        hero_title: "YOUR GUIDE TO THE BEST DEALS.",
+        hero_desc: "We review the most popular products, home hacks, and gadgets on Amazon. Honestly rated, transparently compared, and prepared directly for you.",
+        hero_btn_shop: "View Recommendations",
         hero_btn_about: "Our Story",
         cat_tag: "Categories",
-        cat_title: "Browse Collections",
-        cat_tshirt_desc: "Fan culture redefined. Independent designs.",
-        cat_tshirt_cta: "Shop Now",
-        cat_hoodie_desc: "Stylish hoodies for match days and race weekends.",
-        cat_hoodie_cta: "Shop Now",
-        cat_accessories_title: "Accessories",
-        cat_accessories_desc: "Caps and bags matching your favorite sporting event.",
-        cat_accessories_cta: "Explore",
+        cat_title: "Popular Categories",
+        cat_tshirt_desc: "Practical helpers, innovative gadgets, and smart solutions.",
+        cat_tshirt_cta: "Browse Kitchen",
+        cat_hoodie_desc: "Aesthetic decor trends and stylish interior highlights.",
+        cat_hoodie_cta: "View Home Decor",
+        cat_accessories_title: "Gadgets & Gear",
+        cat_accessories_desc: "Tech that simplifies your daily life, and useful accessories.",
+        cat_accessories_cta: "Explore Tech",
         value_title_1: "100% Independent",
-        value_desc_1: "We design our own creative artworks – completely independently and in strict compliance with trademark rights.",
-        value_title_2: "Sustainability",
-        value_desc_2: "On-demand printing reduces stock waste and carbon footprint.",
-        value_title_3: "Premium Quality",
-        value_desc_3: "Durable materials and long-lasting prints are our top priorities.",
-        value_title_4: "Fair Pricing",
-        value_desc_4: "Creative fan merchandise at fair, transparent terms.",
+        value_desc_1: "We rate products completely independently. Our reviews focus on real customer value.",
+        value_title_2: "Latest Trends",
+        value_desc_2: "We comb social media & Pinterest for the most exciting Amazon novelties.",
+        value_title_3: "Honest Reviews",
+        value_desc_3: "No glossy ad talk. We list clear advantages and real downsides.",
+        value_title_4: "Transparency",
+        value_desc_4: "We fund ourselves via partner links – the price remains 100% the same for you.",
         best_tag: "Selected",
-        best_title: "Popular Gear",
-        best_view_all: "View all products →",
+        best_title: "Top Editorial Recommendations",
+        best_view_all: "View all recommendations →",
         badge_essential: "Essential",
         badge_premium: "Premium",
         badge_new: "New",
-        shop_tag: "Official Store",
-        shop_title: "Sport-EventStore Shop",
-        shop_desc: "Order your official event gear securely and directly through our integrated partner shop. Printed quickly and delivered straight to you.",
-        shop_loading: "Loading collections...",
-        shop_fallback_btn: "Open Spreadshop directly",
-        coll_tag: "Highlights",
-        coll_title: "Collections",
-        coll_noe_tag: "New In",
-        coll_noe_title: "Velocity Performance",
-        coll_noe_desc: "Clean, dynamic, and high contrast. Stay visible on the track or in the gym with our signature volt highlights.",
-        coll_noe_btn: "Shop Collection",
-        coll_preview_title: "Highlights of the Collection",
-        founders_tag: "Concept & Vision",
-        founders_title: "Crafted with passion, focus, and drive.",
-        founders_text: "Behind Sport-EventStore is not an impersonal corporation, but a small team of sports enthusiasts celebrating fan culture.<br><br>We love the excitement before a big football final or the start of a motorsport race. Since official merchandise is often generic and overpriced, we create our own creative fan collections. We always respect existing trademark rights – our designs are 100% independent, original, and made by fans, for fans.<br><br>Every garment is a statement of your passion. Thank you for being part of our community!",
-        about_tag: "Our Philosophy",
-        about_heading: "Gear for Winners.",
-        about_lead: "Sport-EventStore was born from a love of sports and the idea of creating creative, trademark-compliant fan gear for global sport highlights.",
-        about_story_title_1: "Original & Trademark Compliant",
-        about_story_desc_1: "We never copy protected logos or trademark names. Instead, we capture the true emotion and aesthetic of sporting events using our own creative artwork and clever typography.",
-        about_story_title_2: "Print-On-Demand Partnership",
-        about_story_desc_2: "In partnership with Spreadshop, we produce only after you order. This saves inventory space, lowers transport emissions, and minimizes material waste.",
-        sustain_tag: "Responsibility",
-        sustain_title: "Sustainability at Sport-EventStore",
-        sustain_intro: "Our athletic drive thrives in nature and healthy resources. Environmental responsibility is a core value.",
-        sustain_card_title_1: "Resource Efficiency",
-        sustain_card_desc_1: "By utilizing print-on-demand, we reduce textile surplus waste to virtually zero percent.",
-        sustain_card_title_2: "GOTS Organic Fabrics",
-        sustain_card_desc_2: "Wherever possible, we select organic cotton and recycled functional fibers for our garments.",
-        sustain_card_title_3: "Plastic-Free Shipping",
-        sustain_card_desc_3: "Orders are shipped carbon-neutrally in recyclable and plastic-free paper packaging.",
-        values_view_tag: "What we stand for",
-        values_view_title: "Our Values",
-        values_view_intro: "At Sport-EventStore, we focus on fair play, performance, and athletic passion.",
-        value_card_title_1: "Fairplay & Respect",
-        value_card_desc_1: "Community matters in sports. We rely on fair working conditions across our partners' supply chain.",
-        value_card_title_2: "Relentless Focus",
-        value_card_desc_2: "Success takes discipline. Our gear is tested for durability to survive any workout challenge.",
-        value_card_title_3: "Dynamic Community",
-        value_card_desc_3: "Sports unite people. We support running events, local tournaments, and athletic team cohesion.",
+        shop_tag: "Product Finder",
+        shop_title: "Our Recommendations",
+        shop_desc: "Honestly tested products and viral gadgets. Pick a category to view the best deals and reviews.",
+        coll_tag: "Seasonal Specials",
+        coll_title: "Curations",
+        coll_noe_tag: "Favorites",
+        coll_noe_title: "Viral Daily Essentials",
+        coll_noe_desc: "These products are currently going viral on Pinterest and TikTok. We put them to the test to show you if they are really worth buying.",
+        coll_noe_btn: "To the Trends",
+        coll_preview_title: "Curation Highlights",
+        founders_tag: "About Us",
+        founders_title: "Honestly checked. Simply bought.",
+        founders_text: "Behind Checkbude24 is a small team of product enthusiasts. We spend hours scouring the internet for genuine insider tips on Amazon.<br><br>We know how hard it is to find real quality among thousands of fake reviews. That's why we create short, harsh reviews showing the most important pros and cons. We link directly to Amazon – allowing you to shop safely, quickly, and easily. Thank you for supporting us!",
+        about_tag: "Our Mission",
+        about_heading: "Your compass in the jungle of online offers.",
+        about_lead: "Checkbude24 helps you avoid bad purchases and find exactly the products that make your life more beautiful or easier.",
+        about_story_title_1: "Independent Rating",
+        about_story_desc_1: "We receive no payment from manufacturers for better ratings. Our focus is on the truth.",
+        about_story_title_2: "Curation Over Quantity",
+        about_story_desc_2: "We don't list everything, only the best. Every listed product has proven to satisfy us or hundreds of buyers.",
         contact_tag: "Get in touch",
-        contact_heading: "Contact Support",
-        contact_desc: "Do you have questions about your order, custom event merch collaborations, or feedback? We're here to help.",
+        contact_heading: "Questions or Suggestions?",
+        contact_desc: "Discovered a product we absolutely should review? Or have feedback on our site? Write to us!",
         contact_detail_label_email: "Email",
-        contact_detail_label_hours: "Support Hours",
-        contact_detail_val_hours: "Monday – Friday: 09:00 AM – 05:00 PM",
+        contact_detail_label_hours: "Response Time",
+        contact_detail_val_hours: "Usually within 24-48 hours",
         contact_form_name: "Your Name",
         contact_form_email: "Your Email",
         contact_form_msg: "Message",
@@ -747,32 +735,30 @@ const translations = {
         contact_placeholder_name: "e.g. Jane Doe",
         contact_placeholder_email: "e.g. jane@email.com",
         contact_placeholder_msg: "How can we help you?",
-        search_placeholder: "Search for products...",
+        search_placeholder: "Search products...",
         search_btn: "Search",
-        search_suggestions: "Popular searches: <span>Hoodies</span>, <span>T-Shirts</span>, <span>Caps</span>",
-        footer_title_shop: "Shop",
+        search_suggestions: "Popular searches: <span>Airfryer</span>, <span>Diffuser</span>, <span>Headphones</span>",
+        footer_title_shop: "Categories",
         footer_shop_all: "All Products",
-        footer_shop_tshirts: "T-Shirts",
-        footer_shop_hoodies: "Hoodies",
-        footer_shop_accessories: "Caps & Accessories",
+        footer_shop_kitchen: "Kitchen & Home",
+        footer_shop_living: "Home & Decor",
+        footer_shop_gadgets: "Tech & Gadgets",
         footer_title_company: "Company",
         footer_company_about: "About Us",
-        footer_company_sustain: "Sustainability",
-        footer_company_values: "Our Values",
         footer_company_contact: "Contact",
         footer_title_newsletter: "Newsletter",
-        footer_newsletter_desc: "Sign up for our newsletter to get exclusive early access to new drops and offers.",
+        footer_newsletter_desc: "Subscribe to our newsletter for the latest viral Amazon trends and reviews.",
         footer_newsletter_placeholder: "Your email address",
-        footer_copyright: "&copy; 2026 Sport-EventStore. All rights reserved.",
+        footer_copyright: "&copy; 2026 Checkbude24. All rights reserved. * As an Amazon Associate I earn from qualifying purchases.",
         footer_privacy: "Privacy Policy",
-        footer_terms: "Terms & Conditions",
+        footer_terms: "Terms",
         footer_imprint: "Imprint",
         legal_tab_imprint: "Imprint",
         legal_tab_privacy: "Privacy Policy",
-        legal_tab_terms: "Terms & Conditions",
-        legal_imprint_content: `<h2>Imprint</h2><p><strong>Sport-EventStore / baokmedia</strong></p><p>c/o Impressumservice Dein-Impressum<br>Stettiner Straße 41<br>35410 Hungen</p><p><strong>Represented by:</strong><br>O. Balko</p><p><strong>Contact:</strong><br>Email: olli1270@gmail.com</p><p><strong>Disclaimer:</strong><br>We are responsible for the content of our own pages according to general laws. All sales contracts, deliveries, and customer service inquiries regarding the Spreadshop collections are handled exclusively by sprd.net AG (Spreadshirt).</p><p><strong>Online Dispute Resolution (ODR):</strong><br>The European Commission provides a platform for online dispute resolution (ODR), which can be found at <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a>. We are neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board.</p>`,
-        legal_privacy_content: `<h2>Privacy Policy</h2><h3>1. Privacy at a Glance</h3><p>This privacy policy explains the nature, scope, and purpose of the processing of personal data on our landing page and the embedded Spreadshop section.</p><h3>2. Hosting by Vercel</h3><p>We host our website with Vercel (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). To deliver the website, Vercel automatically collects server log files (IP address, browser type, referrer URL, timestamp). This is based on our legitimate interests in operating our website securely and efficiently (Art. 6 para. 1 lit. f GDPR).</p><h3>3. Embedded Spreadshop (sprd.net AG)</h3><p>An online shop is embedded on this website, which is technically and legally operated by <strong>sprd.net AG (Spreadshirt)</strong>, Gießerstraße 27, 04229 Leipzig, Germany. When you access the shop section or place an order, Spreadshirt processes your data (including IP address, browser details, cookies, and order information) under its own responsibility for payment processing, production, and delivery. For more details, please view the <a href="https://www.spreadshirt.com/privacy-policy-C3858" target="_blank">Spreadshirt Privacy Policy</a>.</p><h3>4. Local Storage</h3><p>We store your selected language (DE/EN) in your browser's LocalStorage to display the site in your preferred language upon your next visit. This constitutes a legitimate interest (Art. 6 para. 1 lit. f GDPR).</p>`,
-        legal_terms_content: `<h2>Terms & Conditions (AGB)</h2><h3>1. Scope of Application</h3><p>These terms apply to the use of the landing page. Separate terms apply to orders placed in the online shop.</p><h3>2. Contractual Partner for Orders</h3><p>All contracts, deliveries, and services placed via the online shop embedded on this website are established exclusively between the customer and <strong>sprd.net AG (Spreadshirt)</strong>, Gießerstraße 27, 04229 Leipzig, Germany. The terms and conditions and cancellation policy of sprd.net AG apply, which can be viewed inside the integrated shop widget.</p><h3>3. Limitation of Liability for Content</h3><p>We create the editorial content of this landing page with the utmost care. However, we cannot assume liability for the accuracy, completeness, or timeliness of prices or product details, as they are provided dynamically by Spreadshirt.</p>`
+        legal_tab_terms: "Terms",
+        legal_imprint_content: `<h2>Imprint</h2><p><strong>Checkbude24 / baokmedia</strong></p><p>c/o Impressumservice Dein-Impressum<br>Stettiner Straße 41<br>35410 Hungen</p><p><strong>Represented by:</strong><br>O. Balko</p><p><strong>Contact:</strong><br>Email: olli1270@gmail.com</p><p><strong>Disclaimer:</strong><br>We create reviews and comparisons to the best of our knowledge. We assume no liability for contracts, deliveries, or services established via external links (e.g. Amazon). The terms and conditions of the respective seller apply.</p><p><strong>Affiliate Disclosure:</strong><br>Checkbude24 is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Amazon.de.</p>`,
+        legal_privacy_content: `<h2>Privacy Policy</h2><h3>1. Privacy at a Glance</h3><p>This privacy policy explains the nature, scope, and purpose of the processing of personal data on our review and recommendation website.</p><h3>2. Hosting by Vercel</h3><p>We host our website with Vercel (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). To deliver the website, Vercel automatically collects server log files (IP address, browser type, referrer URL, timestamp). This is based on our legitimate interests in operating our website securely and efficiently (Art. 6 para. 1 lit. f GDPR).</p><h3>3. Amazon Associates Program & Cookies</h3><p>This website contains affiliate links to Amazon. If you click on one of these links and purchase a product, we receive a small commission. Amazon uses cookies to trace the origin of orders. This allows Amazon to recognize that you clicked the partner link on our website. For more details, please see Amazon's privacy policy.</p><h3>4. Local Storage</h3><p>We store your selected language (DE/EN) in your browser's LocalStorage to display the site in your preferred language upon your next visit. (Art. 6 para. 1 lit. f GDPR).</p>`,
+        legal_terms_content: `<h2>Terms of Use (AGB)</h2><h3>1. Scope of Application</h3><p>These terms govern the use of the information services provided on Checkbude24.</p><h3>2. Liability for External Links</h3><p>All links to Amazon or other marketplaces are recommendation-only. Contracts are established exclusively between you and the respective seller or Amazon. We assume no liability for the correctness of prices, descriptions, or delivery conditions shown there.</p><h3>3. Copyright</h3><p>The content, reviews, and product images created on this website are subject to copyright and may not be copied or used without prior consent.</p>`
     }
 };
 
@@ -783,7 +769,6 @@ function initLanguageSwitcher() {
     const langButtons = document.querySelectorAll('.lang-btn');
     const savedLang = localStorage.getItem('sport_event_lang') || 'de';
     
-    // Set initial active state in header
     langButtons.forEach(btn => {
         if (btn.getAttribute('data-lang') === savedLang) {
             btn.classList.add('active');
@@ -799,21 +784,15 @@ function initLanguageSwitcher() {
         });
     });
     
-    // Apply saved language immediately
-    applyLanguage(savedLang, false); // false = do not reload Spreadshop on initial boot
+    applyLanguage(savedLang);
 }
 
-/**
- * Switch page language dynamically
- */
 function switchLanguage(lang) {
     const currentLang = localStorage.getItem('sport_event_lang') || 'de';
     if (lang === currentLang) return;
     
-    // Save to local storage
     localStorage.setItem('sport_event_lang', lang);
     
-    // Update active class on buttons
     const langButtons = document.querySelectorAll('.lang-btn');
     langButtons.forEach(btn => {
         if (btn.getAttribute('data-lang') === lang) {
@@ -823,17 +802,12 @@ function switchLanguage(lang) {
         }
     });
     
-    // Apply changes
-    applyLanguage(lang, true); // true = reload Spreadshop to change shop locale
+    applyLanguage(lang);
 }
 
-/**
- * Translate elements and reload Spreadshop
- */
-function applyLanguage(lang, shouldReloadShop) {
+function applyLanguage(lang) {
     document.documentElement.setAttribute('lang', lang);
     
-    // Translate text contents
     const translatableElements = document.querySelectorAll('[data-i18n]');
     translatableElements.forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -842,7 +816,6 @@ function applyLanguage(lang, shouldReloadShop) {
         }
     });
     
-    // Translate placeholders
     const translatablePlaceholders = document.querySelectorAll('[data-i18n-placeholder]');
     translatablePlaceholders.forEach(el => {
         const key = el.getAttribute('data-i18n-placeholder');
@@ -850,56 +823,6 @@ function applyLanguage(lang, shouldReloadShop) {
             el.setAttribute('placeholder', translations[lang][key]);
         }
     });
-    
-    // Reload Spreadshop with new locale
-    if (shouldReloadShop) {
-        reloadSpreadshop(lang);
-    }
-}
-
-/**
- * Re-render Spreadshop dynamically to switch languages
- */
-function reloadSpreadshop(lang) {
-    const shopContainer = document.getElementById('myShop');
-    if (!shopContainer) return;
-    
-    // Clear current shop elements
-    shopContainer.innerHTML = '';
-    
-    // Re-insert loading spinner
-    const spinner = document.createElement('div');
-    spinner.className = 'shop-loading-spinner';
-    spinner.innerHTML = `
-        <div class="spinner"></div>
-        <p data-i18n="shop_loading">${lang === 'de' ? 'Kollektionen werden geladen...' : 'Loading collections...'}</p>
-        <a href="https://sport-event-store.myspreadshop.de" class="btn btn-secondary" data-i18n="shop_fallback_btn">${lang === 'de' ? 'Direkt zu Spreadshop öffnen' : 'Open Spreadshop directly'}</a>
-    `;
-    shopContainer.appendChild(spinner);
-    
-    // Re-configure the global Spreadshop settings object
-    window.spread_shop_config = {
-        shopName: 'sport-event-store',
-        locale: lang === 'de' ? 'de_DE' : 'en_GB',
-        prefix: 'https://sport-event-store.myspreadshop.de',
-        baseId: 'myShop'
-    };
-    
-    // Remove existing shop client script tags to avoid conflicts
-    const oldScripts = document.querySelectorAll('script[src*="shopclient.nocache.js"]');
-    oldScripts.forEach(s => s.remove());
-    
-    // Delete GWT hooks
-    delete window.spreadshop;
-    
-    // Append new script tag to trigger re-rendering
-    const script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://sport-event-store.myspreadshop.de/shopfiles/shopclient/shopclient.nocache.js?t=' + Date.now();
-    document.body.appendChild(script);
-    
-    // Trigger shop loading check
-    setupShopLoadingState();
 }
 
 /**
@@ -918,14 +841,10 @@ function initLegalTabs() {
 }
 window.initLegalTabs = initLegalTabs;
 
-/**
- * Switch Active Legal Section Tab & Content Panel
- */
 function switchLegalTab(tabName) {
     const tabButtons = document.querySelectorAll('.legal-tab-btn');
     const contentPanels = document.querySelectorAll('.legal-section-content');
     
-    // Toggle active state for tab buttons
     tabButtons.forEach(btn => {
         if (btn.getAttribute('data-legal-section') === tabName) {
             btn.classList.add('active');
@@ -934,7 +853,6 @@ function switchLegalTab(tabName) {
         }
     });
     
-    // Toggle active state for content panels
     contentPanels.forEach(panel => {
         if (panel.id === `legal-section-${tabName}`) {
             panel.classList.add('active');

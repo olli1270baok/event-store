@@ -2015,3 +2015,307 @@ button {
 .animate-fade-in {
     animation: fadeIn 0.5s ease forwards;
 }
+
+/* ==========================================================================
+   Amazon Affiliate Catalog & Modal Styles
+   ========================================================================== */
+
+/* Category Filters */
+.category-filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 2rem 0 3rem 0;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.4rem;
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-secondary);
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+}
+
+.filter-btn:hover {
+    color: var(--color-text-primary);
+    border-color: var(--color-text-light);
+}
+
+.filter-btn.active {
+    background-color: var(--color-accent);
+    color: var(--color-black);
+    border-color: var(--color-accent);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+.modal-overlay.open {
+    display: flex;
+}
+
+/* Modal Card */
+.modal-card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    max-width: 950px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 3rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-border) var(--color-bg-secondary);
+}
+
+.modal-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-card::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: 3px;
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: var(--transition-fast);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+}
+
+.modal-close:hover {
+    color: var(--color-text-primary);
+    background-color: var(--color-border);
+    transform: rotate(90deg);
+}
+
+/* Modal Content Grid */
+.modal-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .modal-content-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .modal-card {
+        padding: 2rem 1.5rem;
+    }
+}
+
+.modal-image-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-image-col .modal-img-wrapper {
+    background-color: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-md);
+    padding: 2rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.modal-image-col img {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: contain;
+}
+
+/* Info Column */
+.modal-info-col {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.modal-tag {
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5rem;
+}
+
+.modal-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 750;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-primary);
+}
+
+.modal-rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.modal-rating .stars {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+}
+
+.modal-rating .rating-number {
+    color: var(--color-text-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.modal-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+/* Review Section */
+.modal-review-section {
+    margin-bottom: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    padding-top: 1.25rem;
+}
+
+.modal-review-section h4 {
+    font-family: var(--font-heading);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.modal-review-section p {
+    font-size: 0.95rem;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Pros and Cons */
+.modal-pros-cons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+    .modal-pros-cons {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pros-col, .cons-col {
+    background-color: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    padding: 1rem;
+    border-radius: var(--border-radius-md);
+}
+
+.pro-title, .con-title {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.pro-title { color: #00ff88; }
+.con-title { color: #ff4444; }
+
+.pros-list, .cons-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pros-list li, .cons-list li {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 0.4rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.pros-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #00ff88;
+    font-weight: 700;
+}
+
+.cons-list li::before {
+    content: "✗";
+    position: absolute;
+    left: 0;
+    color: #ff4444;
+    font-weight: 700;
+}
+
+/* CTA & Note */
+.modal-cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    border-radius: var(--border-radius-md);
+    width: 100%;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.modal-affiliate-note {
+    font-size: 0.75rem;
+    color: var(--color-text-light);
+    text-align: center;
+    line-height: 1.4;
+}
+
