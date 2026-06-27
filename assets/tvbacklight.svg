@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="500" height="500" fill="#1b1c22"/>
+  <circle cx="250" cy="220" r="160" fill="url(#volt-glow)" opacity="0.3"/>
+  <defs>
+    <radialGradient id="volt-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ccff00"/>
+      <stop offset="100%" stop-color="#ccff00" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x="100" y="120" width="300" height="180" rx="10" fill="#2a2c35" stroke="#ccff00" stroke-width="4"/>
+  <rect x="110" y="130" width="280" height="140" fill="#1b1c22"/>
+  <path d="M 230,300 L 270,300 L 280,340 L 220,340 Z" fill="#2a2c35" stroke="#ccff00" stroke-width="2"/>
+  <polygon points="120,250 200,160 280,220 380,140 380,260 120,260" fill="#ccff00" opacity="0.2"/>
+</svg>
