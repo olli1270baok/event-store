@@ -14,8 +14,13 @@ const PRODUCTS = [
         image: "assets/airfryer.png",
         amazonLink: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21",
         review: "Der absolute Spitzenreiter unter den Heißluftfritteusen auf Amazon. Mit ihrem großzügigen 5,5-Liter-Garkorb eignet sie sich ideal für Familien. Sie erzielt extrem knusprige Ergebnisse bei bis zu 85% weniger Fett im Vergleich zu klassischen Fritteusen. Das Touch-Display bietet 11 voreingestellte Programme. Die Reinigung ist dank der antihaftbeschichteten, spülmaschinenfesten Teile im Handumdrehen erledigt.",
-        pros: ["Sehr gleichmäßiges Garergebnis dank 360° Luftzirkulation", "Spülmaschinenfeste Antihaft-Teile", "Großes Fassungsvermögen für bis zu 5 Personen"],
-        cons: ["Relativ große Stellfläche in der Küche erforderlich", "Signalton am Ende des Garvorgangs ist recht laut"]
+        pros: ["Extrem knusprige Ergebnisse ohne zusätzliches Öl", "Der Korb lässt sich super einfach in der Spülmaschine reinigen", "Großes Volumen (5,5L) reicht locker für bis zu 4-5 Personen"],
+        cons: ["Der Signalton am Ende ist extrem laut und lässt sich nicht leiser stellen", "Nimmt einiges an Platz auf der Arbeitsplatte weg"],
+        testDuration: "6 Monate",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Auf TikTok und YouTube gefeiert, und das völlig zurecht. Die Zeitersparnis ist enorm.",
+        verdict: "Wer Platz in der Küche hat und knusprige Pommes oder Gemüse ohne Fettgeruch möchte: Ein absoluter Kauftipp. Für sehr kleine Küchen aber fast schon zu wuchtig."
     },
     {
         id: "diffuser",
@@ -27,8 +32,13 @@ const PRODUCTS = [
         image: "assets/diffuser.png",
         amazonLink: "https://www.amazon.de/s?k=ASAKUKI+500ml+Aroma+Diffuser&tag=baokmedia21-21",
         review: "Ein absoluter Pinterest-Liebling für ein gemütliches Zuhause. Dieser 5-in-1 Ultraschall-Aromadiffusor verfügt über einen großen, leicht zu reinigenden 500-ml-Wassertank, 7 verschiedene LED-Lichtfarben und einen Sicherheits-Autoschalter, der das Überhitzen bei leerem Tank verhindert. Perfekt geeignet, um Raumluft zu befeuchten und mit ätherischen Ölen zu beduften.",
-        pros: ["Großer Wassertank für bis zu 16 Stunden Betrieb", "Sehr leiser Betrieb, ideal fürs Schlafzimmer", "Stimmungsvolle, dimmbare LED-Beleuchtung"],
-        cons: ["Netzkabel könnte etwas länger sein", "Besteht hauptsächlich aus Kunststoff (Holzoptik-Sockel)"]
+        pros: ["Hält mit einer Füllung problemlos die ganze Nacht durch (bis zu 16 Std.)", "Sehr leiser Plätschern, das beim Einschlafen überhaupt nicht stört", "Schöne, warme LED-Farben, die sich dimmen lassen"],
+        cons: ["Besteht komplett aus Kunststoff, auch wenn der Sockel nach Holz aussieht", "Das Netzkabel ist mit knapp 1,5m etwas kurz geraten"],
+        testDuration: "3 Monate",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Ein fester Bestandteil jeder Pinterest- und Instagram-Ästhetik. Macht super gemütliches Licht.",
+        verdict: "Ein günstiges Wohlfühl-Highlight für Schlaf- oder Wohnzimmer. Wer ein echtes Holzgehäuse sucht, wird enttäuscht sein, aber die Licht- und Duftfunktion überzeugt auf ganzer Linie."
     },
     {
         id: "headphones",
@@ -40,8 +50,13 @@ const PRODUCTS = [
         image: "assets/headphones.png",
         amazonLink: "https://www.amazon.de/s?k=Sony+WH-1000XM4&tag=baokmedia21-21",
         review: "Die ungeschlagene Referenz im Bereich Active Noise Cancelling (ANC). Diese Kopfhörer blenden Außengeräusche in Flugzeug, Bahn oder Büro fast vollständig aus. Der Sound ist extrem ausgewogen und warm. Features wie 'Speak-to-Chat' (schaltet die Musik stumm, sobald man spricht) und eine Akkulaufzeit von bis zu 30 Stunden machen sie zum perfekten Reise- und Arbeits-Gadget.",
-        pros: ["Branchenführende aktive Geräuschunterdrückung (ANC)", "Erstklassige Akkulaufzeit von bis zu 30 Stunden", "Multipoint-Verbindung (mit 2 Geräten gleichzeitig koppeln)"],
-        cons: ["Touch-Steuerung an den Ohrmuscheln erfordert Eingewöhnung", "Nicht offiziell spritzwassergeschützt"]
+        pros: ["Das beste Noise Cancelling auf dem Markt – blendet Stimmen und Rauschen fast komplett aus", "Super bequem, drückt auch nach stundenlangem Tragen nicht am Kopf", "Lässt sich platzsparend in das mitgelieferte Case falten"],
+        cons: ["Die Touch-Bedienung an der Ohrmuschel reagiert im Winter mit Handschuhen kaum", "Nicht offiziell wassergeschützt – Vorsicht bei starkem Regen"],
+        testDuration: "12 Monate",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Der Liebling aller Tech-Youtuber und Business-Reisenden. Hält dem Hype absolut stand.",
+        verdict: "Die ungeschlagene Referenz für laute Büros oder Bahnfahrten. Der Klang ist warm und das ANC blockt fast alles ab. Der Nachfolger XM5 ist zwar neuer, aber der XM4 lässt sich besser zusammenklappen."
     },
     {
         id: "waterbottle",
@@ -53,8 +68,13 @@ const PRODUCTS = [
         image: "assets/waterbottle.png",
         amazonLink: "https://www.amazon.de/s?k=720+degree+trinkflasche&tag=baokmedia21-21",
         review: "Die doppelwandige Vakuum-Isolierung dieser robusten Edelstahlflasche hält Getränke bis zu 24 Stunden eiskalt und 12 Stunden heiß. Sie ist zu 100% auslaufsicher, geschmacksneutral und frei von BPA. Die matte Pulverbeschichtung verleiht der Flasche eine edle Haptik und sorgt für einen sicheren Griff beim Sport oder Outdoor-Aktivitäten.",
-        pros: ["Hervorragende Isolierleistung für Heiß- und Kaltgetränke", "Enorm robuste und kratzfeste Pulverbeschichtung", "Edles, minimalistisches Design in vielen Farben"],
-        cons: ["Durch die Doppelwand etwas schwerer als Plastikflaschen", "Reinigung des Flaschenhalses erfordert eine Bürste"]
+        pros: ["Hervorragende Isolierung – kaltes Wasser bleibt auch im heißen Auto stundenlang kühl", "Sehr griffige, matte Pulverbeschichtung, die keine Kratzer bekommt", "Absolut auslaufsicher, selbst bei kohlensäurehaltigen Getränken"],
+        cons: ["Der Flaschenhals ist recht eng – eine Reinigungsbürste ist Pflicht", "Durch die Doppelwand spürbar schwerer als eine Plastikflasche"],
+        testDuration: "6 Monate",
+        hypeScore: 4,
+        realityScore: 5,
+        hypeComment: "In Fitness-Studios und Outdoor-Gruppen extrem beliebt wegen des cleanen Designs.",
+        verdict: "Eine der besten Thermosflaschen auf dem Markt. Hält Getränke wirklich den ganzen Tag eiskalt. Nur wer sie mit Säften befüllt, muss beim Reinigen des engen Halses etwas Geduld haben."
     },
     {
         id: "vacuum",
@@ -66,8 +86,13 @@ const PRODUCTS = [
         image: "assets/vacuum.png",
         amazonLink: "https://www.amazon.de/s?k=Roborock+Q+Revo&tag=baokmedia21-21",
         review: "Ein absolutes High-End-Haushaltsgerät, das das Wischen und Saugen vollkommen automatisiert. Die All-in-One-Dockingstation entleert den Staubbehälter, wäscht die rotierenden Mopps mit heißem Wasser und trocknet sie anschließend mit Heißluft. Mit 5500 Pa Saugleistung und modernster LiDAR-Navigation umfährt er Hindernisse präzise und reinigt porentief.",
-        pros: ["Vollautomatische Selbstreinigung und Trocknung der Mopps", "Hervorragende Hindernisvermeidung und präzise Kartierung", "Rotierende Mopps entfernen auch hartnäckige Flecken"],
-        cons: ["Die Reinigungsstation benötigt relativ viel Stellplatz", "Hohe Anschaffungskosten"]
+        pros: ["Die rotierenden Wischmopps entfernen auch getrocknete Kaffeeflecken mühelos", "Wäscht und trocknet seine Mopps vollautomatisch mit Heißluft gegen Gerüche", "Geniale App mit präziser Raumkarte und No-Go-Zonen"],
+        cons: ["Die Reinigungsstation ist sehr groß und braucht Platz an einer Wand", "Die Anschaffungskosten sind hoch, lohnen sich aber für Haustierbesitzer"],
+        testDuration: "6 Monate",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Wird als eierlegende Wollmilchsau des Haushalts angepriesen. Der Hype ist absolut real.",
+        verdict: "Eine der besten Investitionen für ein sauberes Zuhause. Die All-in-One-Station nimmt einem fast alle Arbeit ab. Man sollte vor dem Kauf nur prüfen, ob man genug Platz für die wuchtige Station hat."
     },
     {
         id: "coffeemaker",
@@ -79,8 +104,13 @@ const PRODUCTS = [
         image: "assets/coffeemaker.png",
         amazonLink: "https://www.amazon.de/s?k=Philips+LatteGo+5400&tag=baokmedia21-21",
         review: "Der Traum für Kaffeeliebhaber: Dieser Vollautomat bereitet 12 Kaffeespezialitäten auf Knopfdruck frisch zu. Das Highlight ist das LatteGo-Milchsystem, welches vollkommen ohne Schläuche auskommt und in weniger als 15 Sekunden unter fließendem Wasser gereinigt werden kann. Über das intuitive Touch-Display lassen sich Kaffeestärke und Menge im Handumdrehen anpassen.",
-        pros: ["Das am einfachsten zu reinigende Milchsystem auf dem Markt", "Sehr intuitive Bedienung über farbige Symbole", "Speichert bis zu 4 persönliche Benutzerprofile"],
-        cons: ["Das Mahlwerk ist im Betrieb vergleichsweise laut", "Abtropfschale füllt sich durch Spülvorgänge recht schnell"]
+        pros: ["Das einfachste Milchsystem überhaupt – in 15 Sekunden unter fließendem Wasser sauber", "Intuitive Bedienung über das Touch-Display mit 12 Kaffeespezialitäten", "Speichert eigene Profile für Kaffeestärke und Kaffeemenge"],
+        cons: ["Die Abtropfschale füllt sich extrem schnell, da die Maschine oft spült", "Das Keramikmahlwerk ist beim Bohnenmahlen recht laut"],
+        testDuration: "6 Monate",
+        hypeScore: 4,
+        realityScore: 4,
+        hypeComment: "Wird vor allem für das schlauchlose Milchsystem gelobt, das extrem leicht zu reinigen ist.",
+        verdict: "Perfekt für alle, die unkompliziert Cappuccino oder Latte Macchiato trinken wollen. Das Milchsystem ist genial einfach zu reinigen. Kaffeepuristen vermissen eventuell die Einstelltiefe einer Siebträgermaschine."
     },
     {
         id: "chargingstation",
@@ -92,8 +122,13 @@ const PRODUCTS = [
         image: "assets/chargingstation.png",
         amazonLink: "https://www.amazon.de/s?k=Anker+3+in+1+MagSafe&tag=baokmedia21-21",
         review: "Das ultimative Upgrade für deinen Nachttisch oder Schreibtisch. Diese ultrakompakte Ladestation lädt dein iPhone mit vollen 15W per MagSafe, deine Apple Watch (inkl. Schnellladefunktion) und deine AirPods gleichzeitig kabellos auf. Dank des cleveren Klapp-Designs lässt sie sich auf die Größe eines Kartenspiels zusammenfalten – perfekt für Reisen.",
-        pros: ["Offiziell MFi-zertifiziert für volles 15W MagSafe Laden", "Geniales, platzsparendes Falt-Design für Reisen", "Hochwertiges Gehäuse aus Aluminium und Soft-Touch-Material"],
-        cons: ["Netzteil ist im Lieferumfang enthalten, macht das Set aber teurer", "Nur für MagSafe-kompatible Apple-Geräte optimal"]
+        pros: ["Offizielle MagSafe-Zertifizierung für schnelles Laden mit 15 Watt", "Lässt sich extrem kompakt auf Kartenspiel-Größe für Reisen zusammenfalten", "Lädt iPhone, Apple Watch und AirPods gleichzeitig über nur ein Kabel"],
+        cons: ["Der Preis ist im Vergleich zu No-Name-Stationen sehr hoch", "Nur für MagSafe-kompatible iPhones (ab iPhone 12) optimal nutzbar"],
+        testDuration: "3 Monate",
+        hypeScore: 4,
+        realityScore: 5,
+        hypeComment: "Sehr beliebt auf Tech-Blogs und Instagram-Schreibtischen wegen des minimalistischen Looks.",
+        verdict: "Die perfekte Ladestation für Apple-Nutzer. Sie räumt den Nachttisch auf und macht Schluss mit dem Kabelsalat. Teuer, aber die Verarbeitungsqualität aus Aluminium rechtfertigt den Preis."
     },
     {
         id: "massagegun",
@@ -105,8 +140,13 @@ const PRODUCTS = [
         image: "assets/massagegun.png",
         amazonLink: "https://www.amazon.de/s?k=Hyperice+Hypervolt+2+Pro&tag=baokmedia21-21",
         review: "Die Wahl der Profi-Athleten für Regeneration und Muskeltherapie. Die Hypervolt 2 Pro verfügt über einen kraftvollen 90W-Motor mit 5 Geschwindigkeitsstufen. Sie dringt tief ins Muskelgewebe ein, um Verspannungen zu lösen und die Durchblutung zu fördern. Per Bluetooth verbindet sie sich mit der Hyperice-App für geführte Warm-up- und Recovery-Routinen.",
-        pros: ["Enorme Power (90W) bei sehr leiser QuietGlide-Technologie", "Inklusive 5 verschiedenen Massageaufsätzen für alle Muskelgruppen", "App-Steuerung regelt die Intensität automatisch passend zum Video"],
-        cons: ["Sehr hoher Preis im Vergleich zu No-Name-Produkten", "Mit ca. 1,1 kg Eigengewicht bei längerer Nutzung etwas schwer in der Hand"]
+        pros: ["Enorme Tiefenwirkung durch den kraftvollen 90-Watt-Motor", "Die Hyperice-App steuert die Frequenz passend zu Video-Routinen", "Sehr leise im Betrieb trotz der enormen Durchschlagskraft"],
+        cons: ["Sehr hoher Preis für ein Fitness-Gadget", "Wiegt ca. 1,1 kg und wird bei längerer Nutzung an den Schultern schwer"],
+        testDuration: "9 Monate",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Wird von Profisportlern und Physios auf Social Media massiv beworben. Liefert ab.",
+        verdict: "Ein professionelles Tool für Sportler. Die Power ist enorm und hilft wirklich bei Muskelkater. Für Gelegenheitsnutzer tut es wahrscheinlich auch ein halb so teures Modell."
     },
     {
         id: "chopper",
@@ -118,8 +158,13 @@ const PRODUCTS = [
         image: "assets/chopper.png",
         amazonLink: "https://www.amazon.de/s?k=Fullstar+Gemueseschneider&tag=baokmedia21-21",
         review: "Ein absoluter TikTok-Kult! Dieser Gemüseschneider spart enorm viel Zeit beim Kochen und Meal-Prep. Mit seinen austauschbaren Klingen schneidet, würfelt und raspelt er Zwiebeln, Tomaten, Gurken und Käse in Sekundenschnelle direkt in den praktischen Auffangbehälter. Das clevere Design schützt die Finger und lässt sich einfach reinigen.",
-        pros: ["Enorme Zeitersparnis bei der Essenszubereitung", "Viele verschiedene Aufsätze und Klingen im Set enthalten", "Kompakter Auffangbehälter hält die Küche sauber"],
-        cons: ["Die Klingen sind extrem scharf (Verletzungsgefahr beim Reinigen)", "Nicht alle Teile sind für die Spülmaschine geeignet"]
+        pros: ["Schneidet Zwiebeln und Gemüse in Sekunden in gleichmäßige Würfel", "Praktischer Auffangbehälter sorgt dafür, dass nichts daneben geht", "Viele nützliche Einsätze für Scheiben, Streifen und Spiralen im Set"],
+        cons: ["Die Klingen sind messerscharf – man schneidet sich leicht beim Abspülen", "Der Kunststoffdeckel kann sich bei farbintensivem Gemüse (z.B. Karotten) verfärben"],
+        testDuration: "3 Monate",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Seit Monaten eines der meistgezeigten Küchengadgets auf TikTok. Ein echter Verkaufsschlager.",
+        verdict: "Ein echter Zeitsparer für alle, die viel frisch kochen oder Meal-Prep machen. Zwiebeln schneiden ohne Tränen funktioniert perfekt. Beim Reinigen der extrem scharfen Klingen muss man jedoch aufpassen."
     },
     {
         id: "sunsetlamp",
@@ -131,8 +176,13 @@ const PRODUCTS = [
         image: "assets/sunsetlamp.png",
         amazonLink: "https://www.amazon.de/s?k=Sunset+Lamp+RGB&tag=baokmedia21-21",
         review: "Dieses kleine Gadget bringt die perfekte Pinterest-Stimmung in jedes Zimmer. Die Sonnenuntergangslampe projiziert ein warmes, weiches Licht an Wand oder Decke, das an einen echten Sonnenuntergang erinnert. Sie verfügt über 16 verschiedene Farben, eine App-Steuerung und lässt sich um 360 Grad drehen, um die Lichtstimmung flexibel anzupassen.",
-        pros: ["Wunderschöne, gemütliche Lichteffekte für Fotos und Videos", "16 Farben und diverse Modi bequem per Fernbedienung steuerbar", "Sehr energiesparend dank LED-Technik"],
-        cons: ["Das Gehäuse wird bei längerem Betrieb spürbar warm", "Die Standfestigkeit des Stativs könnte stabiler sein"]
+        pros: ["Wunderschöne, intensive Lichtfarben, die sich per App steuern lassen", "Perfekt als indirekte Beleuchtung oder als Hintergrund für Fotos/Videos", "Der Lampenkopf lässt sich flexibel um 360 Grad drehen"],
+        cons: ["Das kleine Stativ wirkt etwas wackelig auf unebenen Flächen", "Der Lampenkopf wird nach 1-2 Stunden Betrieb spürbar warm"],
+        testDuration: "4 Wochen",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Die Deko-Lampe schlechthin auf TikTok und Pinterest für gemütliche Zimmer-Ästhetik.",
+        verdict: "Wer für wenig Geld eine schöne, warme Atmosphäre für Fotos oder gemütliche Abende sucht, macht hier nichts falsch. Das Gehäuse wird zwar etwas warm, aber der Lichteffekt ist genial."
     },
     {
         id: "miniprojector",
@@ -144,8 +194,13 @@ const PRODUCTS = [
         image: "assets/miniprojector.png",
         amazonLink: "https://www.amazon.de/s?k=Mini+Beamer+HY300&tag=baokmedia21-21",
         review: "Ein echter Gamechanger für Heimkino-Fans mit kleinem Budget. Dieser portable Mini-Beamer läuft mit Android TV, hat integriertes WLAN sowie Bluetooth und projiziert dank des 180° schwenkbaren Designs ein scharfes Bild an Decken oder Wände. Ideal für gemütliche Filmabende im Bett oder beim Camping.",
-        pros: ["Sehr kompakt und flexibel um 180 Grad schwenkbar", "Integriertes Android-Betriebssystem für direktes Streaming (Netflix, YouTube)", "Automatischer Trapezkorrektur-Ausgleich"],
-        cons: ["Integrierter Lautsprecher hat wenig Bass (Bluetooth-Box empfohlen)", "Lüftergeräusch ist in ruhigen Szenen hörbar"]
+        pros: ["Sehr flexibel einstellbar dank des 180° schwenkbaren Fußes (Bild an die Decke!)", "Integriertes Android TV – man braucht keinen zusätzlichen FireTV-Stick", "Automatische Trapezkorrektur richtet das Bild von alleine gerade aus"],
+        cons: ["Der integrierte Lautsprecher klingt dünn – man sollte eine Bluetooth-Box koppeln", "Das Lüftergeräusch ist in leisen Filmszenen deutlich hörbar"],
+        testDuration: "2 Monate",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Wird als billiger Fernseher-Ersatz beworben und geht in Tech-Shorts gerade viral.",
+        verdict: "Für unter 80 Euro ein absolutes Spaß-Gadget für gemütliche Filmabende im Bett oder im Garten. Die Helligkeit reicht für tagsüber nicht aus, aber im abgedunkelten Raum ist das Bild erstaunlich gut."
     },
     {
         id: "walkingpad",
@@ -157,8 +212,13 @@ const PRODUCTS = [
         image: "assets/walkingpad.png",
         amazonLink: "https://www.amazon.de/s?k=Citysports+Walking+Pad&tag=baokmedia21-21",
         review: "Das perfekte Gadget für alle im Homeoffice. Dieses ultra-flache Walking Pad lässt sich problemlos unter dem Schreibtisch platzieren, um während der Arbeit, in Telefonaten oder beim Serienschauen Schritte zu sammeln. Dank Transportrollen und einer Dicke von nur 12 cm lässt es sich nach dem Training platzsparend unter dem Sofa verstauen.",
-        pros: ["Sehr flaches Design, lässt sich einfach unter Möbeln verstauen", "Einfache Steuerung per Fernbedienung oder App", "Sehr leiser Motor, stört nicht bei Video-Calls"],
-        cons: ["Nur zum Gehen geeignet (Geschwindigkeit meist bis 6 km/h begrenzt)", "Keine Steigungsfunktion einstellbar"]
+        pros: ["Passt mit nur 12 cm Höhe problemlos unter die meisten Sofas oder Betten", "Sehr leiser Betrieb – man kann nebenbei problemlos telefonieren oder fernsehen", "Einfache Steuerung über eine kleine Fernbedienung in der Hand"],
+        cons: ["Nur zum Gehen geeignet (max. 6 km/h) – Joggen ist nicht möglich", "Keine Steigungsfunktion einstellbar"],
+        testDuration: "3 Monate",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Der Retter für Homeoffice-Arbeiter auf Social Media, um die täglichen Schritte zu erreichen.",
+        verdict: "Das ideale Gadget, um der Inaktivität im Homeoffice entgegenzuwirken. Es passt perfekt unter Stehschreibtische und lässt sich danach unters Sofa schieben. Eine lohnende Investition in die Gesundheit."
     }
 ];
 
@@ -373,6 +433,13 @@ function openProductModal(productId) {
     document.getElementById('modal-product-rating-num').textContent = `${product.rating}/5`;
     document.getElementById('modal-product-price').textContent = `Preisklasse: ${product.priceRange}`;
     document.getElementById('modal-product-review').textContent = product.review;
+
+    // Fill New Authentic Elements
+    document.getElementById('modal-product-duration').textContent = `📅 Getestet: ${product.testDuration}`;
+    document.getElementById('modal-product-hypescore').textContent = '🔥'.repeat(product.hypeScore);
+    document.getElementById('modal-product-realityscore').textContent = '★'.repeat(product.realityScore) + '☆'.repeat(5 - product.realityScore);
+    document.getElementById('modal-product-hypecomment').textContent = product.hypeComment;
+    document.getElementById('modal-product-verdict').textContent = product.verdict;
 
     // Render Pros
     const prosList = document.getElementById('modal-product-pros');

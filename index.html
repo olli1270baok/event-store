@@ -580,7 +580,10 @@
                     </div>
                 </div>
                 <div class="modal-info-col">
-                    <span id="modal-product-cat" class="modal-tag">KATEGORIE</span>
+                    <div class="modal-meta-row">
+                        <span id="modal-product-cat" class="modal-tag">KATEGORIE</span>
+                        <span id="modal-product-duration" class="modal-duration-badge">📅 Getestet: 3 Monate</span>
+                    </div>
                     <h2 id="modal-product-title" class="modal-title">Produktname</h2>
                     <div class="modal-rating">
                         <span id="modal-product-stars" class="stars">★★★★★</span>
@@ -591,6 +594,18 @@
                     <div class="modal-review-section">
                         <h4 data-i18n="modal_review_heading">Warum wir es empfehlen:</h4>
                         <p id="modal-product-review">Das ist ein fantastisches produkt...</p>
+                    </div>
+
+                    <div class="modal-hype-section">
+                        <div class="hype-title-row">
+                            <span class="hype-label">🔥 Hype-Check</span>
+                            <span class="hype-scores">
+                                Hype: <span id="modal-product-hypescore" class="hype-stars">🔥🔥🔥🔥</span>
+                                <span style="color: rgba(255, 255, 255, 0.15); margin: 0 0.3rem;">|</span>
+                                Realität: <span id="modal-product-realityscore" class="reality-stars">⭐⭐⭐⭐</span>
+                            </span>
+                        </div>
+                        <p id="modal-product-hypecomment" class="hype-comment">Geht auf Social Media völlig zurecht viral...</p>
                     </div>
 
                     <div class="modal-pros-cons">
@@ -608,12 +623,17 @@
                         </div>
                     </div>
 
+                    <div class="modal-verdict-section">
+                        <h4 class="verdict-title">Unser ehrliches Fazit:</h4>
+                        <p id="modal-product-verdict" class="verdict-text">Das ist ein fantastisches produkt...</p>
+                    </div>
+
                     <a id="modal-product-link" href="#" target="_blank" class="btn btn-primary modal-cta-btn">
                         <span>Auf Amazon ansehen</span>
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                             <polyline points="15 3 21 3 21 9"></polyline>
+                             <line x1="10" y1="14" x2="21" y2="3"></line>
                         </svg>
                     </a>
                     
