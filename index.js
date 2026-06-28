@@ -1039,13 +1039,23 @@ function initNewsletter() {
         const email = input.value;
         
         if (email) {
-            const parent = form.parentNode;
-            parent.innerHTML = `
-                <div class="newsletter-success animate-fade-in" style="padding: 1rem 0; color: var(--color-accent);">
-                    <h4 style="font-family: var(--font-heading); font-size: 1rem; margin-bottom: 0.5rem; text-transform: uppercase;">Vielen Dank!</h4>
-                    <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-text-secondary);">Wir haben deine E-Mail-Adresse (${email}) registriert. Du erhältst ab sofort unsere aktuellen Produkttrends.</p>
-                </div>
-            `;
+            // Send data to Brevo (Sendinblue)
+            const formData = new FormData();
+            formData.append('EMAIL', email);
+
+            fetch("https://6441c82b.sibforms.com/serve/MUIFAKaDL_YdmiGN59hXf4uL-eKa22spKauAm2qwYiScPeY5K3jFHnit7TiD7hAxWhIbXoNkJIKnImkHwhheoz0QZcDBb9xIpclaibSs8KKNvf4-akNr61SFsWT2YeuupvpnIe3XdZEYI0cDvHwpWR7za7U8IAnUwk9FVbOazIpv2ijqn-1CsE7CnJEbyflgqNlkKC2gTGmU-uhJjA==", {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            }).then(() => {
+                const parent = form.parentNode;
+                parent.innerHTML = `
+                    <div class="newsletter-success animate-fade-in" style="padding: 1rem 0; color: var(--color-accent);">
+                        <h4 style="font-family: var(--font-heading); font-size: 1rem; margin-bottom: 0.5rem; text-transform: uppercase;">Vielen Dank!</h4>
+                        <p style="font-size: 0.85rem; line-height: 1.5; color: var(--color-text-secondary);">Wir haben deine E-Mail-Adresse (${email}) registriert. Du erhältst ab sofort unsere aktuellen Produkttrends.</p>
+                    </div>
+                `;
+            }).catch(console.error);
         }
     };
 }
