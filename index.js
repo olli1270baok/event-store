@@ -1366,3 +1366,77 @@ function switchLegalTab(tabName) {
     });
 }
 window.switchLegalTab = switchLegalTab;
+
+/* ================================================
+   NATIVE SHOPPING AD LOGIC
+   ================================================ */
+
+function initDealTicker() {
+    const tickerText = document.getElementById('deal-ticker-text');
+    if (!tickerText) return;
+    
+    // Pick a random product as the "Deal of the day"
+    const randomProduct = PRODUCTS[Math.floor(Math.random() * PRODUCTS.length)];
+    
+    tickerText.innerHTML = `Amazon Blitzangebot: <strong>${randomProduct.name}</strong> – Nur für kurze Zeit!`;
+    const cta = document.getElementById('deal-ticker-cta');
+    if(cta) cta.href = randomProduct.amazonLink;
+}
+window.initDealTicker = initDealTicker;
+
+function renderNativeTrending() {
+    const grid = document.getElementById('native-trending-grid');
+    if (!grid) return;
+    
+    grid.innerHTML = '';
+    // Select 4 high-hype products
+    const trending = [...PRODUCTS].sort((a, b) => b.hypeScore - a.hypeScore).slice(0, 4);
+    
+    trending.forEach(product => {
+        const card = document.createElement('a');
+        card.className = 'native-ad-card';
+        card.href = product.amazonLink;
+        card.target = '_blank';
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" class="native-ad-card-img" loading="lazy">
+            <h4 class="native-ad-card-name">${product.name}</h4>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+                <span class="native-ad-card-price">${product.priceRange}</span>
+                <span class="native-ad-card-stars">★★★★★</span>
+            </div>
+            <span class="native-ad-card-cta">Auf Amazon ansehen →</span>
+        `;
+        grid.appendChild(card);
+    });
+}
+window.renderNativeTrending = renderNativeTrending;
+
+function renderModalRelated(currentProductId, category) {
+    const grid = document.getElementById('modal-related-grid');
+    if (!grid) return;
+    
+    grid.innerHTML = '';
+    // Find up to 3 products in the same category, excluding the current one
+    const related = PRODUCTS.filter(p => p.category === category && p.id !== currentProductId)
+                            .slice(0, 3);
+                            
+    // Fallback if not enough in same category
+    if (related.length < 3) {
+        const others = PRODUCTS.filter(p => p.id !== currentProductId && !related.find(r => r.id === p.id));
+        related.push(...others.slice(0, 3 - related.length));
+    }
+    
+    related.forEach(product => {
+        const card = document.createElement('a');
+        card.className = 'modal-related-card';
+        card.href = product.amazonLink;
+        card.target = '_blank';
+        card.innerHTML = `
+            <img src="${product.image}" alt="${product.name}" loading="lazy">
+            <h4 class="modal-related-card-name">${product.name}</h4>
+            <span class="modal-related-card-price">${product.priceRange}</span>
+        `;
+        grid.appendChild(card);
+    });
+}
+window.renderModalRelated = renderModalRelated;
