@@ -13,6 +13,11 @@ const PRODUCTS = [
         stars: "★★★★★",
         image: "assets/airfryer.png",
         amazonLink: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21", price: "ab 99 €", type: "amazon" },
+            { name: "MediaMarkt", url: "#", price: "ab 109 €", type: "mediamarkt" },
+            { name: "OTTO", url: "#", price: "ab 115 €", type: "otto" }
+        ],
         review: "Der absolute Spitzenreiter unter den Heißluftfritteusen auf Amazon. Mit ihrem großzügigen 5,5-Liter-Garkorb eignet sie sich ideal für Familien. Sie erzielt extrem knusprige Ergebnisse bei bis zu 85% weniger Fett im Vergleich zu klassischen Fritteusen. Das Touch-Display bietet 11 voreingestellte Programme. Die Reinigung ist dank der antihaftbeschichteten, spülmaschinenfesten Teile im Handumdrehen erledigt.",
         pros: ["Extrem knusprige Ergebnisse ohne zusätzliches Öl", "Der Korb lässt sich super einfach in der Spülmaschine reinigen", "Großes Volumen (5,5L) reicht locker für bis zu 4-5 Personen"],
         cons: ["Der Signalton am Ende ist extrem laut und lässt sich nicht leiser stellen", "Nimmt einiges an Platz auf der Arbeitsplatte weg"],
@@ -841,8 +846,39 @@ function openProductModal(productId) {
         consList.appendChild(li);
     });
 
-    // Set Amazon CTA Link
-    document.getElementById('modal-product-link').href = product.amazonLink;
+    // Render Multi-Shop CTA Links
+    const linksContainer = document.getElementById('modal-product-links');
+    if (linksContainer) {
+        linksContainer.innerHTML = '';
+        if (product.shops && product.shops.length > 0) {
+            product.shops.forEach(shop => {
+                const btn = document.createElement('a');
+                btn.className = `modal-multi-link-btn ${shop.type || 'generic'}`;
+                btn.href = shop.url;
+                btn.target = "_blank";
+                btn.innerHTML = `
+                    <span>Auf ${shop.name} ansehen</span>
+                    <span class="modal-multi-link-price">${shop.price || ''}</span>
+                `;
+                linksContainer.appendChild(btn);
+            });
+        } else {
+            // Fallback to Amazon Link only
+            const btn = document.createElement('a');
+            btn.className = "modal-multi-link-btn amazon";
+            btn.href = product.amazonLink;
+            btn.target = "_blank";
+            btn.innerHTML = `
+                <span>Auf Amazon ansehen</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                     <polyline points="15 3 21 3 21 9"></polyline>
+                     <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            `;
+            linksContainer.appendChild(btn);
+        }
+    }
 
     // Render Related Products Ad
     renderModalRelated(product.id, product.category);

@@ -2775,3 +2775,59 @@ button {
     }
 }
 
+/* ================================================
+   MULTI-SHOP LINKS (MODAL)
+   ================================================ */
+.modal-product-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+.modal-multi-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+.modal-multi-link-btn.amazon {
+    background: #FF9900;
+    color: #1a1c24;
+}
+.modal-multi-link-btn.amazon:hover {
+    background: #ffaa33;
+    transform: translateY(-2px);
+}
+.modal-multi-link-btn.mediamarkt {
+    background: #df0000;
+    color: white;
+}
+.modal-multi-link-btn.mediamarkt:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+}
+.modal-multi-link-btn.otto {
+    background: #cc0000;
+    color: white;
+}
+.modal-multi-link-btn.otto:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+}
+.modal-multi-link-btn.generic {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+.modal-multi-link-btn.generic:hover {
+    background: #d4ff33;
+    transform: translateY(-2px);
+}
+.modal-multi-link-price {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
