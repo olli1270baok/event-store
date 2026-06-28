@@ -1916,12 +1916,12 @@ function initFomoTicker() {
         }, 5000);
     };
 
-    // First toast after 10 seconds
+    // First toast after 3 seconds
     setTimeout(() => {
         showToast();
         // Then randomly show it continuously
         setInterval(() => {
             showToast();
-        }, 25000); // fixed 25s interval for simplicity
-    }, 10000);
+        }, 15000); 
+    }, 3000);
 }
