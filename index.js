@@ -5,6 +5,216 @@
 // --- Curated Products Dataset ---
 const PRODUCTS = [
     {
+        id: "retro_marshall",
+        name: "Marshall Acton III Bluetooth-Lautsprecher",
+        category: "retro",
+        priceRange: "200 - 270 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/mh_marshall_acton.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Marshall+Acton+III",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Marshall+Acton+III", price: "ab 229 €", type: "amazon" }
+        ],
+        review: "Der Inbegriff von Modern Heritage. Sieht aus wie ein legendärer Gitarrenverstärker aus den 70ern, ist aber vollgestopft mit modernster Bluetooth-Technik. Ein echtes Statement-Piece für jedes Wohnzimmer.",
+        pros: ["Grandioser Retro-Look mit Leder und Gold", "Überraschend starker und klarer Sound", "Sehr einfache Bedienung"],
+        cons: ["Kein integrierter Akku (braucht Stromkabel)"],
+        testDuration: "Getestet: 2 Wochen",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Ein Dauerbrenner auf Pinterest und Instagram.",
+        verdict: "Perfekt für Musikliebhaber mit Sinn für Ästhetik."
+    },
+    {
+        id: "retro_instax",
+        name: "Fujifilm Instax Mini Evo",
+        category: "retro",
+        priceRange: "160 - 200 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/mh_fujifilm_instax.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Fujifilm+Instax+Mini+Evo",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Fujifilm+Instax+Mini+Evo", price: "ab 179 €", type: "amazon" }
+        ],
+        review: "Eine geniale Hybridkamera! Sie sieht aus wie eine klassische analoge Kamera, fotografiert aber digital. Das Highlight: Man kann sich auf dem Display das beste Bild aussuchen und erst dann ausdrucken. Nie wieder verschwendeter Film!",
+        pros: ["Wunderschönes Retro-Kameradesign", "Digital speichern, selektiv drucken", "Viele lustige Objektiv- und Filmeffekte"],
+        cons: ["Druckqualität ist 'Retro' (nicht gestochen scharf)"],
+        testDuration: "Getestet: 1 Monat",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Der Liebling aller Influencer für Party-Fotos.",
+        verdict: "Die beste Sofortbildkamera auf dem Markt."
+    },
+    {
+        id: "retro_casio",
+        name: "Casio Vintage Collection",
+        category: "retro",
+        priceRange: "30 - 50 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/mh_casio_vintage.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Casio+Vintage+Collection",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Casio+Vintage+Collection", price: "ab 35 €", type: "amazon" }
+        ],
+        review: "Der absolute Kult-Klassiker unter den Digitaluhren. Sie sieht heute genauso cool aus wie in den 80ern. Leicht, unverwüstlich und passt zu jedem Outfit.",
+        pros: ["Kultiges Retro-Design", "Unschlagbar günstig", "Batterie hält extrem lang"],
+        cons: ["Display ist bei starker Sonne manchmal schwer lesbar"],
+        testDuration: "Getestet: 1 Jahr",
+        hypeScore: 4,
+        realityScore: 5,
+        hypeComment: "Vintage-Look, der nie uncool wird.",
+        verdict: "Ein stylisches Accessoire für wirklich jeden."
+    },
+    {
+        id: "retro_smeg",
+        name: "Smeg 50's Retro Style Toaster",
+        category: "retro",
+        priceRange: "140 - 180 €",
+        rating: 4.6,
+        stars: "★★★★★",
+        image: "assets/mh_smeg_toaster.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Smeg+Toaster",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Smeg+Toaster", price: "ab 149 €", type: "amazon" }
+        ],
+        review: "Dieser Toaster ist ein echtes Statussymbol für die Küche. Mit seinem unverkennbaren 50er-Jahre-Design in wunderschönen Pastellfarben wertet er jede Küchenzeile auf.",
+        pros: ["Unverwechselbares Design-Statement", "Sehr gute und gleichmäßige Röstung", "Hochwertige Verarbeitung"],
+        cons: ["Für einen Toaster sehr teuer", "Nimmt recht viel Platz weg"],
+        testDuration: "Getestet: 3 Monate",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Must-Have für ästhetische Küchen.",
+        verdict: "Teuer, aber optisch jeden Cent wert."
+    },
+    {
+        id: "retro_audiotechnica",
+        name: "Audio-Technica LP120XUSB",
+        category: "retro",
+        priceRange: "280 - 350 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/mh_audiotechnica.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Audio-Technica+LP120XUSB",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Audio-Technica+LP120XUSB", price: "ab 299 €", type: "amazon" }
+        ],
+        review: "Das Design erinnert stark an die legendären Technics 1210er DJ-Plattenspieler. Dieser Player holt das Vinyl-Erlebnis zurück ins Wohnzimmer und bietet sogar einen USB-Anschluss, um alte Schätze zu digitalisieren.",
+        pros: ["Klassisches, schweres DJ-Design", "Sehr guter Klang dank starkem Tonabnehmer", "Integrierter Vorverstärker & USB"],
+        cons: ["Voll manuell (Tonarm muss selbst aufgelegt werden)"],
+        testDuration: "Getestet: 6 Monate",
+        hypeScore: 4,
+        realityScore: 5,
+        hypeComment: "Vinyl ist zurück und dieser Player ist die beste Wahl.",
+        verdict: "Der perfekte Plattenspieler für ambitionierte Einsteiger."
+    },
+    {
+        id: "retro_bialetti",
+        name: "Bialetti Moka Express",
+        category: "retro",
+        priceRange: "20 - 40 €",
+        rating: 4.9,
+        stars: "★★★★★",
+        image: "assets/mh_bialetti.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Bialetti+Moka+Express",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Bialetti+Moka+Express", price: "ab 25 €", type: "amazon" }
+        ],
+        review: "Die Ikone des italienischen Kaffees. Das Design dieses Espressokochers hat sich seit Jahrzehnten nicht verändert – aus gutem Grund. Es zelebriert die Kaffeezubereitung als Ritual.",
+        pros: ["Der Design-Klassiker schlechthin", "Macht starken, leckeren Moka-Kaffee", "Komplett plastikfrei und nachhaltig"],
+        cons: ["Nicht für Induktionsherde geeignet (außer mit Adapterplatte)"],
+        testDuration: "Getestet: Jahre!",
+        hypeScore: 3,
+        realityScore: 5,
+        hypeComment: "Slow Coffee ist der Gegenentwurf zum Kapsel-Wahnsinn.",
+        verdict: "Ein Muss für jeden Haushalt und Kaffee-Liebhaber."
+    },
+    {
+        id: "retro_kludge",
+        name: "RK ROYAL KLUDGE R98 Pro",
+        category: "retro",
+        priceRange: "70 - 100 €",
+        rating: 4.7,
+        stars: "★★★★★",
+        image: "assets/mh_r98_keyboard.jpg",
+        amazonLink: "https://www.amazon.de/s?k=RK+ROYAL+KLUDGE+R98+Pro",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=RK+ROYAL+KLUDGE+R98+Pro", price: "ab 89 €", type: "amazon" }
+        ],
+        review: "Eine mechanische Tastatur, die das nostalgische Tippgefühl alter Computer-Tastaturen mit moderner Technik und RGB-Beleuchtung verbindet. Der Sound beim Tippen ('Thock') ist unglaublich befriedigend.",
+        pros: ["Geniales Tippgefühl und Sound", "Coole Retro-Farbkombination", "Hot-swappable (Switches austauschbar)"],
+        cons: ["Relativ hoch, eine Handballenauflage wird empfohlen"],
+        testDuration: "Getestet: 1 Monat",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Mechanische Custom-Keyboards sind ein riesiger Tech-Trend.",
+        verdict: "Macht Home-Office und Gaming sofort stylischer."
+    },
+    {
+        id: "retro_edison",
+        name: "Edison-Style Vintage Glühbirnen",
+        category: "retro",
+        priceRange: "15 - 30 €",
+        rating: 4.6,
+        stars: "★★★★★",
+        image: "assets/mh_edison_bulbs.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Vintage+Glühbirne+LED",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Vintage+Glühbirne+LED", price: "ab 19 €", type: "amazon" }
+        ],
+        review: "Der unverzichtbare Retro-Look für offene Leuchten. Sie sehen aus wie Glühbirnen aus dem 19. Jahrhundert, nutzen im Inneren aber moderne, stromsparende LEDs.",
+        pros: ["Wunderschönes, warmes Licht", "Tolle Optik auch im ausgeschalteten Zustand", "Dimmbar (modellabhängig)"],
+        cons: ["Als Hauptlichtquelle oft zu dunkel"],
+        testDuration: "Getestet: 4 Monate",
+        hypeScore: 4,
+        realityScore: 5,
+        hypeComment: "Die Standard-Beleuchtung in jedem hippen Café.",
+        verdict: "Perfekt, um Gemütlichkeit ins Zimmer zu bringen."
+    },
+    {
+        id: "retro_polaroid",
+        name: "Polaroid Now+ Gen 2",
+        category: "retro",
+        priceRange: "120 - 150 €",
+        rating: 4.5,
+        stars: "★★★★☆",
+        image: "assets/mh_polaroid_now.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Polaroid+Now+Gen+2",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=Polaroid+Now+Gen+2", price: "ab 129 €", type: "amazon" }
+        ],
+        review: "Das unverwechselbare Polaroid-Design der 70er, vollgepackt mit smarten Features. Über die Bluetooth-App kann man Doppelbelichtungen oder Light-Painting steuern.",
+        pros: ["Der echte Retro-Polaroid Look", "Lustige kreative Features via App", "Mitgelieferte Farbfilter"],
+        cons: ["Die Original Polaroid-Filme sind recht teuer"],
+        testDuration: "Getestet: 3 Wochen",
+        hypeScore: 5,
+        realityScore: 4,
+        hypeComment: "Retro-Fotografie boomt auf TikTok.",
+        verdict: "Ein tolles Party-Gadget für echte Nostalgiker."
+    },
+    {
+        id: "retro_kodak",
+        name: "KODAK Mini 2 Retro Fotodrucker",
+        category: "retro",
+        priceRange: "90 - 120 €",
+        rating: 4.6,
+        stars: "★★★★★",
+        image: "assets/mh_kodak_printer.jpg",
+        amazonLink: "https://www.amazon.de/s?k=KODAK+Mini+2+Retro",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=KODAK+Mini+2+Retro", price: "ab 99 €", type: "amazon" }
+        ],
+        review: "Dieser kleine Fotodrucker im genialen Retro-Kamera-Design druckt Handyfotos direkt über Bluetooth aus. Die patentierte 4-Pass-Drucktechnologie liefert laminierte Fotos, die sofort wischfest sind.",
+        pros: ["Kompaktes Vintage-Design", "Sehr gute Druckqualität (laminiert)", "Günstigere Druckkosten als Instax"],
+        cons: ["Das Drucken dauert pro Bild ca. 50 Sekunden"],
+        testDuration: "Getestet: 1 Monat",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Der perfekte Begleiter für Scrapbooking und Bullet Journals.",
+        verdict: "Praktisch, stylisch und eine geniale Geschenkidee."
+    },
+    {
         id: "lego_botanical",
         name: "LEGO Icons Wildblumenstrauß",
         category: "gadgets",
