@@ -301,8 +301,26 @@
 
                 <!-- Custom Product Grid -->
                 <div class="catalog-grid-wrapper">
+                    <!-- Deal Ticker -->
+                    <div class="deal-ticker-banner">
+                        <span class="deal-ticker-badge">🔥 Deal</span>
+                        <span class="deal-ticker-text" id="deal-ticker-text">Lade aktuelle Deals...</span>
+                        <a id="deal-ticker-cta" href="https://www.amazon.de/deals?tag=baokmedia21-21" target="_blank" class="deal-ticker-link">Alle Deals →</a>
+                    </div>
+
                     <div id="catalog-products-grid" class="products-grid">
                         <!-- Dynamic items loaded by index.js -->
+                    </div>
+
+                    <!-- Native Trending Products Section -->
+                    <div class="native-ad-section">
+                        <div class="native-ad-header">
+                            <span class="native-ad-label">Empfehlung</span>
+                            <h3 class="native-ad-title">🔥 Diese Woche besonders beliebt</h3>
+                        </div>
+                        <div class="native-ad-grid" id="native-trending-grid">
+                            <!-- Populated by JS -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -642,6 +660,14 @@
                     <p class="modal-affiliate-note">
                         * Als Amazon-Partner verdiene ich an qualifizierten Verkäufen. Für dich entstehen keine Mehrkosten.
                     </p>
+
+                    <!-- Related Products Native Ad -->
+                    <div class="modal-related-section">
+                        <p class="modal-related-title">Das könnte dich auch interessieren</p>
+                        <div class="modal-related-grid" id="modal-related-grid">
+                            <!-- Populated by JS -->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

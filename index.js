@@ -610,6 +610,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initProductCatalog();
     loadBestsellers();
     initProductModalCloseListeners();
+    initDealTicker();
 });
 
 /**
@@ -742,6 +743,9 @@ function initProductCatalog() {
             renderProductCatalog(category);
         });
     });
+
+    // Render Native Trending Ad
+    renderNativeTrending();
 }
 
 function renderProductCatalog(filter) {
@@ -839,6 +843,9 @@ function openProductModal(productId) {
 
     // Set Amazon CTA Link
     document.getElementById('modal-product-link').href = product.amazonLink;
+
+    // Render Related Products Ad
+    renderModalRelated(product.id, product.category);
 
     // Show Modal
     const modal = document.getElementById('product-detail-modal');
