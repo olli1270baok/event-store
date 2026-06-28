@@ -568,7 +568,7 @@ button {
     opacity: 1;
     line-height: 1.7;
     text-shadow: 0 2px 8px rgba(0,0,0,0.85);
-    color: var(--color-text-primary);
+    color: var(--color-white);
 }
 
 @media (max-width: 768px) {
@@ -592,12 +592,12 @@ button {
 
 .hero-actions .btn-secondary {
     color: var(--color-white);
-    border-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 .hero-actions .btn-secondary:hover {
-    background-color: rgba(0, 0, 0, 0.05);
-    border-color: var(--color-accent);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
 }
 
 /* --- Category Cards Grid --- */
@@ -2718,7 +2718,7 @@ button {
     transform: translateX(-50%);
     width: 90%;
     max-width: 800px;
-    background: #1a1c24;
+    background: var(--color-bg-secondary);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 12px 12px 0 0;
     padding: 1.5rem 2rem;
