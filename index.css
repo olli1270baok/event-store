@@ -2140,8 +2140,10 @@ button {
 
 .modal-image-col {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    position: sticky;
+    top: 0;
 }
 
 .modal-image-col .modal-img-wrapper {
