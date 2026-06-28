@@ -5,6 +5,29 @@
 // --- Curated Products Dataset ---
 const PRODUCTS = [
     {
+        id: "lego_botanical",
+        name: "LEGO Icons Wildblumenstrauß",
+        category: "gadgets",
+        priceRange: "40 - 50 €",
+        rating: 4.8,
+        stars: "★★★★★",
+        image: "assets/lego_botanical_product.jpg",
+        amazonLink: "https://www.amazon.de/s?k=lego+wildblumenstrauss&tag=baokmedia21-21",
+        shops: [
+            { name: "Amazon", url: "https://www.amazon.de/s?k=lego+wildblumenstrauss&tag=baokmedia21-21", price: "ab 43 €", type: "amazon" },
+            { name: "Thalia", url: "#", price: "ab 49 €", type: "mediamarkt" },
+            { name: "LEGO", url: "#", price: "ab 59 €", type: "otto" }
+        ],
+        review: "Ein absoluter Hit auf Instagram und Pinterest. Der LEGO Wildblumenstrauß bietet nicht nur entspannenden Bauspaß, sondern ist danach auch eine extrem hochwertige und langlebige Dekoration für das Wohnzimmer oder Home Office.",
+        pros: ["Tolle Entspannungs-Aktivität für Erwachsene", "Sieht extrem hochwertig und farbenfroh aus", "Pflanzen, die niemals verwelken"],
+        cons: ["Benötigt eine echte Vase zur Präsentation (nicht enthalten)", "Muss ab und zu vorsichtig abgestaubt werden"],
+        testDuration: "Getestet: 1 Monat",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Ein echter Dauerbrenner auf Social Media. Total berechtigter Hype!",
+        verdict: "Das perfekte Geschenk für Erwachsene oder als stylische Home-Office Deko."
+    },
+    {
         id: "airfryer",
         name: "Cosori XXL Heißluftfritteuse 5,5L",
         category: "kitchen",
@@ -714,7 +737,7 @@ const ARTICLES = [
                 <div class="article-product-info">
                     <h4>LEGO Icons Wildblumenstrauß</h4>
                     <p>Wunderschöne Deko-Alternative zu echten Pflanzen. Sieht im Regal extrem hochwertig aus.</p>
-                    <button class="btn btn-primary" onclick="openProductModal('lego1'); return false;">Zum Produkt & Testbericht</button>
+                    <button class="btn btn-primary" onclick="openProductModal('lego_botanical'); return false;">Zum Produkt & Testbericht</button>
                 </div>
             </div>
 
