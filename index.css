@@ -2982,21 +2982,21 @@ button {
 .article-body {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #e0e0e0;
+    color: var(--color-text-secondary);
 }
 
 .article-body h2 {
     font-family: var(--font-heading);
     font-size: 2rem;
     margin: 3rem 0 1rem;
-    color: var(--color-text);
+    color: var(--color-text-primary);
 }
 
 .article-body h3 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     margin: 2rem 0 1rem;
-    color: var(--color-text);
+    color: var(--color-text-primary);
 }
 
 .article-body p {
