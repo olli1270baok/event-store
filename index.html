@@ -735,12 +735,15 @@
     <!-- Core App Logic -->
     <!-- FOMO Live Ticker Toast -->
     <div id="fomo-toast" class="fomo-toast">
-        <div class="fomo-icon">🎉</div>
+        <div class="fomo-icon-wrapper">
+            <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+            </svg>
+        </div>
         <div class="fomo-content">
-            <span id="fomo-name" class="fomo-name">Anna</span> hat gerade
-            <br>
-            <span id="fomo-product" class="fomo-product">ein Produkt</span>
-            <br>gekauft!
+            <span class="fomo-text-top"><strong id="fomo-name">Anna</strong> hat gerade gekauft:</span>
+            <span id="fomo-product" class="fomo-product">Produkt Name</span>
         </div>
     </div>
 
