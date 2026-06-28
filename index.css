@@ -3057,3 +3057,187 @@ button {
     }
 }
 
+/* ================================================
+   CONVERSION BOOSTERS (FOMO, Price Alert, Suggest)
+   ================================================ */
+
+/* Search Auto Suggest */
+.shop-search-bar {
+    position: relative;
+}
+
+.search-suggest-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 12px 12px;
+    z-index: 100;
+    margin-top: -8px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    transition: var(--transition-fast);
+}
+
+.search-suggest-container.hidden {
+    display: none;
+}
+
+.suggest-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    transition: background 0.2s;
+}
+
+.suggest-item:last-child {
+    border-bottom: none;
+}
+
+.suggest-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.suggest-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    object-fit: cover;
+    background: var(--color-white);
+}
+
+.suggest-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.suggest-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-primary);
+}
+
+.suggest-price {
+    font-size: 0.8rem;
+    color: var(--color-accent);
+}
+
+/* Price Alert */
+.price-alert-wrapper {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.btn-text.price-alert-toggle {
+    background: none;
+    border: none;
+    color: var(--color-text-secondary);
+    font-size: 0.9rem;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.2s;
+}
+
+.btn-text.price-alert-toggle:hover {
+    color: var(--color-white);
+}
+
+.price-alert-form {
+    margin-top: 1rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.price-alert-form.hidden {
+    display: none;
+}
+
+.price-alert-form p {
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-text-secondary);
+}
+
+.price-alert-input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.price-alert-input-group input {
+    flex-grow: 1;
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-white);
+    font-size: 0.9rem;
+}
+
+.price-alert-success {
+    margin-top: 1rem;
+    color: var(--color-accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* FOMO Toast */
+.fomo-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: -100%;
+    background: rgba(18, 20, 28, 0.95);
+    backdrop-filter: blur(10px);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 8px;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: left 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    max-width: 320px;
+}
+
+.fomo-toast.show {
+    left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .fomo-toast.show {
+        left: 1rem;
+        bottom: 5rem; /* Above mobile cookie banner */
+        right: 1rem;
+        max-width: calc(100% - 2rem);
+    }
+}
+
+.fomo-icon {
+    font-size: 1.5rem;
+}
+
+.fomo-content {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+}
+
+.fomo-name {
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+.fomo-product {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+

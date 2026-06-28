@@ -742,6 +742,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadBestsellers();
     initProductModalCloseListeners();
     initDealTicker();
+    initFomoTicker();
 });
 
 /**
@@ -1643,8 +1644,53 @@ function initCookieBanner() {
 function initInlineSearch() {
     const searchInput = document.getElementById('inline-search-input');
     const searchBtn = document.getElementById('inline-search-btn');
+    const suggestContainer = document.getElementById('search-suggest');
 
     if (!searchInput) return;
+
+    if (suggestContainer) {
+        searchInput.addEventListener('input', (e) => {
+            const query = e.target.value.trim().toLowerCase();
+            
+            if (query.length < 2) {
+                suggestContainer.classList.add('hidden');
+                return;
+            }
+
+            const matches = PRODUCTS.filter(p => p.name.toLowerCase().includes(query) || p.category.toLowerCase().includes(query)).slice(0, 4);
+            
+            if (matches.length === 0) {
+                suggestContainer.classList.add('hidden');
+                return;
+            }
+
+            suggestContainer.innerHTML = '';
+            matches.forEach(p => {
+                const item = document.createElement('div');
+                item.className = 'suggest-item';
+                item.innerHTML = `
+                    <img src="${p.image}" class="suggest-img" alt="${p.name}">
+                    <div class="suggest-info">
+                        <span class="suggest-title">${p.name}</span>
+                        <span class="suggest-price">${p.priceRange}</span>
+                    </div>
+                `;
+                item.onclick = () => {
+                    openProductModal(p.id);
+                    suggestContainer.classList.add('hidden');
+                    searchInput.value = '';
+                };
+                suggestContainer.appendChild(item);
+            });
+            suggestContainer.classList.remove('hidden');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!searchInput.contains(e.target) && !suggestContainer.contains(e.target)) {
+                suggestContainer.classList.add('hidden');
+            }
+        });
+    }
 
     const performSearch = () => {
         const query = searchInput.value.trim().toLowerCase();
@@ -1710,3 +1756,59 @@ document.addEventListener('DOMContentLoaded', () => {
     initCookieBanner();
     initInlineSearch();
 });
+
+// ================================================
+// CONVERSION BOOSTERS LOGIC
+// ================================================
+
+function handlePriceAlert(event) {
+    event.preventDefault();
+    const form = event.target;
+    const input = form.querySelector('input');
+    const success = form.querySelector('.price-alert-success');
+    
+    if (input.value) {
+        // Mock sending to Brevo API
+        setTimeout(() => {
+            success.classList.remove('hidden');
+            input.value = '';
+            setTimeout(() => {
+                form.classList.add('hidden');
+                success.classList.add('hidden');
+            }, 3000);
+        }, 500);
+    }
+}
+
+function initFomoTicker() {
+    const toast = document.getElementById('fomo-toast');
+    const nameEl = document.getElementById('fomo-name');
+    const productEl = document.getElementById('fomo-product');
+    
+    if (!toast || !nameEl || !productEl) return;
+
+    const names = ["Anna aus München", "Thomas M.", "Julia K.", "Ein Besucher", "Max aus Berlin", "Sarah L.", "Ein Gast"];
+    
+    const showToast = () => {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        const randomProduct = PRODUCTS[Math.floor(Math.random() * PRODUCTS.length)].name;
+        
+        nameEl.textContent = randomName;
+        productEl.textContent = randomProduct;
+        
+        toast.classList.add('show');
+        
+        setTimeout(() => {
+            toast.classList.remove('show');
+        }, 5000);
+    };
+
+    // First toast after 10 seconds
+    setTimeout(() => {
+        showToast();
+        // Then randomly show it continuously
+        setInterval(() => {
+            showToast();
+        }, 25000); // fixed 25s interval for simplicity
+    }, 10000);
+}
