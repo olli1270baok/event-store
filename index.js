@@ -1900,7 +1900,7 @@ function initFomoTicker() {
     
     if (!toast || !nameEl || !productEl) return;
 
-    const names = ["Anna aus München", "Thomas M.", "Julia K.", "Ein Besucher", "Max aus Berlin", "Sarah L.", "Ein Gast"];
+    const names = ["Gerade im Trend:", "Oft gelesen:", "Beliebter Testbericht:", "Gerade gesucht:"];
     
     const showToast = () => {
         const randomName = names[Math.floor(Math.random() * names.length)];
