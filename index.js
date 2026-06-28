@@ -674,6 +674,24 @@ const PRODUCTS = [
         realityScore: 5,
         hypeComment: "Eines der meistverkauften Star Wars Sets der letzten Jahre.",
         verdict: "Sowohl zum Spielen als auch als Ausstellungsstück ein absoluter Volltreffer. Das Bauset ist jeden Cent wert."
+    },
+    {
+        id: "ultimate_grogu",
+        name: "Star Wars Ultimate Grogu (1:1 Maßstab)",
+        category: "gadgets",
+        priceRange: "80 - 120 €",
+        rating: 4.9,
+        stars: "★★★★★",
+        image: "assets/ultimate_grogu.jpg",
+        amazonLink: "https://www.amazon.de/s?k=Star+Wars+Ultimate+Grogu+Hasbro&tag=baokmedia21-21",
+        review: "Der absolute Wahnsinn für jeden Star Wars Fan! Diese Ultimate Grogu Figur von Hasbro ist im 1:1 Maßstab (lebensgroß) und kommt mit realistischen Bewegungen und Sounds. Er reagiert auf Berührungen und sieht unglaublich echt aus.",
+        pros: ["Lebensgroß (1:1 Maßstab) - wirkt wie echt", "Tolle Animatronic-Bewegungen (Augen, Ohren, Kopf)", "Sehr weiches Gewand und hochwertige Verarbeitung"],
+        cons: ["Benötigt relativ viele Batterien", "Motor-Geräusche beim Bewegen sind hörbar"],
+        testDuration: "1 Woche",
+        hypeScore: 5,
+        realityScore: 5,
+        hypeComment: "Geht als Geschenkidee auf Social Media regelmäßig viral.",
+        verdict: "Wer Grogu liebt, braucht diese Figur. Sie ist nicht nur ein Spielzeug, sondern ein fantastisches Sammlerstück, das jeden Schreibtisch oder jedes Wohnzimmer aufwertet."
     }
 ];
 
