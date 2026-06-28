@@ -1440,3 +1440,101 @@ function renderModalRelated(currentProductId, category) {
     });
 }
 window.renderModalRelated = renderModalRelated;
+
+/* ================================================
+   COOKIE CONSENT & INLINE SEARCH LOGIC
+   ================================================ */
+
+function initCookieBanner() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptAll = document.getElementById('cookie-accept-all');
+    const acceptEssential = document.getElementById('cookie-accept-essential');
+
+    if (!banner) return;
+
+    // Check if consent is already given
+    if (!localStorage.getItem('checkbude24_cookie_consent')) {
+        setTimeout(() => {
+            banner.classList.add('show');
+        }, 1500); // Show after 1.5s
+    }
+
+    const setConsent = (type) => {
+        localStorage.setItem('checkbude24_cookie_consent', type);
+        banner.classList.remove('show');
+    };
+
+    if (acceptAll) acceptAll.addEventListener('click', () => setConsent('all'));
+    if (acceptEssential) acceptEssential.addEventListener('click', () => setConsent('essential'));
+}
+
+function initInlineSearch() {
+    const searchInput = document.getElementById('inline-search-input');
+    const searchBtn = document.getElementById('inline-search-btn');
+
+    if (!searchInput) return;
+
+    const performSearch = () => {
+        const query = searchInput.value.trim().toLowerCase();
+        
+        // Remove active state from all category buttons
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        filterButtons.forEach(b => b.classList.remove('active'));
+
+        const grid = document.getElementById('catalog-products-grid');
+        if (!grid) return;
+
+        grid.innerHTML = '';
+        
+        if (!query) {
+            // If empty search, render all products
+            renderProductCatalog('all');
+            // Re-activate "all" button
+            const allBtn = document.querySelector('.filter-btn[data-category="all"]');
+            if(allBtn) allBtn.classList.add('active');
+            return;
+        }
+
+        const matches = PRODUCTS.filter(p => p.name.toLowerCase().includes(query) || p.review.toLowerCase().includes(query));
+        
+        if (matches.length === 0) {
+            grid.innerHTML = '<p class="no-products">Keine Produkte passend zu deiner Suche gefunden.</p>';
+            return;
+        }
+        
+        matches.forEach(product => {
+            const card = document.createElement('div');
+            card.className = 'product-card animate-fade-in';
+            card.addEventListener('click', () => openProductModal(product.id));
+
+            card.innerHTML = `
+                <div class="product-img-wrapper">
+                    <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
+                    <span class="badge">${product.category.toUpperCase()}</span>
+                </div>
+                <div class="product-details">
+                    <h3 class="product-name">${product.name}</h3>
+                    <div class="modal-rating" style="margin-bottom: 0.5rem;">
+                        <span style="color: var(--color-accent); font-size: 0.9rem;">${product.stars}</span>
+                        <span style="color: var(--color-text-secondary); font-size: 0.75rem; font-weight: 600;">${product.rating}</span>
+                    </div>
+                    <p class="product-price">Preis: ${product.priceRange}</p>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    };
+
+    searchBtn.addEventListener('click', performSearch);
+    searchInput.addEventListener('keyup', (e) => {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+}
+
+// Ensure these functions run on load
+document.addEventListener('DOMContentLoaded', () => {
+    initCookieBanner();
+    initInlineSearch();
+});

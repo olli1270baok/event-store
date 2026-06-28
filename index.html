@@ -286,6 +286,17 @@
                     <span class="section-tag" data-i18n="shop_tag">Produkt-Finder</span>
                     <h2 class="section-title" data-i18n="shop_title">Unsere Empfehlungen</h2>
                     <p class="shop-intro-text" data-i18n="shop_desc">Ehrlich getestete Produkte und aktuelle Gadgets. Wähle eine Kategorie, um die besten Deals und Reviews anzuzeigen.</p>
+                    
+                    <!-- Inline Search Bar -->
+                    <div class="shop-search-bar">
+                        <input type="text" id="inline-search-input" placeholder="Nach Produkten suchen (z.B. Lego, Ventilator)...">
+                        <button id="inline-search-btn" aria-label="Suchen">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
                 
                 <!-- Category Filter Pills -->
@@ -670,6 +681,18 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <h4>🍪 Wir verwenden Cookies</h4>
+            <p>Um dir das beste Erlebnis auf Checkbude24 zu bieten, nutzen wir Cookies und Affiliate-Tracking. <a href="#privacy" onclick="switchLegalTab('privacy'); navigateToView('legal-view');">Mehr erfahren</a></p>
+        </div>
+        <div class="cookie-actions">
+            <button id="cookie-accept-all" class="btn btn-primary">Alle akzeptieren</button>
+            <button id="cookie-accept-essential" class="btn btn-outline">Nur essenzielle</button>
         </div>
     </div>
 
