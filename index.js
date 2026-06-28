@@ -605,6 +605,131 @@ const PRODUCTS = [
     }
 ];
 
+const ARTICLES = [
+    {
+        id: "lego-sets-2026",
+        title: "Die 5 besten LEGO-Sets für Erwachsene in 2026",
+        excerpt: "LEGO ist längst nicht mehr nur für Kinder. Wir zeigen dir die beeindruckendsten Architektur-, Technik- und Star Wars-Modelle für dein Wohnzimmer.",
+        date: "28. Juni 2026",
+        tag: "LEGO & Spielzeug",
+        readTime: "4 Min. Lesezeit",
+        image: "assets/lego_botanical.png",
+        content: `
+            <p>LEGO hat sich in den letzten Jahren rasant gewandelt. Was früher hauptsächlich in Kinderzimmern stattfand, ist heute ein Premium-Hobby für Erwachsene geworden. Besonders die Botanical Collection, Architektur-Sets und gigantische Star Wars Modelle haben es uns angetan.</p>
+            
+            <h3>1. Die Botanical Collection: Pflanzen, die nie verwelken</h3>
+            <p>Einer der größten Hypes auf Instagram und Pinterest sind die LEGO Blumensträuße und Bonsai-Bäume. Sie sehen nicht nur stylisch aus, sondern bieten auch ein extrem entspannendes Bau-Erlebnis. Wer keinen grünen Daumen hat, bekommt hier die perfekte Deko für den Schreibtisch.</p>
+            <div class="article-product-embed">
+                <img src="assets/lego_botanical.png" alt="LEGO Blumenstrauß">
+                <div class="article-product-info">
+                    <h4>LEGO Icons Wildblumenstrauß</h4>
+                    <p>Wunderschöne Deko-Alternative zu echten Pflanzen. Sieht im Regal extrem hochwertig aus.</p>
+                    <button class="btn btn-primary" onclick="openProductModal('lego1'); return false;">Zum Produkt & Testbericht</button>
+                </div>
+            </div>
+
+            <h3>2. Architektur für das Wohnzimmer</h3>
+            <p>Die Architecture-Reihe besticht durch ihren cleanen, minimalistischen Look. Wer Skyline-Modelle von Tokio, Paris oder New York auf dem Board stehen hat, setzt ein echtes Design-Statement.</p>
+            
+            <blockquote>"Ich baue jeden Sonntagabend eine Stunde an meinem Set. Es ist besser als Meditation und hält mich vom Smartphone fern." – Olli</blockquote>
+            
+            <h3>Fazit</h3>
+            <p>Erwachsene brauchen Hobbys, die sie aus dem digitalen Alltag herausholen. LEGO bietet genau diese haptische Befriedigung. Die Preise sind zwar im Premium-Segment, aber das Design und die Langlebigkeit rechtfertigen jeden Cent.</p>
+        `
+    },
+    {
+        id: "airfryer-vs-ofen",
+        title: "Heißluftfritteuse vs. Backofen: Lohnt sich der Hype?",
+        excerpt: "Jeder redet über Airfryer. Aber ist es wirklich eine Revolution für die Küche oder nur ein kleiner Backofen, der Platz wegnimmt? Unser ehrlicher Check.",
+        date: "25. Juni 2026",
+        tag: "Küche & Haushalt",
+        readTime: "6 Min. Lesezeit",
+        image: "assets/airfryer.png",
+        content: `
+            <p>Gefühlt hat inzwischen jeder einen Airfryer in der Küche stehen. Auf TikTok gibt es Millionen von Rezepten, von knusprigen Pommes bis hin zu gebackenen Haferflocken. Aber was ist dran am Hype?</p>
+            
+            <h3>Die Vorteile eines Airfryers</h3>
+            <ul>
+                <li><strong>Geschwindigkeit:</strong> Ein Airfryer muss nicht 15 Minuten vorheizen. Er ist sofort heiß.</li>
+                <li><strong>Knusprigkeit:</strong> Durch den extrem starken Luftstrom werden Speisen rundum knusprig – und das mit 80% weniger Öl.</li>
+                <li><strong>Energieeffizienz:</strong> Einen großen Ofen für zwei Brötchen aufzuheizen ist Stromverschwendung. Der Airfryer ist deutlich effizienter.</li>
+            </ul>
+
+            <div class="article-product-embed">
+                <img src="assets/airfryer.png" alt="Cosori Airfryer">
+                <div class="article-product-info">
+                    <h4>COSORI Heißluftfritteuse 5.5L</h4>
+                    <p>Unser unangefochtener Testsieger. Bietet genug Platz für 4 Personen und lässt sich super leicht reinigen.</p>
+                    <button class="btn btn-primary" onclick="openProductModal('airfryer'); return false;">Zum Produkt & Testbericht</button>
+                </div>
+            </div>
+
+            <h3>Die Nachteile</h3>
+            <p>Man muss ehrlich sein: Es ist ein weiteres Gerät, das Platz auf der Arbeitsplatte wegnimmt. Wer nur 3 Quadratmeter in seiner Studenten-Küche hat, sollte sich die Anschaffung gut überlegen. Auch für Familienfeiern mit 8 Personen ist das Volumen oft zu klein.</p>
+
+            <h3>Unser Fazit</h3>
+            <p>Ja, der Hype ist berechtigt. Wer den Platz hat, wird seinen großen Backofen im Alltag wahrscheinlich nur noch für Pizzen oder riesige Kuchen anschalten. Für alles andere (Pommes, Gemüse, Lachs, Brötchen aufbacken) ist die Heißluftfritteuse unschlagbar schnell und knusprig.</p>
+        `
+    }
+];
+
+function renderBlogGrid() {
+    const grid = document.getElementById('blog-grid');
+    if (!grid) return;
+    grid.innerHTML = '';
+
+    ARTICLES.forEach(article => {
+        const card = document.createElement('div');
+        card.className = 'blog-card animate-fade-in';
+        card.onclick = () => openArticle(article.id);
+        
+        card.innerHTML = `
+            <div class="blog-img-wrapper">
+                <img src="${article.image}" alt="${article.title}">
+            </div>
+            <div class="blog-content">
+                <div class="blog-meta">
+                    <span class="blog-tag">${article.tag}</span>
+                    <span>${article.readTime}</span>
+                </div>
+                <h3 class="blog-title">${article.title}</h3>
+                <p class="blog-excerpt">${article.excerpt}</p>
+                <div class="blog-read-more">
+                    Artikel lesen &rarr;
+                </div>
+            </div>
+        `;
+        grid.appendChild(card);
+    });
+}
+
+function openArticle(articleId) {
+    const article = ARTICLES.find(a => a.id === articleId);
+    if (!article) return;
+
+    const container = document.getElementById('article-content-container');
+    if(!container) return;
+    container.innerHTML = `
+        <div class="article-header">
+            <span class="blog-tag">${article.tag}</span>
+            <h1 class="article-title">${article.title}</h1>
+            <div class="article-meta-large">
+                <span>Von Checkbude24 Team</span>
+                <span>•</span>
+                <span>${article.date}</span>
+                <span>•</span>
+                <span>${article.readTime}</span>
+            </div>
+        </div>
+        <img src="${article.image}" alt="${article.title}" class="article-hero-img">
+        <div class="article-body">
+            ${article.content}
+        </div>
+    `;
+
+    navigateToView('article-view');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 document.addEventListener('DOMContentLoaded', () => {
     initLanguageSwitcher();
     initNavigation();
@@ -613,6 +738,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNewsletter();
     initLegalTabs();
     initProductCatalog();
+    renderBlogGrid();
     loadBestsellers();
     initProductModalCloseListeners();
     initDealTicker();

@@ -28,6 +28,7 @@
             <nav class="nav-left">
                 <a href="#home" class="nav-link active" data-target="home-view" data-i18n="nav_home">Home</a>
                 <a href="#shop" class="nav-link" data-target="shop-view" data-i18n="nav_shop">Empfehlungen</a>
+                <a href="#blog" class="nav-link" data-target="blog-view" data-i18n="nav_blog">Magazin</a>
                 <a href="#collections" class="nav-link" data-target="collections-view" data-i18n="nav_collections">Kollektionen</a>
                 <a href="#about" class="nav-link" data-target="about-view" data-i18n="nav_about">Über uns</a>
             </nav>
@@ -66,6 +67,7 @@
         <nav class="mobile-nav">
             <a href="#home" class="mobile-nav-link active" data-target="home-view" data-i18n="nav_home">Home</a>
             <a href="#shop" class="mobile-nav-link" data-target="shop-view" data-i18n="nav_shop">Empfehlungen</a>
+            <a href="#blog" class="mobile-nav-link" data-target="blog-view" data-i18n="nav_blog">Magazin</a>
             <a href="#collections" class="mobile-nav-link" data-target="collections-view" data-i18n="nav_collections">Kollektionen</a>
             <a href="#about" class="mobile-nav-link" data-target="about-view" data-i18n="nav_about">Über uns</a>
         </nav>
@@ -508,6 +510,30 @@
                         <!-- Populated dynamically -->
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- BLOG VIEW -->
+        <section id="blog-view" class="view">
+            <div class="container">
+                <div class="section-header" style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+                    <span class="section-tag">Magazin</span>
+                    <h2 class="section-title">Checkbude24 Insights</h2>
+                    <p style="color: var(--color-text-secondary); max-width: 600px; margin: 1rem auto 0;">Tiefgehende Testberichte, Ratgeber und Vergleiche zu den aktuellsten Gadgets und Lifestyle-Produkten.</p>
+                </div>
+                <div id="blog-grid" class="blog-grid">
+                    <!-- Blog Cards injected via JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ARTICLE VIEW -->
+        <section id="article-view" class="view">
+            <div class="container article-container">
+                <button class="back-btn" onclick="navigateToView('blog-view')" style="margin-bottom: 2rem;">&larr; Zurück zum Magazin</button>
+                <article class="article-content" id="article-content-container">
+                    <!-- Article content injected via JS -->
+                </article>
             </div>
         </section>
 
