@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <rect width="500" height="500" fill="#0d1117"/>
+  <!-- Argentina jersey colors background -->
+  <rect x="0" y="0" width="500" height="500" fill="#1a2744"/>
+  <!-- Jersey stripes -->
+  <rect x="140" y="0" width="60" height="500" fill="#ffffff" opacity="0.08"/>
+  <rect x="260" y="0" width="60" height="500" fill="#ffffff" opacity="0.08"/>
+  <rect x="380" y="0" width="60" height="500" fill="#ffffff" opacity="0.08"/>
+  <!-- LEGO figure body -->
+  <rect x="190" y="160" width="120" height="140" rx="8" fill="#75aadb"/>
+  <!-- LEGO head -->
+  <rect x="200" y="100" width="100" height="90" rx="12" fill="#ffd700"/>
+  <!-- LEGO stud on head -->
+  <circle cx="250" cy="98" r="14" fill="#ffd700" stroke="#e6c200" stroke-width="3"/>
+  <!-- Eyes -->
+  <rect x="218" y="125" width="18" height="14" rx="3" fill="#1a1a1a"/>
+  <rect x="264" y="125" width="18" height="14" rx="3" fill="#1a1a1a"/>
+  <!-- Smile -->
+  <path d="M 225,155 Q 250,172 275,155" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Jersey number 10 -->
+  <text x="250" y="240" fill="#ffffff" font-family="sans-serif" font-size="36" font-weight="bold" text-anchor="middle">10</text>
+  <!-- Arms -->
+  <rect x="140" y="165" width="50" height="25" rx="8" fill="#75aadb"/>
+  <rect x="310" y="165" width="50" height="25" rx="8" fill="#75aadb"/>
+  <!-- Legs -->
+  <rect x="200" y="295" width="45" height="100" rx="8" fill="#1a2744"/>
+  <rect x="255" y="295" width="45" height="100" rx="8" fill="#1a2744"/>
+  <!-- Feet (shoes) -->
+  <rect x="195" y="385" width="55" height="30" rx="6" fill="#cc0000"/>
+  <rect x="250" y="385" width="55" height="30" rx="6" fill="#cc0000"/>
+  <!-- Football -->
+  <circle cx="340" cy="380" r="32" fill="#ffffff" stroke="#1a1a1a" stroke-width="3"/>
+  <path d="M 340,348 L 340,412 M 308,380 L 372,380" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- LEGO text -->
+  <text x="250" y="470" fill="#ccff00" font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle" letter-spacing="6">LEGO</text>
+  <!-- Star accent -->
+  <text x="250" y="78" fill="#ccff00" font-family="sans-serif" font-size="18" text-anchor="middle">★ ★ ★</text>
+</svg>
