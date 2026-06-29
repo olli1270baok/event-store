@@ -2797,12 +2797,15 @@ button {
     transition: all 0.2s ease;
 }
 .modal-multi-link-btn.amazon {
-    background: #FF9900;
+    background: #ffffff;
+    border: 2px solid #FF9900;
     color: #1a1c24;
 }
 .modal-multi-link-btn.amazon:hover {
-    background: #ffaa33;
+    background: #fafafa;
+    border-color: #e68a00;
     transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 153, 0, 0.15);
 }
 .modal-multi-link-btn.mediamarkt {
     background: #df0000;

@@ -1725,12 +1725,7 @@ function openProductModal(productId) {
             btn.href = product.amazonLink;
             btn.target = "_blank";
             btn.innerHTML = `
-                <span>Auf Amazon ansehen</span>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                     <polyline points="15 3 21 3 21 9"></polyline>
-                     <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
+                <img src="assets/amazon_logo.svg" alt="Auf Amazon ansehen" style="height: 22px; object-fit: contain;">
             `;
             linksContainer.appendChild(btn);
         }
@@ -2302,11 +2297,13 @@ function renderNativeTrending() {
         card.innerHTML = `
             <img src="${product.image}" alt="${product.name}" class="native-ad-card-img" loading="lazy">
             <h4 class="native-ad-card-name">${product.name}</h4>
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-top: auto; margin-bottom: 0.5rem;">
                 <span class="native-ad-card-price">${product.priceRange}</span>
                 <span class="native-ad-card-stars">★★★★★</span>
             </div>
-            <span class="native-ad-card-cta">Auf Amazon ansehen →</span>
+            <div class="native-ad-card-cta" style="background: #ffffff; border: 1px solid #FF9900;">
+                <img src="assets/amazon_logo.svg" alt="Auf Amazon ansehen" style="height: 18px; object-fit: contain;">
+            </div>
         `;
         grid.appendChild(card);
     });
