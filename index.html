@@ -634,8 +634,11 @@
             </button>
             <div class="modal-content-grid">
                 <div class="modal-image-col">
-                    <div class="modal-img-wrapper">
+                    <div class="modal-img-wrapper" id="modal-img-wrapper">
                         <img id="modal-product-img" src="" alt="Produktbild">
+                        <button class="carousel-btn prev" id="modal-carousel-prev" style="display:none;">❮</button>
+                        <button class="carousel-btn next" id="modal-carousel-next" style="display:none;">❯</button>
+                        <div class="carousel-dots" id="modal-carousel-dots"></div>
                     </div>
                 </div>
                 <div class="modal-info-col">
@@ -650,9 +653,38 @@
                     </div>
                     <p id="modal-product-price" class="modal-price">Preis: €€</p>
                     
+                    <div class="modal-persona-section" id="modal-persona-container">
+                        <div class="persona-row">
+                            <div class="persona-col perfect-for">
+                                <span class="persona-icon">✅</span>
+                                <div class="persona-text">
+                                    <strong>Perfekt für:</strong>
+                                    <span id="modal-product-perfectfor">...</span>
+                                </div>
+                            </div>
+                            <div class="persona-col not-for">
+                                <span class="persona-icon">❌</span>
+                                <div class="persona-text">
+                                    <strong>Nicht für:</strong>
+                                    <span id="modal-product-notfor">...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="modal-review-section">
                         <h4 data-i18n="modal_review_heading">Warum wir es empfehlen:</h4>
                         <p id="modal-product-review">Das ist ein fantastisches produkt...</p>
+                        
+                        <div class="tester-quote-box" id="modal-quote-container">
+                            <span class="quote-mark">"</span>
+                            <p id="modal-product-testerquote">...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-hidden-feature" id="modal-hidden-feature-container">
+                        <h5>🤫 Geheimtipp</h5>
+                        <p id="modal-product-hiddenfeature">...</p>
                     </div>
 
                     <div class="modal-hype-section">
@@ -685,6 +717,13 @@
                     <div class="modal-verdict-section">
                         <h4 class="verdict-title">Unser ehrliches Fazit:</h4>
                         <p id="modal-product-verdict" class="verdict-text">Das ist ein fantastisches produkt...</p>
+                    </div>
+
+                    <div class="modal-alternatives-section" id="modal-alternatives-container">
+                        <h5 class="alternatives-title">Alternativen ansehen:</h5>
+                        <div class="alternatives-list" id="modal-product-alternatives">
+                           <!-- Dynamic -->
+                        </div>
                     </div>
 
                     <div id="modal-product-links" class="modal-product-links-container">

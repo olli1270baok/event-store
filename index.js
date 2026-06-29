@@ -23,7 +23,15 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Ein Dauerbrenner auf Pinterest und Instagram.",
-        verdict: "Perfekt für Musikliebhaber mit Sinn für Ästhetik."
+        verdict: "Perfekt für Musikliebhaber mit Sinn für Ästhetik.",
+        perfectFor: "Design-Liebhaber, Rock-Fans und alle, die einen stationären Speaker fürs Wohnzimmer suchen.",
+        notFor: "Outdoor-Fans, die einen kleinen Bluetooth-Speaker für den Park oder Strand brauchen.",
+        testerQuote: "Ollis Fazit: Ich war anfangs skeptisch wegen des ganzen Instagram-Hypes, aber der warme, bassige Sound in Kombination mit dem echten Leder-Finish hat mich komplett überzeugt. Ein echtes Schmuckstück für jedes Regal.",
+        hiddenFeature: "Die Messing-Drehregler auf der Oberseite sehen nicht nur gut aus, sie sind massiv und haben einen unglaublich befriedigenden Widerstand beim Drehen - genau wie bei einem echten Gitarrenverstärker.",
+        alternatives: [
+            { id: "retro_audiotechnica", name: "Audio-Technica Plattenspieler" },
+            { id: "retro_edison", name: "Edison-Style Vintage Lampen" }
+        ]
     },
     {
         id: "retro_instax",
@@ -1277,6 +1285,101 @@ function openProductModal(productId) {
     document.getElementById('modal-product-realityscore').textContent = '★'.repeat(product.realityScore) + '☆'.repeat(5 - product.realityScore);
     document.getElementById('modal-product-hypecomment').textContent = product.hypeComment;
     document.getElementById('modal-product-verdict').textContent = product.verdict;
+
+    // Enhanced Review Elements (Persona, Quote, Hidden Feature, Alternatives)
+    const personaContainer = document.getElementById('modal-persona-container');
+    if (product.perfectFor && product.notFor) {
+        personaContainer.style.display = 'block';
+        document.getElementById('modal-product-perfectfor').textContent = product.perfectFor;
+        document.getElementById('modal-product-notfor').textContent = product.notFor;
+    } else {
+        personaContainer.style.display = 'none';
+    }
+
+    const quoteContainer = document.getElementById('modal-quote-container');
+    if (product.testerQuote) {
+        quoteContainer.style.display = 'block';
+        document.getElementById('modal-product-testerquote').textContent = product.testerQuote;
+    } else {
+        quoteContainer.style.display = 'none';
+    }
+
+    const hiddenFeatureContainer = document.getElementById('modal-hidden-feature-container');
+    if (product.hiddenFeature) {
+        hiddenFeatureContainer.style.display = 'block';
+        document.getElementById('modal-product-hiddenfeature').textContent = product.hiddenFeature;
+    } else {
+        hiddenFeatureContainer.style.display = 'none';
+    }
+
+    const alternativesContainer = document.getElementById('modal-alternatives-container');
+    const alternativesList = document.getElementById('modal-product-alternatives');
+    if (product.alternatives && product.alternatives.length > 0) {
+        alternativesContainer.style.display = 'block';
+        alternativesList.innerHTML = '';
+        product.alternatives.forEach(alt => {
+            const altPill = document.createElement('a');
+            altPill.className = 'alternative-pill';
+            // Click alternative will open that product modal instead
+            altPill.onclick = () => { closeProductModal(); setTimeout(() => openProductModal(alt.id), 300); };
+            altPill.textContent = alt.name;
+            alternativesList.appendChild(altPill);
+        });
+    } else {
+        alternativesContainer.style.display = 'none';
+    }
+
+    // Image Carousel Logic
+    const imgElement = document.getElementById('modal-product-img');
+    const prevBtn = document.getElementById('modal-carousel-prev');
+    const nextBtn = document.getElementById('modal-carousel-next');
+    const dotsContainer = document.getElementById('modal-carousel-dots');
+    
+    // Clear old carousel state
+    if (window.currentCarouselListenerNext) {
+        nextBtn.removeEventListener('click', window.currentCarouselListenerNext);
+        prevBtn.removeEventListener('click', window.currentCarouselListenerPrev);
+    }
+    
+    let currentImgIndex = 0;
+    const images = product.images && product.images.length > 0 ? product.images : [product.image];
+    
+    const updateCarousel = () => {
+        imgElement.src = images[currentImgIndex];
+        // update dots
+        Array.from(dotsContainer.children).forEach((dot, idx) => {
+            if (idx === currentImgIndex) dot.classList.add('active');
+            else dot.classList.remove('active');
+        });
+    };
+
+    if (images.length > 1) {
+        prevBtn.style.display = 'flex';
+        nextBtn.style.display = 'flex';
+        dotsContainer.innerHTML = '';
+        images.forEach((_, idx) => {
+            const dot = document.createElement('div');
+            dot.className = 'dot' + (idx === 0 ? ' active' : '');
+            dot.onclick = () => { currentImgIndex = idx; updateCarousel(); };
+            dotsContainer.appendChild(dot);
+        });
+        
+        window.currentCarouselListenerNext = () => {
+            currentImgIndex = (currentImgIndex + 1) % images.length;
+            updateCarousel();
+        };
+        window.currentCarouselListenerPrev = () => {
+            currentImgIndex = (currentImgIndex - 1 + images.length) % images.length;
+            updateCarousel();
+        };
+        nextBtn.addEventListener('click', window.currentCarouselListenerNext);
+        prevBtn.addEventListener('click', window.currentCarouselListenerPrev);
+    } else {
+        prevBtn.style.display = 'none';
+        nextBtn.style.display = 'none';
+        dotsContainer.innerHTML = '';
+        imgElement.src = images[0];
+    }
 
     // Render Pros
     const prosList = document.getElementById('modal-product-pros');
