@@ -331,7 +331,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Auf TikTok und YouTube gefeiert, und das völlig zurecht. Die Zeitersparnis ist enorm.",
-        verdict: "Wer Platz in der Küche hat und knusprige Pommes oder Gemüse ohne Fettgeruch möchte: Ein absoluter Kauftipp. Für sehr kleine Küchen aber fast schon zu wuchtig."
+        verdict: "Wer Platz in der Küche hat und knusprige Pommes oder Gemüse ohne Fettgeruch möchte: Ein absoluter Kauftipp. Für sehr kleine Küchen aber fast schon zu wuchtig.",
+        perfectFor: "Familien, Meal-Prep-Fans und alle, die Pommes ohne schlechtes Gewissen essen wollen.",
+        notFor: "Menschen mit extrem kleinen Single-Küchen ohne freie Arbeitsfläche.",
+        testerQuote: "Ollis Fazit: Ich benutze meinen Backofen kaum noch. Lachs, Gemüse, Pommes – alles wird in der Cosori in der halben Zeit perfekt knusprig. Die 5,5 Liter sind ideal, um zwei Portionen auf einmal zu machen.",
+        hiddenFeature: "Man kann sogar Muffins und kleine Kuchen darin backen! Die Heißluft-Zirkulation funktioniert wie bei einem professionellen Konvektomat.",
+        alternatives: [
+            { id: "chopper", name: "Gemüseschneider für schnelle Vorbereitung" }
+        ]
     },
     {
         id: "diffuser",
@@ -349,7 +356,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Ein fester Bestandteil jeder Pinterest- und Instagram-Ästhetik. Macht super gemütliches Licht.",
-        verdict: "Ein günstiges Wohlfühl-Highlight für Schlaf- oder Wohnzimmer. Wer ein echtes Holzgehäuse sucht, wird enttäuscht sein, aber die Licht- und Duftfunktion überzeugt auf ganzer Linie."
+        verdict: "Ein günstiges Wohlfühl-Highlight für Schlaf- oder Wohnzimmer. Wer ein echtes Holzgehäuse sucht, wird enttäuscht sein, aber die Licht- und Duftfunktion überzeugt auf ganzer Linie.",
+        perfectFor: "Alle, die ihr Zuhause in eine kleine Wellness-Oase verwandeln wollen.",
+        notFor: "Leute, die eine aktive Luftbefeuchtung für große Räume suchen (dafür ist der Tank zu klein).",
+        testerQuote: "Kathas Fazit: Ich mache ihn jeden Abend an. Das sanfte Licht und ein bisschen Lavendelöl helfen mir extrem beim Runterkommen nach einem langen Arbeitstag. Und er ist wirklich flüsterleise!",
+        hiddenFeature: "Man kann den Diffuser auch ganz ohne Wasser nur als wunderschönes Stimmungslicht/Nachttischlampe verwenden.",
+        alternatives: [
+            { id: "airpurifier", name: "Luftreiniger (für echte Luftverbesserung)" }
+        ]
     },
     {
         id: "headphones",
@@ -367,7 +381,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Der Liebling aller Tech-Youtuber und Business-Reisenden. Hält dem Hype absolut stand.",
-        verdict: "Die ungeschlagene Referenz für laute Büros oder Bahnfahrten. Der Klang ist warm und das ANC blockt fast alles ab. Der Nachfolger XM5 ist zwar neuer, aber der XM4 lässt sich besser zusammenklappen."
+        verdict: "Die ungeschlagene Referenz für laute Büros oder Bahnfahrten. Der Klang ist warm und das ANC blockt fast alles ab. Der Nachfolger XM5 ist zwar neuer, aber der XM4 lässt sich besser zusammenklappen.",
+        perfectFor: "Pendler, Vielreisende und alle, die im Großraumbüro ihre Ruhe brauchen.",
+        notFor: "Fürs Joggen oder intensive Workouts (dafür sind In-Ears besser geeignet).",
+        testerQuote: "Mels Fazit: Ich setze sie auf, schalte das ANC an und die Welt ist stumm. Es ist magisch. Egal ob schreiende Kinder im Zug oder telefonierende Kollegen – ich höre nichts mehr außer meiner Playlist.",
+        hiddenFeature: "Wenn du kurz mit jemandem sprechen musst, lege einfach deine flache Hand auf die rechte Ohrmuschel. Die Musik wird extrem leise und die Mikrofone verstärken die Stimme deines Gegenübers.",
+        alternatives: [
+            { id: "neckpillow", name: "Reisekissen für Langstreckenflüge" }
+        ]
     },
     {
         id: "waterbottle",
@@ -385,7 +406,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "In Fitness-Studios und Outdoor-Gruppen extrem beliebt wegen des cleanen Designs.",
-        verdict: "Eine der besten Thermosflaschen auf dem Markt. Hält Getränke wirklich den ganzen Tag eiskalt. Nur wer sie mit Säften befüllt, muss beim Reinigen des engen Halses etwas Geduld haben."
+        verdict: "Eine der besten Thermosflaschen auf dem Markt. Hält Getränke wirklich den ganzen Tag eiskalt. Nur wer sie mit Säften befüllt, muss beim Reinigen des engen Halses etwas Geduld haben.",
+        perfectFor: "Sportler, Büro-Arbeiter und alle, die ihr Wasser im Sommer eiskalt mögen.",
+        notFor: "Leute, die ultraleichtes Gepäck für extreme Wanderungen packen.",
+        testerQuote: "Mitchs Fazit: Ich habe die Flasche im Hochsommer bei 35 Grad im Auto vergessen. Als ich wiederkam, war das Wasser darin immer noch so eisig, dass die Flasche von außen beschlagen ist. Wahnsinn!",
+        hiddenFeature: "Die Flasche ist so gut isoliert, dass man auch heißen Tee für den Winterspaziergang einfüllen kann – er bleibt über 12 Stunden dampfend heiß.",
+        alternatives: [
+            { id: "massagegun", name: "Massagepistole zur Regeneration nach dem Sport" }
+        ]
     },
     {
         id: "vacuum",
@@ -403,7 +431,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Wird als eierlegende Wollmilchsau des Haushalts angepriesen. Der Hype ist absolut real.",
-        verdict: "Eine der besten Investitionen für ein sauberes Zuhause. Die All-in-One-Station nimmt einem fast alle Arbeit ab. Man sollte vor dem Kauf nur prüfen, ob man genug Platz für die wuchtige Station hat."
+        verdict: "Eine der besten Investitionen für ein sauberes Zuhause. Die All-in-One-Station nimmt einem fast alle Arbeit ab. Man sollte vor dem Kauf nur prüfen, ob man genug Platz für die wuchtige Station hat.",
+        perfectFor: "Haustierbesitzer und Leute, die das Saugen und Wischen komplett auslagern wollen.",
+        notFor: "Wohnungen mit extrem vielen hohen Türschwellen (über 2cm).",
+        testerQuote: "Ollis Fazit: Ich habe meinen normalen Staubsauger seit Monaten nicht mehr angefasst. Die Wischfunktion mit den rotierenden Pads schrubbt sogar angetrocknete Flecken weg. Wahnsinn!",
+        hiddenFeature: "In der App kann man die Feuchtigkeit der Wischpads pro Raum einstellen – z.B. feuchter für Fliesen im Bad und sehr trocken für empfindliches Parkett.",
+        alternatives: [
+            { id: "airpurifier", name: "Luftreiniger für eine rundum saubere Wohnung" }
+        ]
     },
     {
         id: "coffeemaker",
@@ -421,7 +456,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Wird vor allem für das schlauchlose Milchsystem gelobt, das extrem leicht zu reinigen ist.",
-        verdict: "Perfekt für alle, die unkompliziert Cappuccino oder Latte Macchiato trinken wollen. Das Milchsystem ist genial einfach zu reinigen. Kaffeepuristen vermissen eventuell die Einstelltiefe einer Siebträgermaschine."
+        verdict: "Perfekt für alle, die unkompliziert Cappuccino oder Latte Macchiato trinken wollen. Das Milchsystem ist genial einfach zu reinigen. Kaffeepuristen vermissen eventuell die Einstelltiefe einer Siebträgermaschine.",
+        perfectFor: "Familien und Latte-Macchiato-Fans, die eine schnelle, leichte Reinigung schätzen.",
+        notFor: "Espresso-Nerds, die jeden Brühparameter manuell einstellen wollen.",
+        testerQuote: "Kathas Fazit: Ich hatte noch nie eine Maschine, die so wenig nervt. Der LatteGo-Becher hat keine Schläuche, man spült ihn nach dem Cappuccino einfach in drei Sekunden unter dem Wasserhahn ab.",
+        hiddenFeature: "Die Maschine hat eine Extra-Shot-Funktion für alle Milchgetränke, wenn man morgens mal etwas mehr Koffein braucht, ohne dass der Kaffee wässrig wird.",
+        alternatives: [
+            { id: "retro_bialetti", name: "Bialetti Moka (für Puristen)" }
+        ]
     },
     {
         id: "chargingstation",
@@ -439,7 +481,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Sehr beliebt auf Tech-Blogs und Instagram-Schreibtischen wegen des minimalistischen Looks.",
-        verdict: "Die perfekte Ladestation für Apple-Nutzer. Sie räumt den Nachttisch auf und macht Schluss mit dem Kabelsalat. Teuer, aber die Verarbeitungsqualität aus Aluminium rechtfertigt den Preis."
+        verdict: "Die perfekte Ladestation für Apple-Nutzer. Sie räumt den Nachttisch auf und macht Schluss mit dem Kabelsalat. Teuer, aber die Verarbeitungsqualität aus Aluminium rechtfertigt den Preis.",
+        perfectFor: "Apple-Nutzer mit iPhone, Watch und AirPods, die Ordnung auf dem Nachttisch wollen.",
+        notFor: "Android-Nutzer (die MagSafe-Magneten greifen hier nicht).",
+        testerQuote: "Mels Fazit: Ich hasse Kabelgewirr auf dem Nachttisch. Dieser kleine Würfel sieht so clean aus und lädt alle drei Geräte gleichzeitig und schnell auf. Auch super zum Verreisen!",
+        hiddenFeature: "Der Apple-Watch-Ladepuck lässt sich einklappen, wenn man nur das Handy lädt – so wird der Würfel noch minimalistischer.",
+        alternatives: [
+            { id: "powerbank", name: "Kompakte Powerbank für unterwegs" }
+        ]
     },
     {
         id: "massagegun",
@@ -457,7 +506,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Wird von Profisportlern und Physios auf Social Media massiv beworben. Liefert ab.",
-        verdict: "Ein professionelles Tool für Sportler. Die Power ist enorm und hilft wirklich bei Muskelkater. Für Gelegenheitsnutzer tut es wahrscheinlich auch ein halb so teures Modell."
+        verdict: "Ein professionelles Tool für Sportler. Die Power ist enorm und hilft wirklich bei Muskelkater. Für Gelegenheitsnutzer tut es wahrscheinlich auch ein halb so teures Modell.",
+        perfectFor: "Leistungssportler, Fitness-Gänger und Leute mit starken Verspannungen im Nacken.",
+        notFor: "Personen, die sehr schmerzempfindlich sind (das Gerät hat ordentlich Wumms).",
+        testerQuote: "Mitchs Fazit: Nach dem Leg-Day ist das Teil mein Lebensretter. Es dringt so tief ins Gewebe ein, dass der Muskelkater am nächsten Tag nur halb so schlimm ist.",
+        hiddenFeature: "Es gibt einen eingebauten Drucksensor (LED-Ring), der anzeigt, wie viel Kraft man gerade auf den Muskel ausübt – sehr hilfreich für eine gleichmäßige Massage.",
+        alternatives: [
+            { id: "neckmassager", name: "Sanftes Nackenmassagegerät" }
+        ]
     },
     {
         id: "chopper",
@@ -475,7 +531,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Seit Monaten eines der meistgezeigten Küchengadgets auf TikTok. Ein echter Verkaufsschlager.",
-        verdict: "Ein echter Zeitsparer für alle, die viel frisch kochen oder Meal-Prep machen. Zwiebeln schneiden ohne Tränen funktioniert perfekt. Beim Reinigen der extrem scharfen Klingen muss man jedoch aufpassen."
+        verdict: "Ein echter Zeitsparer für alle, die viel frisch kochen oder Meal-Prep machen. Zwiebeln schneiden ohne Tränen funktioniert perfekt. Beim Reinigen der extrem scharfen Klingen muss man jedoch aufpassen.",
+        perfectFor: "Hobbyköche, Meal-Prep-Fans und alle, die Zwiebeln schneiden hassen.",
+        notFor: "Sehr weiches Gemüse wie überreife Tomaten (die werden eher zerquetscht).",
+        testerQuote: "Ollis Fazit: Ich koche wahnsinnig gerne, aber das Schnippeln nervt. Mit dem Fullstar habe ich für ein Chili con Carne die Paprika und Zwiebeln in exakt 20 Sekunden in perfekte Würfel geschnitten.",
+        hiddenFeature: "Der kleine beigelegte Plastik-Kamm sieht unscheinbar aus, ist aber Gold wert: Damit lassen sich Gemüsereste super einfach aus den Rillen des Press-Deckels kratzen.",
+        alternatives: [
+            { id: "airfryer", name: "Heißluftfritteuse für fettarmes Kochen" }
+        ]
     },
     {
         id: "sunsetlamp",
@@ -493,7 +556,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Die Deko-Lampe schlechthin auf TikTok und Pinterest für gemütliche Zimmer-Ästhetik.",
-        verdict: "Wer für wenig Geld eine schöne, warme Atmosphäre für Fotos oder gemütliche Abende sucht, macht hier nichts falsch. Das Gehäuse wird zwar etwas warm, aber der Lichteffekt ist genial."
+        verdict: "Wer für wenig Geld eine schöne, warme Atmosphäre für Fotos oder gemütliche Abende sucht, macht hier nichts falsch. Das Gehäuse wird zwar etwas warm, aber der Lichteffekt ist genial.",
+        perfectFor: "Teenager, Content-Creator und alle, die eine kuschelige Lese-Ecke einrichten wollen.",
+        notFor: "Menschen, die ein helles Hauptlicht zum Arbeiten oder Lesen am Schreibtisch suchen.",
+        testerQuote: "Kathas Fazit: Das Licht ist unfassbar schön. Ich schalte abends mein Hauptlicht aus und nur noch diese Lampe an. Der Raum sieht sofort aus wie in einem goldenen kalifornischen Sonnenuntergang.",
+        hiddenFeature: "Der Projektionskopf lässt sich abschrauben. Wenn man ihn ohne die Linse verwendet, hat man einen coolen RGB-Spot für Partys.",
+        alternatives: [
+            { id: "floorlamp", name: "Klassische Stehlampe (für mehr Helligkeit)" }
+        ]
     },
     {
         id: "miniprojector",
@@ -511,7 +581,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 2,
         hypeComment: "Geht auf TikTok extrem viral, aber der Hype ist stark übertrieben.",
-        verdict: "Für unter 80 Euro ein nettes Spielzeug, mehr aber auch nicht. Wer echtes Heimkino-Feeling erwartet, wird schwer enttäuscht. Die Helligkeit und der laute Lüfter machen Filmabende eher anstrengend."
+        verdict: "Für unter 80 Euro ein nettes Spielzeug, mehr aber auch nicht. Wer echtes Heimkino-Feeling erwartet, wird schwer enttäuscht. Die Helligkeit und der laute Lüfter machen Filmabende eher anstrengend.",
+        perfectFor: "Studenten mit kleinem Budget, die abends im dunklen Zimmer YouTube-Videos schauen wollen.",
+        notFor: "Heimkino-Enthusiasten und Leute, die auch tagsüber etwas erkennen wollen.",
+        testerQuote: "Mels Fazit: Ich war ehrlich gesagt enttäuscht. Ja, das Ding kostet fast nichts und ist winzig, aber der Lüfter surrt wie eine Biene und die Farben wirken wahnsinnig blass. Für die Gartenlaube okay, fürs Wohnzimmer ein No-Go.",
+        hiddenFeature: "Man kann den Beamer über einen USB-Port auch direkt mit einer Powerbank betreiben (wenn sie genug Watt liefert) – ideal für laue Sommernächte im Zelt.",
+        alternatives: [
+            { id: "tvbacklight", name: "TV Backlight (für echtes Kino-Feeling beim Fernseher)" }
+        ]
     },
     {
         id: "walkingpad",
@@ -529,7 +606,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Der Retter für Homeoffice-Arbeiter auf Social Media, um die täglichen Schritte zu erreichen.",
-        verdict: "Das ideale Gadget, um der Inaktivität im Homeoffice entgegenzuwirken. Es passt perfekt unter Stehschreibtische und lässt sich danach unters Sofa schieben. Eine lohnende Investition in die Gesundheit."
+        verdict: "Das ideale Gadget, um der Inaktivität im Homeoffice entgegenzuwirken. Es passt perfekt unter Stehschreibtische und lässt sich danach unters Sofa schieben. Eine lohnende Investition in die Gesundheit.",
+        perfectFor: "Home-Office Worker mit Stehschreibtisch und alle, die im Winter nicht raus wollen.",
+        notFor: "Echte Läufer, die Joggen wollen (das Band geht nur bis max 6 km/h).",
+        testerQuote: "Mitchs Fazit: Ein Gamechanger! Ich gehe während langweiliger Team-Meetings jetzt locker 3-4 Kilometer. Die Konzentration bleibt oben und der Rücken schmerzt abends nicht mehr.",
+        hiddenFeature: "Das Laufband merkt sich eure durchschnittliche Schrittgeschwindigkeit und beschleunigt/bremst in bestimmten Modi automatisch, je nachdem, wo ihr auf dem Band lauft.",
+        alternatives: [
+            { id: "massagegun", name: "Massagepistole (für die Beine nach dem Laufen)" }
+        ]
     },
     {
         id: "sodastream",
@@ -547,7 +631,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Ein Klassiker in deutschen Haushalten, der den Alltag wirklich erleichtert.",
-        verdict: "Wer viel Sprudelwasser trinkt, spart sich mit dem SodaStream langfristig Geld und das Kistenschleppen. Das Plastikgehäuse wirkt zwar nicht übermäßig edel, tut aber absolut seinen Dienst."
+        verdict: "Wer viel Sprudelwasser trinkt, spart sich mit dem SodaStream langfristig Geld und das Kistenschleppen. Das Plastikgehäuse wirkt zwar nicht übermäßig edel, tut aber absolut seinen Dienst.",
+        perfectFor: "Familien, Vieltrinker und jeden, der im 4. Stock ohne Aufzug wohnt.",
+        notFor: "Menschen, die ausschließlich stilles Wasser trinken.",
+        testerQuote: "Ollis Fazit: Nie wieder Kisten schleppen! Der neue Quick-Connect Verschluss ist genial, weil man die Kartuschen nicht mehr umständlich einschrauben muss, sondern sie einfach einklickt.",
+        hiddenFeature: "Man kann Sirup direkt in die Flasche geben (nach dem Sprudeln!) und hat in Sekunden eigene Cola oder Limo ohne viel Plastikmüll.",
+        alternatives: [
+            { id: "waterbottle", name: "Isolierflasche für Sprudelwasser unterwegs" }
+        ]
     },
     {
         id: "vacuumsealer",
@@ -565,7 +656,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "In Koch-Communitys und für Grillmeister ein unverzichtbares Standardgerät.",
-        verdict: "Ein super verarbeitetes und verlässliches Gerät. Wer gerne vorkocht oder größere Mengen einfriert, spart hiermit viel Geld durch weniger weggeworfene Lebensmittel."
+        verdict: "Ein super verarbeitetes und verlässliches Gerät. Wer gerne vorkocht oder größere Mengen einfriert, spart hiermit viel Geld durch weniger weggeworfene Lebensmittel.",
+        perfectFor: "Meal-Prep-Fans, Grillmeister und Schnäppchenjäger beim Fleischeinkauf.",
+        notFor: "Single-Haushalte, die ohnehin jeden Tag frisch und in kleinen Mengen kochen.",
+        testerQuote: "Kathas Fazit: Ich vakuumiere damit immer das Grillfleisch für den Sommer ein. Es nimmt extrem wenig Platz im Gefrierschrank weg und hält Monate ohne Gefrierbrand.",
+        hiddenFeature: "Es gibt einen Schlauch-Anschluss, mit dem man die Luft aus speziellen Vakuum-Vorratsdosen ziehen kann – ideal für empfindliche Dinge wie Kekse oder Kaffee.",
+        alternatives: [
+            { id: "chopper", name: "Gemüseschneider (für Meal-Prep)" }
+        ]
     },
     {
         id: "labelprinter",
@@ -583,7 +681,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Ein absoluter Dauerbrenner in Pinterest- und TikTok-Videos zum Thema Küche organisieren.",
-        verdict: "Für alle Ordnungsfanatiker ein absolutes Must-Have. Die Handhabung ist spielend einfach und das Ergebnis sieht extrem professionell aus."
+        verdict: "Für alle Ordnungsfanatiker ein absolutes Must-Have. Die Handhabung ist spielend einfach und das Ergebnis sieht extrem professionell aus.",
+        perfectFor: "Ordnungsfanatiker, Scrapbooker und alle, die Vorratsdosen lieben.",
+        notFor: "Für den Druck von großen Paket-Etiketten (die Bänder sind schmal).",
+        testerQuote: "Mels Fazit: Ich habe nach dem Auspacken am ersten Tag meine halbe Wohnung beschriftet. Gewürze, Ladekabel, Briefkästen. Die App hat hunderte kleine Icons, das macht wahnsinnig Spaß.",
+        hiddenFeature: "Die Thermodruck-Etiketten sind überraschend wasserfest und überstehen auch einen Spülgang auf Gewürzgläsern ohne zu verschmieren.",
+        alternatives: [
+            { id: "retro_kodak", name: "Fotodrucker (für richtige Bilder)" }
+        ]
     },
     {
         id: "airpurifier",
@@ -601,7 +706,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Auf Social Media als Retter für Allergiker und Haustierbesitzer gefeiert.",
-        verdict: "Besonders für Allergiker oder Haushalte mit Haustieren eine lohnende Investition. Der smarte Automatikmodus funktioniert zuverlässig und spart Strom."
+        verdict: "Besonders für Allergiker oder Haushalte mit Haustieren eine lohnende Investition. Der smarte Automatikmodus funktioniert zuverlässig und spart Strom.",
+        perfectFor: "Allergiker, Haustierbesitzer und Leute in Wohnungen an vielbefahrenen Straßen.",
+        notFor: "Räume über 50qm (dafür fehlt dem kleinen Gerät die Power).",
+        testerQuote: "Mitchs Fazit: Als Hundehalter ist der Levoit Gold wert. Er saugt den feinen Staub förmlich aus der Luft und zeigt in der App genau an, wann die Luftqualität sinkt.",
+        hiddenFeature: "Man kann den Display-Ring oben am Gerät in der App komplett ausschalten, damit er nachts im Schlafzimmer nicht leuchtet.",
+        alternatives: [
+            { id: "diffuser", name: "Aromadiffuser (für Raumduft)" }
+        ]
     },
     {
         id: "tvbacklight",
@@ -619,7 +731,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Das ultimative Upgrade für Heimkino-Enthusiasten auf Instagram und Reddit.",
-        verdict: "Ein geniales Gadget, das Filmabende und Gaming-Sessions optisch extrem aufwertet. Die Kamera stört nach ein paar Tagen nicht mehr und der Lichteffekt ist fantastisch."
+        verdict: "Ein geniales Gadget, das Filmabende und Gaming-Sessions optisch extrem aufwertet. Die Kamera stört nach ein paar Tagen nicht mehr und der Lichteffekt ist fantastisch.",
+        perfectFor: "Gamer, Film-Fans und alle, die ihr Wohnzimmer in ein Heimkino verwandeln wollen.",
+        notFor: "Minimalisten, die sich an der kleinen Kamera oben auf dem Fernseher stören.",
+        testerQuote: "Ollis Fazit: Das wertet jeden Fernseher massiv auf! Filme wirken viel plastischer und beim Zocken zieht das Licht einen richtig ins Spiel. Die Kalibrierung dauert nur 5 Minuten.",
+        hiddenFeature: "Man kann in der App den Video-Modus auf 'Musik' umstellen, dann pulsieren die LEDs passend zum Takt des Filmsoundtracks oder bei Partys.",
+        alternatives: [
+            { id: "miniprojector", name: "Mini Beamer" }
+        ]
     },
     {
         id: "neckpillow",
@@ -637,7 +756,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 3,
         hypeComment: "Als Allheilmittel gegen Nackenschmerzen angepriesen, aber das ist zu pauschal.",
-        verdict: "Ein Kissen ist extrem subjektiv. Dieses Modell ist qualitativ hochwertig verarbeitet, aber für viele Nutzer schlichtweg zu fest. Wer weich liegen möchte, sollte sich definitiv nach Alternativen umsehen."
+        verdict: "Ein Kissen ist extrem subjektiv. Dieses Modell ist qualitativ hochwertig verarbeitet, aber für viele Nutzer schlichtweg zu fest. Wer weich liegen möchte, sollte sich definitiv nach Alternativen umsehen.",
+        perfectFor: "Reine Rückenschläfer, die eine harte, feste Unterlage für den Nacken bevorzugen.",
+        notFor: "Bauchschläfer und Menschen, die gerne in weiche Daunenkissen einsinken.",
+        testerQuote: "Kathas Fazit: Ich habe wirklich versucht, es zu mögen. Nach 3 Nächten hatte ich mehr Nackenschmerzen als vorher, weil es extrem hart ist. Für mich war das leider ein absoluter Fehlkauf.",
+        hiddenFeature: "Der Bezug besteht aus speziellen thermoregulierenden Mikrokapseln, die im Sommer tatsächlich extrem kühl bleiben.",
+        alternatives: [
+            { id: "massagegun", name: "Massagepistole (gegen echte Nackenschmerzen)" }
+        ]
     },
     {
         id: "powerbank",
@@ -655,7 +781,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Der unangefochtene Bestseller im Elektronik-Zubehör. Wird blind gekauft.",
-        verdict: "Ein extrem zuverlässiger Begleiter für Reisen, Festivals oder lange Unitage. Anker liefert gewohnt hohe Qualität zu einem sehr fairen Preis."
+        verdict: "Ein extrem zuverlässiger Begleiter für Reisen, Festivals oder lange Unitage. Anker liefert gewohnt hohe Qualität zu einem sehr fairen Preis.",
+        perfectFor: "Festival-Gänger, Reisende und Leute, deren Akku mittags schon auf 10% ist.",
+        notFor: "Leute, die eine federleichte Notfall-Batterie für die kleine Handtasche suchen.",
+        testerQuote: "Mels Fazit: Dieses Ding ist ein Ziegelstein – aber ein genialer! Auf einem 4-Tages-Festival habe ich mein iPhone jeden Tag geladen und die Powerbank hatte am Ende immer noch einen Balken übrig.",
+        hiddenFeature: "Wenn man die Taste gedrückt hält, aktiviert sich der 'Trickle-Charging'-Modus (grüne LED). Damit kann man Kopfhörer laden, ohne dass die Powerbank sich wegen zu geringem Stromverbrauch abschaltet.",
+        alternatives: [
+            { id: "chargingstation", name: "MagSafe Station (für zu Hause)" }
+        ]
     },
     {
         id: "floorlamp",
@@ -673,7 +806,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Das Standard-Gadget in fast jedem modernen Setup- und Raum-Makeover-Video.",
-        verdict: "Die perfekte Ecken-Beleuchtung für alle, die smarte Lichteffekte lieben. Sie ist unauffällig im Design, aber extrem effektvoll, sobald sie eingeschaltet wird."
+        verdict: "Die perfekte Ecken-Beleuchtung für alle, die smarte Lichteffekte lieben. Sie ist unauffällig im Design, aber extrem effektvoll, sobald sie eingeschaltet wird.",
+        perfectFor: "Gamer, Streamer und Leute, die bunte LED-Beleuchtung im Wohnzimmer mögen.",
+        notFor: "Als helle Leselampe neben dem Sofa (das Licht ist zu diffus).",
+        testerQuote: "Mitchs Fazit: Die Lampe sieht ausgeschaltet aus wie ein schwarzer Besenstiel, aber sobald sie an ist, ist der Farbverlauf an der Wand der Wahnsinn. Die App-Steuerung reagiert extrem schnell.",
+        hiddenFeature: "Die Lampe hat ein eingebautes Mikrofon. Im 'Party-Modus' reagiert sie auf Klatschen oder Musik und baut ein eigenes Lichtfeuerwerk auf.",
+        alternatives: [
+            { id: "sunsetlamp", name: "Sunset Projection Lamp" }
+        ]
     },
     {
         id: "keyfinder",
@@ -691,7 +831,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Ein beliebtes Geschenk für vergessliche Menschen und ein praktischer Alltagshelfer.",
-        verdict: "Ein tolles, verlässliches Gadget für alle, die öfter mal ihre Schlüssel oder Geldbörse verlegen. Für Android-Nutzer eine hervorragende AirTag-Alternative."
+        verdict: "Ein tolles, verlässliches Gadget für alle, die öfter mal ihre Schlüssel oder Geldbörse verlegen. Für Android-Nutzer eine hervorragende AirTag-Alternative.",
+        perfectFor: "Schusselköpfe, Reisende und Katzenbesitzer.",
+        notFor: "Leute im tiefsten Wald (es braucht andere Smartphones in der Nähe für die Ortung).",
+        testerQuote: "Ollis Fazit: Ich drücke morgens auf den Tile-Knopf in meiner App und mein Schlüssel piept. Ich habe dadurch in den letzten Monaten bestimmt 5 Stunden Zeit gespart, die ich sonst mit Suchen verbracht hätte.",
+        hiddenFeature: "Der Doppelklick auf das kleine Tile-Logo lässt das Smartphone klingeln – selbst wenn es komplett auf stumm geschaltet ist!",
+        alternatives: [
+            { id: "powerbank", name: "Powerbank (für das klingelnde Handy)" }
+        ]
     },
     {
         id: "bluetoothsender",
@@ -709,7 +856,14 @@ const PRODUCTS = [
         hypeScore: 3,
         realityScore: 2,
         hypeComment: "Wird oft als die ultimative Lösung für alte Anlagen verkauft.",
-        verdict: "Wer starke Nerven beim Einrichten hat, bekommt für wenig Geld eine solide Lösung zum Musikhören. Fürs Fernsehen (wegen der Verzögerung) raten wir aufgrund der Verbindungsabbrüche jedoch eher davon ab."
+        verdict: "Wer starke Nerven beim Einrichten hat, bekommt für wenig Geld eine solide Lösung zum Musikhören. Fürs Fernsehen (wegen der Verzögerung) raten wir aufgrund der Verbindungsabbrüche jedoch eher davon ab.",
+        perfectFor: "Bastler, die ihre 90er-Jahre Stereoanlage kabellos machen wollen.",
+        notFor: "Leute, die lippensynchrones Fernsehen erwarten oder keine Geduld beim Pairing haben.",
+        testerQuote: "Kathas Fazit: Um Spotify auf der alten Musikanlage in der Küche zu hören, reicht es völlig. Aber als ich abends im Bett mit Kopfhörern fernsehen wollte, war der Ton immer eine halbe Sekunde zu spät. Das nervt extrem.",
+        hiddenFeature: "Der Adapter lässt sich per Schieberegler von RX (Receiver) auf TX (Transmitter) umschalten. So kann man z.B. einen alten iPod an moderne Bluetooth-Kopfhörer senden lassen.",
+        alternatives: [
+            { id: "headphones", name: "Bluetooth-Kopfhörer" }
+        ]
     },
     {
         id: "neckmassager",
@@ -727,7 +881,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Wird oft in Wellness- und Entspannungs-Videos gezeigt. Die Bewertungen sind durchweg euphorisch.",
-        verdict: "Wer viel am Schreibtisch sitzt und mit Verspannungen zu kämpfen hat, spart sich mit diesem Gerät den einen oder anderen Physiotermin. Die Massagekraft ist beeindruckend."
+        verdict: "Wer viel am Schreibtisch sitzt und mit Verspannungen zu kämpfen hat, spart sich mit diesem Gerät den einen oder anderen Physiotermin. Die Massagekraft ist beeindruckend.",
+        perfectFor: "Büro-Arbeiter, LKW-Fahrer und alle mit chronischen Nackenverspannungen.",
+        notFor: "Leute, die eine flächendeckende, sanfte Rückenmassage erwarten (das Gerät arbeitet punktuell).",
+        testerQuote: "Mels Fazit: Nach 8 Stunden vorm Bildschirm ist das Ding mein Retter. Die Wärmefunktion in Kombination mit den harten Kugeln löst die Knoten in meinen Schultern viel besser als mein Freund es jemals könnte.",
+        hiddenFeature: "Man kann das Gerät auch super auf den Boden legen und die Wadenmuskulatur (z.B. nach dem Joggen) durchkneten lassen.",
+        alternatives: [
+            { id: "massagegun", name: "Massagepistole (für Sportler)" }
+        ]
     },
     {
         id: "resistancebands",
@@ -745,7 +906,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Der absolute Klassiker in jedem Home-Workout-Video. Günstig und effektiv.",
-        verdict: "Mehr Fitness für unter 10 Euro geht nicht. Sie sind reißfest und perfekt geeignet, um Übungen zu Hause ein bisschen anspruchsvoller zu gestalten."
+        verdict: "Mehr Fitness für unter 10 Euro geht nicht. Sie sind reißfest und perfekt geeignet, um Übungen zu Hause ein bisschen anspruchsvoller zu gestalten.",
+        perfectFor: "Home-Workout-Fans, Physiotherapie-Patienten und Leute, die auf Reisen fit bleiben wollen.",
+        notFor: "Bodybuilder, die mit 100 Kilo Bankdrücken machen wollen.",
+        testerQuote: "Mitchs Fazit: Für den Preis darf man nicht meckern. Ich nehme sie auf jeden Wochenendtrip mit. Man bekommt ein erstaunlich gutes Ganzkörper-Workout hin, wenn man weiß, wie man sie einsetzt.",
+        hiddenFeature: "Das schwarze (schwerste) Band ist so stark, dass man es auch nutzen kann, um Klimmzüge am Türrahmen zu erleichtern (als Unterstützung).",
+        alternatives: [
+            { id: "walkingpad", name: "Walking Pad für Cardio" }
+        ]
     },
     {
         id: "picnicblanket",
@@ -763,7 +931,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Ein Must-Have in jeder Sommer- und Outdoor-Kollektion auf Social Media.",
-        verdict: "Die perfekte Decke für Parkbesuche, Camping oder den Strand. Die wasserdichte Unterseite macht im Alltag den entscheidenden Unterschied aus."
+        verdict: "Die perfekte Decke für Parkbesuche, Camping oder den Strand. Die wasserdichte Unterseite macht im Alltag den entscheidenden Unterschied aus.",
+        perfectFor: "Familien mit Kindern, Festival-Gänger und Picknick-Fans.",
+        notFor: "Minimalisten mit ultraleichtem Gepäck (die Decke hat ein gewisses Packmaß).",
+        testerQuote: "Ollis Fazit: Endlich keine nassen Hosen mehr, wenn man sich morgens im Park auf den taufeuchten Rasen setzt. Das Einpacken erfordert nach dem ersten Ausklappen etwas Übung, aber das Klett-System hält super.",
+        hiddenFeature: "Die Fleeceschicht ist so dick, dass man die Decke im Auto auch mal als Notfall-Kuscheldecke für Beifahrer zweckentfremden kann.",
+        alternatives: [
+            { id: "waterbottle", name: "Isolierflasche fürs Picknick" }
+        ]
     },
     {
         id: "maehroboter",
@@ -781,7 +956,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Mähroboter sind auf Pinterest und Social Media momentan extrem gefragt – und das zurecht.",
-        verdict: "Für alle, die nie wieder selbst mähen wollen: Der Automower 430X ist sein Geld auf lange Sicht absolut wert. Ein echter Komfort-Gamechanger."
+        verdict: "Für alle, die nie wieder selbst mähen wollen: Der Automower 430X ist sein Geld auf lange Sicht absolut wert. Ein echter Komfort-Gamechanger.",
+        perfectFor: "Gartenbesitzer mit großen oder komplexen Flächen, die Technik lieben.",
+        notFor: "Kleine Reihenhausgärten (dafür ist der Roboter völlig überdimensioniert).",
+        testerQuote: "Kathas Fazit: Er fährt komplett geräuschlos und zieht sauber seine Bahnen. Sogar nachts stört er niemanden. Mein Rasen sah noch nie so dicht und grün aus wie seitdem der Roboter regelmäßig die Spitzen abschneidet.",
+        hiddenFeature: "Der Roboter hat einen eingebauten GPS-Diebstahlschutz. Sobald ihn jemand vom Grundstück trägt, schlägt er lauten Alarm und man kann ihn in der App auf einer Karte tracken.",
+        alternatives: [
+            { id: "vacuum", name: "Saugroboter für drinnen" }
+        ]
     },
     {
         id: "kopfhoerer",
@@ -799,7 +981,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Auf jeder 'beste Kopfhörer'-Liste ganz oben. Der Hype ist 100% gerechtfertigt.",
-        verdict: "Wenn du nur einen kabellosen Kopfhörer kaufst, dann diesen. Punkt. Die WH-1000XM5 sind in jeder Situation eine Klasse für sich."
+        verdict: "Wenn du nur einen kabellosen Kopfhörer kaufst, dann diesen. Punkt. Die WH-1000XM5 sind in jeder Situation eine Klasse für sich.",
+        perfectFor: "Vielflieger, Pendler und alle, die im Großraumbüro ihre Ruhe haben wollen.",
+        notFor: "Fitness-Gänger (dafür sind In-Ears besser geeignet) oder Leute, die extrem platzsparende Kopfhörer suchen.",
+        testerQuote: "Mitchs Fazit: Unglaublich, wie ruhig die Welt plötzlich ist, wenn man das Noise-Cancelling anwirft. Ich höre im Zug absolut nichts mehr vom Rattern. Der Bass drückt richtig schön, ohne zu übersteuern.",
+        hiddenFeature: "Die 'Speak-to-Chat'-Funktion pausiert die Musik automatisch, sobald man anfängt zu sprechen, und schaltet die Mikrofone auf Durchzug. Man muss die Kopfhörer an der Kasse also nicht abnehmen.",
+        alternatives: [
+            { id: "powerbank", name: "Powerbank für endlose Akkulaufzeit auf Reisen" }
+        ]
     },
     {
         id: "getraenkekuehlschrank",
@@ -817,7 +1006,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Getränkekühlschränke sind auf Pinterest und in Hausbar-Accounts gerade mega im Trend.",
-        verdict: "Ein echter Party-Booster und cooler Einrichtungsgegenstand für Küche oder Keller. Für Gastgeber ein absolutes Must-Have."
+        verdict: "Ein echter Party-Booster und cooler Einrichtungsgegenstand für Küche oder Keller. Für Gastgeber ein absolutes Must-Have.",
+        perfectFor: "Party-Gastgeber, Männer-Höhlen-Einrichter und WG-Küchen.",
+        notFor: "Schlafzimmer (das Kühlaggregat brummt hörbar).",
+        testerQuote: "Ollis Fazit: Wenn die Kumpels zum Fußballschauen kommen, ist das der absolute Hingucker. Kühles Bier direkt aus der stylischen Glastür greifen zu können, wertet den ganzen Raum auf.",
+        hiddenFeature: "Man kann die Regalböden einzeln in der Höhe verstellen, um auch große Sekt- oder Weinflaschen stehend zu lagern.",
+        alternatives: [
+            { id: "sodastream", name: "Wassersprudler" }
+        ]
     },
     {
         id: "lego",
@@ -871,7 +1067,14 @@ const PRODUCTS = [
         hypeScore: 3,
         realityScore: 5,
         hypeComment: "Unscheinbar, aber auf Amazon mit hunderten 5-Sterne-Bewertungen – ein echter Hidden Champion.",
-        verdict: "Wer Ordnung im Papierchaos braucht, wird diese Mappe lieben. Einfach, günstig, robust – und wirklich nützlich im Alltag."
+        verdict: "Wer Ordnung im Papierchaos braucht, wird diese Mappe lieben. Einfach, günstig, robust – und wirklich nützlich im Alltag.",
+        perfectFor: "Büroarbeiter, Studenten und Leute, die ihre Rechnungen endlich sortieren wollen.",
+        notFor: "Für den Transport von dicken Büchern oder Laptops.",
+        testerQuote: "Mels Fazit: Mein Schreibtisch war immer voll mit losen Zetteln. Diese simple Mappe hat mein Leben verändert. Die drei Klappen halten alles zusammen, ohne dass Papiere an der Seite rausrutschen.",
+        hiddenFeature: "Der Karton lässt sich super mit Filzstiften oder Stickern individualisieren, falls man für jedes Familienmitglied eine eigene Mappe anlegen will.",
+        alternatives: [
+            { id: "labelprinter", name: "Etikettendrucker (für noch mehr Ordnung)" }
+        ]
     },
     {
         id: "ventilator_brandson",
@@ -889,7 +1092,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Im Sommer einer der meistgekauften Ventilatoren auf Amazon Deutschland.",
-        verdict: "Für den Preis ein absolut solides Gerät. Wer einen leisen, effizienten Turmventilator ohne Schnickschnack sucht, macht mit Brandson nichts falsch."
+        verdict: "Für den Preis ein absolut solides Gerät. Wer einen leisen, effizienten Turmventilator ohne Schnickschnack sucht, macht mit Brandson nichts falsch.",
+        perfectFor: "Schlafzimmer, heiße Dachgeschosswohnungen und Home-Office-Tage im Hochsommer.",
+        notFor: "Smart-Home-Nerds, die alles über ihr Handy steuern wollen.",
+        testerQuote: "Mitchs Fazit: An heißen Tagen läuft der bei mir durchgehend. Der Timer ist genial fürs Schlafzimmer: Ich stelle ihn auf 2 Stunden, schlafe entspannt bei der leichten Brise ein und er schaltet sich von selbst ab.",
+        hiddenFeature: "Die Fernbedienung hat auf der Rückseite des Ventilators ein kleines, unscheinbares Geheimfach, damit man sie im Winter nicht verliert.",
+        alternatives: [
+            { id: "ventilator_philips", name: "Philips Turmventilator (mit Luftreiniger)" }
+        ]
     },
     {
         id: "ventilator_philips",
@@ -907,7 +1117,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Auf Pinterest und in Interior-Accounts als Premium-Wohnzimmer-Gadget gehyped – völlig zu recht.",
-        verdict: "Wer in saubere Luft und Komfort investieren möchte, bekommt mit dem Philips 7000 ein Gerät, das in jeder Hinsicht überzeugt. Premium-Kauf, der sich täglich auszahlt."
+        verdict: "Wer in saubere Luft und Komfort investieren möchte, bekommt mit dem Philips 7000 ein Gerät, das in jeder Hinsicht überzeugt. Premium-Kauf, der sich täglich auszahlt.",
+        perfectFor: "Allergiker, Design-Liebhaber und Smart-Home-Fans.",
+        notFor: "Studis mit extrem knappem Budget.",
+        testerQuote: "Ollis Fazit: Das Design ohne klassische Rotorblätter sieht aus wie aus der Zukunft. Im Automatikmodus merkt er sofort, wenn beim Kochen Rauch in der Luft liegt und dreht kurz hoch. Der Luftreiniger ist ein echter Mehrwert.",
+        hiddenFeature: "In der App kann man historische Daten zur Luftqualität im Raum abrufen und analysieren, zu welchen Tageszeiten (oder beim Kochen) die Feinstaubbelastung am höchsten war.",
+        alternatives: [
+            { id: "airpurifier", name: "Reiner Luftreiniger (ohne Kühlung)" }
+        ]
     },
     {
         id: "funko_mandalorian",
@@ -925,7 +1142,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Beliebtester Funko Pop auf Pinterest und Instagram.",
-        verdict: "Egal ob als Sammlerstück oder kleines Geschenk – mit The Child und Mando macht man nie etwas falsch. Sieht toll aus und macht gute Laune."
+        verdict: "Egal ob als Sammlerstück oder kleines Geschenk – mit The Child und Mando macht man nie etwas falsch. Sieht toll aus und macht gute Laune.",
+        perfectFor: "Star Wars Fans, Schreibtisch-Dekorateure und Funko-Sammler.",
+        notFor: "Leute, die minimalistische Einrichtungen ohne Deko bevorzugen.",
+        testerQuote: "Kathas Fazit: Grogu ist einfach unfassbar niedlich! Die beiden stehen bei mir direkt neben dem Monitor und zaubern mir an stressigen Arbeitstagen immer ein Lächeln ins Gesicht.",
+        hiddenFeature: "Der kleine Grogu (The Child) ist nicht fest mit Mando verbunden und kann frei positioniert werden.",
+        alternatives: [
+            { id: "ultimate_grogu", name: "Grogu in Lebensgröße" }
+        ]
     },
     {
         id: "lego_clone_trooper",
@@ -961,7 +1185,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 4,
         hypeComment: "Besonders vor großen Turnieren ein absoluter Renner.",
-        verdict: "Eine tolle Edition für Sammler und Fans, die Monopoly lieben und auf Fußball stehen."
+        verdict: "Eine tolle Edition für Sammler und Fans, die Monopoly lieben und auf Fußball stehen.",
+        perfectFor: "Fußballverrückte Familien und als Geschenk für Kids im Panini-Sammel-Fieber.",
+        notFor: "Strenge Monopoly-Puristen, die keine Regeländerungen mögen.",
+        testerQuote: "Mels Fazit: Statt Schlossallee kauft man hier Mbappé! Die Kombination aus klassischem Verhandeln und dem Sammeln der Prizm-Karten hat in unserer Runde für richtig laute Lacher gesorgt.",
+        hiddenFeature: "Das Spiel enthält exklusive Panini Prizm Karten, die Sammler sogar separat tauschen oder wertsteigernd aufbewahren könnten.",
+        alternatives: [
+            { id: "messi_lego", name: "Messi LEGO Set" }
+        ]
     },
     {
         id: "lego_razor_crest",
@@ -997,7 +1228,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Geht als Geschenkidee auf Social Media regelmäßig viral.",
-        verdict: "Wer Grogu liebt, braucht diese Figur. Sie ist nicht nur ein Spielzeug, sondern ein fantastisches Sammlerstück, das jeden Schreibtisch oder jedes Wohnzimmer aufwertet."
+        verdict: "Wer Grogu liebt, braucht diese Figur. Sie ist nicht nur ein Spielzeug, sondern ein fantastisches Sammlerstück, das jeden Schreibtisch oder jedes Wohnzimmer aufwertet.",
+        perfectFor: "Hardcore Star Wars Fans und alle, die eine Schwäche für süße Aliens haben.",
+        notFor: "Kleine Kinder, die eher ein weiches Kuscheltier zum Schlafen suchen (die Mechanik ist hart).",
+        testerQuote: "Ollis Fazit: Als er zum ersten Mal geblinzelt und die Ohren bewegt hat, bin ich fast vom Stuhl gefallen. Er wirkt so lebendig! Die Sounds aus der Serie sind perfekt getroffen.",
+        hiddenFeature: "Wenn man ihn drei Mal sanft auf den Kopf tippt, aktiviert er die 'Macht' und hebt beide Arme mit dem typischen Soundeffekt.",
+        alternatives: [
+            { id: "funko_mandalorian", name: "Funko POP (für den kleinen Geldbeutel)" }
+        ]
     }
 ];
 
