@@ -55,7 +55,7 @@ const PRODUCTS = [
         verdict: "Die beste Sofortbildkamera auf dem Markt.",
         perfectFor: "Party-Gänger, Hochzeiten und Scrapbook-Fans.",
         notFor: "Profis, die perfekte Bildschärfe und hohe Auflösung erwarten.",
-        testerQuote: "Kathas Fazit: Ich liebe den Look der Kamera! Sie sieht nicht nur schick aus, sondern rettet jede Party. Dass man die Fotos vorher auf dem Handy aussuchen kann, spart extrem viel teuren Film.",
+        testerQuote: "Ollis Fazit: Ich liebe den Look der Kamera! Sie sieht nicht nur schick aus, sondern rettet jede Party. Dass man die Fotos vorher auf dem Handy aussuchen kann, spart extrem viel teuren Film.",
         hiddenFeature: "Der Selfie-Modus eignet sich auch extrem gut für Makro-Aufnahmen (z.B. von Blumen oder Essen). Probier es aus!",
         alternatives: [
             { id: "retro_polaroid", name: "Polaroid Now+ Gen 2" },
@@ -112,7 +112,7 @@ const PRODUCTS = [
         verdict: "Teuer, aber optisch jeden Cent wert.",
         perfectFor: "Design-Liebhaber mit offenen Küchen, in denen Geräte gesehen werden wollen.",
         notFor: "Schnäppchenjäger, die einfach nur ihr Toastbrot warm machen wollen.",
-        testerQuote: "Kathas Fazit: Ja, der Preis ist hoch für einen Toaster. Aber er ist wirklich jeden Morgen ein Highlight in meiner Küche. Außerdem bräunt er überraschend gleichmäßig!",
+        testerQuote: "Ollis Fazit: Ja, der Preis ist hoch für einen Toaster. Aber er ist wirklich jeden Morgen ein Highlight in meiner Küche. Außerdem bräunt er überraschend gleichmäßig!",
         hiddenFeature: "Die Bagel-Funktion (Knopf mit dem Bagel-Symbol) röstet das Brötchen nur auf einer Seite an – perfekt für richtig gute, fluffige Burger-Buns!",
         alternatives: [
             { id: "retro_bialetti", name: "Bialetti Espressokocher" }
@@ -168,7 +168,7 @@ const PRODUCTS = [
         verdict: "Ein Muss für jeden Haushalt und Kaffee-Liebhaber.",
         perfectFor: "Kaffee-Puristen, Studenten und Liebhaber der italienischen Kultur.",
         notFor: "Leute, die morgens per Knopfdruck in 5 Sekunden ihren Kaffee wollen.",
-        testerQuote: "Mels Fazit: Ich benutze meine Bialetti jeden Morgen. Es ist ein Ritual, das mich runterbringt. Der Kaffee schmeckt einfach ehrlicher und kräftiger als aus jeder Maschine.",
+        testerQuote: "Ollis Fazit: Ich benutze meine Bialetti jeden Morgen. Es ist ein Ritual, das mich runterbringt. Der Kaffee schmeckt einfach ehrlicher und kräftiger als aus jeder Maschine.",
         hiddenFeature: "Niemals mit Spüli waschen! Die Kanne baut über die Zeit eine dünne Schicht an Kaffeeölen (Patina) auf, die das Aluminium versiegelt und den Kaffee erst richtig gut macht.",
         alternatives: [
             { id: "retro_smeg", name: "Smeg Toaster (fürs Frühstück)" }
@@ -196,7 +196,7 @@ const PRODUCTS = [
         verdict: "Macht Home-Office und Gaming sofort stylischer.",
         perfectFor: "Home-Office Worker und Gamer, die das klassische Tipp-Gefühl und 'Thock'-Sound lieben.",
         notFor: "Leute in extrem ruhigen Großraumbüros (die Tastatur ist hörbar!).",
-        testerQuote: "Mitchs Fazit: Das Tippen auf dieser Tastatur macht fast schon süchtig. Die RGB-Beleuchtung sieht im Dunkeln fantastisch aus, und das Retro-Farbschema der Keycaps ist genau mein Ding.",
+        testerQuote: "Ollis Fazit: Das Tippen auf dieser Tastatur macht fast schon süchtig. Die RGB-Beleuchtung sieht im Dunkeln fantastisch aus, und das Retro-Farbschema der Keycaps ist genau mein Ding.",
         hiddenFeature: "Die Tastatur ist 'Hot-Swappable'. Das bedeutet, man kann kaputte Schalter in Sekunden selbst mit dem mitgelieferten Tool herausziehen und austauschen, ohne löten zu müssen.",
         alternatives: [
             { id: "retro_edison", name: "Vintage Desk Lamp" }
@@ -224,7 +224,7 @@ const PRODUCTS = [
         verdict: "Perfekt, um Gemütlichkeit ins Zimmer zu bringen.",
         perfectFor: "Gemütliche Wohnzimmer, offene Lampenfassungen und Industrial-Design Fans.",
         notFor: "Als helle Arbeitsbeleuchtung am Schreibtisch.",
-        testerQuote: "Mels Fazit: Ich habe diese Birnen über meinem Esstisch hängen. Sie blenden nicht und geben dem Raum sofort diese warme, gemütliche Café-Atmosphäre.",
+        testerQuote: "Ollis Fazit: Ich habe diese Birnen über meinem Esstisch hängen. Sie blenden nicht und geben dem Raum sofort diese warme, gemütliche Café-Atmosphäre.",
         hiddenFeature: "Wenn man einen günstigen Dimmer-Stecker (für die Steckdose) dazwischen schaltet, kann man die Leuchtfäden extrem weit runterdimmen, bis sie nur noch wie tiefrotes Bernstein glühen.",
         alternatives: [
             { id: "retro_marshall", name: "Marshall Acton III" }
@@ -252,7 +252,7 @@ const PRODUCTS = [
         verdict: "Ein tolles Party-Gadget für echte Nostalgiker.",
         perfectFor: "Nostalgiker und Fans des klassischen, großen quadratischen Polaroid-Looks.",
         notFor: "Leute, die möglichst günstig viele Fotos drucken wollen (Filme sind teuer).",
-        testerQuote: "Mitchs Fazit: Die Farben sind unberechenbar und genau das macht den Charme aus. Die Bilder sehen aus, als kämen sie direkt aus den 70ern. Die Bluetooth-App ist eine geniale Ergänzung für Light-Painting.",
+        testerQuote: "Ollis Fazit: Die Farben sind unberechenbar und genau das macht den Charme aus. Die Bilder sehen aus, als kämen sie direkt aus den 70ern. Die Bluetooth-App ist eine geniale Ergänzung für Light-Painting.",
         hiddenFeature: "Geheimtipp der Profis: Filme im Kühlschrank lagern! Das hält die Chemikalien frisch. Beim Entwickeln das Foto für 15 Minuten in die dunkle Hosentasche stecken (Wärme sorgt für sattere Farben).",
         alternatives: [
             { id: "retro_instax", name: "Fujifilm Instax Mini" },
@@ -281,7 +281,7 @@ const PRODUCTS = [
         verdict: "Praktisch, stylisch und eine geniale Geschenkidee.",
         perfectFor: "Handy-Fotografen, die ihre Lieblings-Schnappschüsse direkt am Kühlschrank haben wollen.",
         notFor: "Leute, die große Poster-Ausdrucke suchen.",
-        testerQuote: "Kathas Fazit: Ich liebe diesen kleinen Drucker! Es ist faszinierend zuzusehen, wie er das Papier viermal einzieht und dabei jede Farbschicht einzeln aufträgt. Die Qualität ist für die Größe überragend.",
+        testerQuote: "Ollis Fazit: Ich liebe diesen kleinen Drucker! Es ist faszinierend zuzusehen, wie er das Papier viermal einzieht und dabei jede Farbschicht einzeln aufträgt. Die Qualität ist für die Größe überragend.",
         hiddenFeature: "Das verwendete 4-Pass-Druckverfahren überzieht die Fotos im letzten Durchgang mit einer klaren Schutzschicht. Dadurch sind die Bilder komplett wasserfest, wischfest und bleichen nicht aus!",
         alternatives: [
             { id: "retro_instax", name: "Fujifilm Instax Mini" }
@@ -334,7 +334,7 @@ const PRODUCTS = [
         verdict: "Wer Platz in der Küche hat und knusprige Pommes oder Gemüse ohne Fettgeruch möchte: Ein absoluter Kauftipp. Für sehr kleine Küchen aber fast schon zu wuchtig.",
         perfectFor: "Familien, Meal-Prep-Fans und alle, die Pommes ohne schlechtes Gewissen essen wollen.",
         notFor: "Menschen mit extrem kleinen Single-Küchen ohne freie Arbeitsfläche.",
-        testerQuote: "Ollis Fazit: Ich benutze meinen Backofen kaum noch. Lachs, Gemüse, Pommes – alles wird in der Cosori in der halben Zeit perfekt knusprig. Die 5,5 Liter sind ideal, um zwei Portionen auf einmal zu machen.",
+        testerQuote: "Mitchs Fazit: Ich benutze meinen Backofen kaum noch. Lachs, Gemüse, Pommes – alles wird in der Cosori in der halben Zeit perfekt knusprig. Die 5,5 Liter sind ideal, um zwei Portionen auf einmal zu machen.",
         hiddenFeature: "Man kann sogar Muffins und kleine Kuchen darin backen! Die Heißluft-Zirkulation funktioniert wie bei einem professionellen Konvektomat.",
         alternatives: [
             { id: "chopper", name: "Gemüseschneider für schnelle Vorbereitung" }
@@ -384,7 +384,7 @@ const PRODUCTS = [
         verdict: "Die ungeschlagene Referenz für laute Büros oder Bahnfahrten. Der Klang ist warm und das ANC blockt fast alles ab. Der Nachfolger XM5 ist zwar neuer, aber der XM4 lässt sich besser zusammenklappen.",
         perfectFor: "Pendler, Vielreisende und alle, die im Großraumbüro ihre Ruhe brauchen.",
         notFor: "Fürs Joggen oder intensive Workouts (dafür sind In-Ears besser geeignet).",
-        testerQuote: "Mels Fazit: Ich setze sie auf, schalte das ANC an und die Welt ist stumm. Es ist magisch. Egal ob schreiende Kinder im Zug oder telefonierende Kollegen – ich höre nichts mehr außer meiner Playlist.",
+        testerQuote: "Mitchs Fazit: Ich setze sie auf, schalte das ANC an und die Welt ist stumm. Es ist magisch. Egal ob schreiende Kinder im Zug oder telefonierende Kollegen – ich höre nichts mehr außer meiner Playlist.",
         hiddenFeature: "Wenn du kurz mit jemandem sprechen musst, lege einfach deine flache Hand auf die rechte Ohrmuschel. Die Musik wird extrem leise und die Mikrofone verstärken die Stimme deines Gegenübers.",
         alternatives: [
             { id: "neckpillow", name: "Reisekissen für Langstreckenflüge" }
@@ -409,7 +409,7 @@ const PRODUCTS = [
         verdict: "Eine der besten Thermosflaschen auf dem Markt. Hält Getränke wirklich den ganzen Tag eiskalt. Nur wer sie mit Säften befüllt, muss beim Reinigen des engen Halses etwas Geduld haben.",
         perfectFor: "Sportler, Büro-Arbeiter und alle, die ihr Wasser im Sommer eiskalt mögen.",
         notFor: "Leute, die ultraleichtes Gepäck für extreme Wanderungen packen.",
-        testerQuote: "Mitchs Fazit: Ich habe die Flasche im Hochsommer bei 35 Grad im Auto vergessen. Als ich wiederkam, war das Wasser darin immer noch so eisig, dass die Flasche von außen beschlagen ist. Wahnsinn!",
+        testerQuote: "Mels Fazit: Ich habe die Flasche im Hochsommer bei 35 Grad im Auto vergessen. Als ich wiederkam, war das Wasser darin immer noch so eisig, dass die Flasche von außen beschlagen ist. Wahnsinn!",
         hiddenFeature: "Die Flasche ist so gut isoliert, dass man auch heißen Tee für den Winterspaziergang einfüllen kann – er bleibt über 12 Stunden dampfend heiß.",
         alternatives: [
             { id: "massagegun", name: "Massagepistole zur Regeneration nach dem Sport" }
@@ -434,7 +434,7 @@ const PRODUCTS = [
         verdict: "Eine der besten Investitionen für ein sauberes Zuhause. Die All-in-One-Station nimmt einem fast alle Arbeit ab. Man sollte vor dem Kauf nur prüfen, ob man genug Platz für die wuchtige Station hat.",
         perfectFor: "Haustierbesitzer und Leute, die das Saugen und Wischen komplett auslagern wollen.",
         notFor: "Wohnungen mit extrem vielen hohen Türschwellen (über 2cm).",
-        testerQuote: "Ollis Fazit: Ich habe meinen normalen Staubsauger seit Monaten nicht mehr angefasst. Die Wischfunktion mit den rotierenden Pads schrubbt sogar angetrocknete Flecken weg. Wahnsinn!",
+        testerQuote: "Kathas Fazit: Ich habe meinen normalen Staubsauger seit Monaten nicht mehr angefasst. Die Wischfunktion mit den rotierenden Pads schrubbt sogar angetrocknete Flecken weg. Wahnsinn!",
         hiddenFeature: "In der App kann man die Feuchtigkeit der Wischpads pro Raum einstellen – z.B. feuchter für Fliesen im Bad und sehr trocken für empfindliches Parkett.",
         alternatives: [
             { id: "airpurifier", name: "Luftreiniger für eine rundum saubere Wohnung" }
@@ -484,7 +484,7 @@ const PRODUCTS = [
         verdict: "Die perfekte Ladestation für Apple-Nutzer. Sie räumt den Nachttisch auf und macht Schluss mit dem Kabelsalat. Teuer, aber die Verarbeitungsqualität aus Aluminium rechtfertigt den Preis.",
         perfectFor: "Apple-Nutzer mit iPhone, Watch und AirPods, die Ordnung auf dem Nachttisch wollen.",
         notFor: "Android-Nutzer (die MagSafe-Magneten greifen hier nicht).",
-        testerQuote: "Mels Fazit: Ich hasse Kabelgewirr auf dem Nachttisch. Dieser kleine Würfel sieht so clean aus und lädt alle drei Geräte gleichzeitig und schnell auf. Auch super zum Verreisen!",
+        testerQuote: "Mitchs Fazit: Ich hasse Kabelgewirr auf dem Nachttisch. Dieser kleine Würfel sieht so clean aus und lädt alle drei Geräte gleichzeitig und schnell auf. Auch super zum Verreisen!",
         hiddenFeature: "Der Apple-Watch-Ladepuck lässt sich einklappen, wenn man nur das Handy lädt – so wird der Würfel noch minimalistischer.",
         alternatives: [
             { id: "powerbank", name: "Kompakte Powerbank für unterwegs" }
@@ -509,7 +509,7 @@ const PRODUCTS = [
         verdict: "Ein professionelles Tool für Sportler. Die Power ist enorm und hilft wirklich bei Muskelkater. Für Gelegenheitsnutzer tut es wahrscheinlich auch ein halb so teures Modell.",
         perfectFor: "Leistungssportler, Fitness-Gänger und Leute mit starken Verspannungen im Nacken.",
         notFor: "Personen, die sehr schmerzempfindlich sind (das Gerät hat ordentlich Wumms).",
-        testerQuote: "Mitchs Fazit: Nach dem Leg-Day ist das Teil mein Lebensretter. Es dringt so tief ins Gewebe ein, dass der Muskelkater am nächsten Tag nur halb so schlimm ist.",
+        testerQuote: "Mels Fazit: Nach dem Leg-Day ist das Teil mein Lebensretter. Es dringt so tief ins Gewebe ein, dass der Muskelkater am nächsten Tag nur halb so schlimm ist.",
         hiddenFeature: "Es gibt einen eingebauten Drucksensor (LED-Ring), der anzeigt, wie viel Kraft man gerade auf den Muskel ausübt – sehr hilfreich für eine gleichmäßige Massage.",
         alternatives: [
             { id: "neckmassager", name: "Sanftes Nackenmassagegerät" }
@@ -534,7 +534,7 @@ const PRODUCTS = [
         verdict: "Ein echter Zeitsparer für alle, die viel frisch kochen oder Meal-Prep machen. Zwiebeln schneiden ohne Tränen funktioniert perfekt. Beim Reinigen der extrem scharfen Klingen muss man jedoch aufpassen.",
         perfectFor: "Hobbyköche, Meal-Prep-Fans und alle, die Zwiebeln schneiden hassen.",
         notFor: "Sehr weiches Gemüse wie überreife Tomaten (die werden eher zerquetscht).",
-        testerQuote: "Ollis Fazit: Ich koche wahnsinnig gerne, aber das Schnippeln nervt. Mit dem Fullstar habe ich für ein Chili con Carne die Paprika und Zwiebeln in exakt 20 Sekunden in perfekte Würfel geschnitten.",
+        testerQuote: "Kathas Fazit: Ich koche wahnsinnig gerne, aber das Schnippeln nervt. Mit dem Fullstar habe ich für ein Chili con Carne die Paprika und Zwiebeln in exakt 20 Sekunden in perfekte Würfel geschnitten.",
         hiddenFeature: "Der kleine beigelegte Plastik-Kamm sieht unscheinbar aus, ist aber Gold wert: Damit lassen sich Gemüsereste super einfach aus den Rillen des Press-Deckels kratzen.",
         alternatives: [
             { id: "airfryer", name: "Heißluftfritteuse für fettarmes Kochen" }
@@ -584,7 +584,7 @@ const PRODUCTS = [
         verdict: "Für unter 80 Euro ein nettes Spielzeug, mehr aber auch nicht. Wer echtes Heimkino-Feeling erwartet, wird schwer enttäuscht. Die Helligkeit und der laute Lüfter machen Filmabende eher anstrengend.",
         perfectFor: "Studenten mit kleinem Budget, die abends im dunklen Zimmer YouTube-Videos schauen wollen.",
         notFor: "Heimkino-Enthusiasten und Leute, die auch tagsüber etwas erkennen wollen.",
-        testerQuote: "Mels Fazit: Ich war ehrlich gesagt enttäuscht. Ja, das Ding kostet fast nichts und ist winzig, aber der Lüfter surrt wie eine Biene und die Farben wirken wahnsinnig blass. Für die Gartenlaube okay, fürs Wohnzimmer ein No-Go.",
+        testerQuote: "Mitchs Fazit: Ich war ehrlich gesagt enttäuscht. Ja, das Ding kostet fast nichts und ist winzig, aber der Lüfter surrt wie eine Biene und die Farben wirken wahnsinnig blass. Für die Gartenlaube okay, fürs Wohnzimmer ein No-Go.",
         hiddenFeature: "Man kann den Beamer über einen USB-Port auch direkt mit einer Powerbank betreiben (wenn sie genug Watt liefert) – ideal für laue Sommernächte im Zelt.",
         alternatives: [
             { id: "tvbacklight", name: "TV Backlight (für echtes Kino-Feeling beim Fernseher)" }
@@ -609,7 +609,7 @@ const PRODUCTS = [
         verdict: "Das ideale Gadget, um der Inaktivität im Homeoffice entgegenzuwirken. Es passt perfekt unter Stehschreibtische und lässt sich danach unters Sofa schieben. Eine lohnende Investition in die Gesundheit.",
         perfectFor: "Home-Office Worker mit Stehschreibtisch und alle, die im Winter nicht raus wollen.",
         notFor: "Echte Läufer, die Joggen wollen (das Band geht nur bis max 6 km/h).",
-        testerQuote: "Mitchs Fazit: Ein Gamechanger! Ich gehe während langweiliger Team-Meetings jetzt locker 3-4 Kilometer. Die Konzentration bleibt oben und der Rücken schmerzt abends nicht mehr.",
+        testerQuote: "Mels Fazit: Ein Gamechanger! Ich gehe während langweiliger Team-Meetings jetzt locker 3-4 Kilometer. Die Konzentration bleibt oben und der Rücken schmerzt abends nicht mehr.",
         hiddenFeature: "Das Laufband merkt sich eure durchschnittliche Schrittgeschwindigkeit und beschleunigt/bremst in bestimmten Modi automatisch, je nachdem, wo ihr auf dem Band lauft.",
         alternatives: [
             { id: "massagegun", name: "Massagepistole (für die Beine nach dem Laufen)" }
@@ -634,7 +634,7 @@ const PRODUCTS = [
         verdict: "Wer viel Sprudelwasser trinkt, spart sich mit dem SodaStream langfristig Geld und das Kistenschleppen. Das Plastikgehäuse wirkt zwar nicht übermäßig edel, tut aber absolut seinen Dienst.",
         perfectFor: "Familien, Vieltrinker und jeden, der im 4. Stock ohne Aufzug wohnt.",
         notFor: "Menschen, die ausschließlich stilles Wasser trinken.",
-        testerQuote: "Ollis Fazit: Nie wieder Kisten schleppen! Der neue Quick-Connect Verschluss ist genial, weil man die Kartuschen nicht mehr umständlich einschrauben muss, sondern sie einfach einklickt.",
+        testerQuote: "Kathas Fazit: Nie wieder Kisten schleppen! Der neue Quick-Connect Verschluss ist genial, weil man die Kartuschen nicht mehr umständlich einschrauben muss, sondern sie einfach einklickt.",
         hiddenFeature: "Man kann Sirup direkt in die Flasche geben (nach dem Sprudeln!) und hat in Sekunden eigene Cola oder Limo ohne viel Plastikmüll.",
         alternatives: [
             { id: "waterbottle", name: "Isolierflasche für Sprudelwasser unterwegs" }
@@ -684,7 +684,7 @@ const PRODUCTS = [
         verdict: "Für alle Ordnungsfanatiker ein absolutes Must-Have. Die Handhabung ist spielend einfach und das Ergebnis sieht extrem professionell aus.",
         perfectFor: "Ordnungsfanatiker, Scrapbooker und alle, die Vorratsdosen lieben.",
         notFor: "Für den Druck von großen Paket-Etiketten (die Bänder sind schmal).",
-        testerQuote: "Mels Fazit: Ich habe nach dem Auspacken am ersten Tag meine halbe Wohnung beschriftet. Gewürze, Ladekabel, Briefkästen. Die App hat hunderte kleine Icons, das macht wahnsinnig Spaß.",
+        testerQuote: "Kathas Fazit: Ich habe nach dem Auspacken am ersten Tag meine halbe Wohnung beschriftet. Gewürze, Ladekabel, Briefkästen. Die App hat hunderte kleine Icons, das macht wahnsinnig Spaß.",
         hiddenFeature: "Die Thermodruck-Etiketten sind überraschend wasserfest und überstehen auch einen Spülgang auf Gewürzgläsern ohne zu verschmieren.",
         alternatives: [
             { id: "retro_kodak", name: "Fotodrucker (für richtige Bilder)" }
@@ -709,7 +709,7 @@ const PRODUCTS = [
         verdict: "Besonders für Allergiker oder Haushalte mit Haustieren eine lohnende Investition. Der smarte Automatikmodus funktioniert zuverlässig und spart Strom.",
         perfectFor: "Allergiker, Haustierbesitzer und Leute in Wohnungen an vielbefahrenen Straßen.",
         notFor: "Räume über 50qm (dafür fehlt dem kleinen Gerät die Power).",
-        testerQuote: "Mitchs Fazit: Als Hundehalter ist der Levoit Gold wert. Er saugt den feinen Staub förmlich aus der Luft und zeigt in der App genau an, wann die Luftqualität sinkt.",
+        testerQuote: "Kathas Fazit: Als Hundehalter ist der Levoit Gold wert. Er saugt den feinen Staub förmlich aus der Luft und zeigt in der App genau an, wann die Luftqualität sinkt.",
         hiddenFeature: "Man kann den Display-Ring oben am Gerät in der App komplett ausschalten, damit er nachts im Schlafzimmer nicht leuchtet.",
         alternatives: [
             { id: "diffuser", name: "Aromadiffuser (für Raumduft)" }
@@ -734,7 +734,7 @@ const PRODUCTS = [
         verdict: "Ein geniales Gadget, das Filmabende und Gaming-Sessions optisch extrem aufwertet. Die Kamera stört nach ein paar Tagen nicht mehr und der Lichteffekt ist fantastisch.",
         perfectFor: "Gamer, Film-Fans und alle, die ihr Wohnzimmer in ein Heimkino verwandeln wollen.",
         notFor: "Minimalisten, die sich an der kleinen Kamera oben auf dem Fernseher stören.",
-        testerQuote: "Ollis Fazit: Das wertet jeden Fernseher massiv auf! Filme wirken viel plastischer und beim Zocken zieht das Licht einen richtig ins Spiel. Die Kalibrierung dauert nur 5 Minuten.",
+        testerQuote: "Kathas Fazit: Das wertet jeden Fernseher massiv auf! Filme wirken viel plastischer und beim Zocken zieht das Licht einen richtig ins Spiel. Die Kalibrierung dauert nur 5 Minuten.",
         hiddenFeature: "Man kann in der App den Video-Modus auf 'Musik' umstellen, dann pulsieren die LEDs passend zum Takt des Filmsoundtracks oder bei Partys.",
         alternatives: [
             { id: "miniprojector", name: "Mini Beamer" }
@@ -784,7 +784,7 @@ const PRODUCTS = [
         verdict: "Ein extrem zuverlässiger Begleiter für Reisen, Festivals oder lange Unitage. Anker liefert gewohnt hohe Qualität zu einem sehr fairen Preis.",
         perfectFor: "Festival-Gänger, Reisende und Leute, deren Akku mittags schon auf 10% ist.",
         notFor: "Leute, die eine federleichte Notfall-Batterie für die kleine Handtasche suchen.",
-        testerQuote: "Mels Fazit: Dieses Ding ist ein Ziegelstein – aber ein genialer! Auf einem 4-Tages-Festival habe ich mein iPhone jeden Tag geladen und die Powerbank hatte am Ende immer noch einen Balken übrig.",
+        testerQuote: "Mitchs Fazit: Dieses Ding ist ein Ziegelstein – aber ein genialer! Auf einem 4-Tages-Festival habe ich mein iPhone jeden Tag geladen und die Powerbank hatte am Ende immer noch einen Balken übrig.",
         hiddenFeature: "Wenn man die Taste gedrückt hält, aktiviert sich der 'Trickle-Charging'-Modus (grüne LED). Damit kann man Kopfhörer laden, ohne dass die Powerbank sich wegen zu geringem Stromverbrauch abschaltet.",
         alternatives: [
             { id: "chargingstation", name: "MagSafe Station (für zu Hause)" }
@@ -834,7 +834,7 @@ const PRODUCTS = [
         verdict: "Ein tolles, verlässliches Gadget für alle, die öfter mal ihre Schlüssel oder Geldbörse verlegen. Für Android-Nutzer eine hervorragende AirTag-Alternative.",
         perfectFor: "Schusselköpfe, Reisende und Katzenbesitzer.",
         notFor: "Leute im tiefsten Wald (es braucht andere Smartphones in der Nähe für die Ortung).",
-        testerQuote: "Ollis Fazit: Ich drücke morgens auf den Tile-Knopf in meiner App und mein Schlüssel piept. Ich habe dadurch in den letzten Monaten bestimmt 5 Stunden Zeit gespart, die ich sonst mit Suchen verbracht hätte.",
+        testerQuote: "Mitchs Fazit: Ich drücke morgens auf den Tile-Knopf in meiner App und mein Schlüssel piept. Ich habe dadurch in den letzten Monaten bestimmt 5 Stunden Zeit gespart, die ich sonst mit Suchen verbracht hätte.",
         hiddenFeature: "Der Doppelklick auf das kleine Tile-Logo lässt das Smartphone klingeln – selbst wenn es komplett auf stumm geschaltet ist!",
         alternatives: [
             { id: "powerbank", name: "Powerbank (für das klingelnde Handy)" }
@@ -859,7 +859,7 @@ const PRODUCTS = [
         verdict: "Wer starke Nerven beim Einrichten hat, bekommt für wenig Geld eine solide Lösung zum Musikhören. Fürs Fernsehen (wegen der Verzögerung) raten wir aufgrund der Verbindungsabbrüche jedoch eher davon ab.",
         perfectFor: "Bastler, die ihre 90er-Jahre Stereoanlage kabellos machen wollen.",
         notFor: "Leute, die lippensynchrones Fernsehen erwarten oder keine Geduld beim Pairing haben.",
-        testerQuote: "Kathas Fazit: Um Spotify auf der alten Musikanlage in der Küche zu hören, reicht es völlig. Aber als ich abends im Bett mit Kopfhörern fernsehen wollte, war der Ton immer eine halbe Sekunde zu spät. Das nervt extrem.",
+        testerQuote: "Mitchs Fazit: Um Spotify auf der alten Musikanlage in der Küche zu hören, reicht es völlig. Aber als ich abends im Bett mit Kopfhörern fernsehen wollte, war der Ton immer eine halbe Sekunde zu spät. Das nervt extrem.",
         hiddenFeature: "Der Adapter lässt sich per Schieberegler von RX (Receiver) auf TX (Transmitter) umschalten. So kann man z.B. einen alten iPod an moderne Bluetooth-Kopfhörer senden lassen.",
         alternatives: [
             { id: "headphones", name: "Bluetooth-Kopfhörer" }
@@ -909,7 +909,7 @@ const PRODUCTS = [
         verdict: "Mehr Fitness für unter 10 Euro geht nicht. Sie sind reißfest und perfekt geeignet, um Übungen zu Hause ein bisschen anspruchsvoller zu gestalten.",
         perfectFor: "Home-Workout-Fans, Physiotherapie-Patienten und Leute, die auf Reisen fit bleiben wollen.",
         notFor: "Bodybuilder, die mit 100 Kilo Bankdrücken machen wollen.",
-        testerQuote: "Mitchs Fazit: Für den Preis darf man nicht meckern. Ich nehme sie auf jeden Wochenendtrip mit. Man bekommt ein erstaunlich gutes Ganzkörper-Workout hin, wenn man weiß, wie man sie einsetzt.",
+        testerQuote: "Mels Fazit: Für den Preis darf man nicht meckern. Ich nehme sie auf jeden Wochenendtrip mit. Man bekommt ein erstaunlich gutes Ganzkörper-Workout hin, wenn man weiß, wie man sie einsetzt.",
         hiddenFeature: "Das schwarze (schwerste) Band ist so stark, dass man es auch nutzen kann, um Klimmzüge am Türrahmen zu erleichtern (als Unterstützung).",
         alternatives: [
             { id: "walkingpad", name: "Walking Pad für Cardio" }
@@ -934,7 +934,7 @@ const PRODUCTS = [
         verdict: "Die perfekte Decke für Parkbesuche, Camping oder den Strand. Die wasserdichte Unterseite macht im Alltag den entscheidenden Unterschied aus.",
         perfectFor: "Familien mit Kindern, Festival-Gänger und Picknick-Fans.",
         notFor: "Minimalisten mit ultraleichtem Gepäck (die Decke hat ein gewisses Packmaß).",
-        testerQuote: "Ollis Fazit: Endlich keine nassen Hosen mehr, wenn man sich morgens im Park auf den taufeuchten Rasen setzt. Das Einpacken erfordert nach dem ersten Ausklappen etwas Übung, aber das Klett-System hält super.",
+        testerQuote: "Mels Fazit: Endlich keine nassen Hosen mehr, wenn man sich morgens im Park auf den taufeuchten Rasen setzt. Das Einpacken erfordert nach dem ersten Ausklappen etwas Übung, aber das Klett-System hält super.",
         hiddenFeature: "Die Fleeceschicht ist so dick, dass man die Decke im Auto auch mal als Notfall-Kuscheldecke für Beifahrer zweckentfremden kann.",
         alternatives: [
             { id: "waterbottle", name: "Isolierflasche fürs Picknick" }
@@ -959,7 +959,7 @@ const PRODUCTS = [
         verdict: "Für alle, die nie wieder selbst mähen wollen: Der Automower 430X ist sein Geld auf lange Sicht absolut wert. Ein echter Komfort-Gamechanger.",
         perfectFor: "Gartenbesitzer mit großen oder komplexen Flächen, die Technik lieben.",
         notFor: "Kleine Reihenhausgärten (dafür ist der Roboter völlig überdimensioniert).",
-        testerQuote: "Kathas Fazit: Er fährt komplett geräuschlos und zieht sauber seine Bahnen. Sogar nachts stört er niemanden. Mein Rasen sah noch nie so dicht und grün aus wie seitdem der Roboter regelmäßig die Spitzen abschneidet.",
+        testerQuote: "Ollis Fazit: Er fährt komplett geräuschlos und zieht sauber seine Bahnen. Sogar nachts stört er niemanden. Mein Rasen sah noch nie so dicht und grün aus wie seitdem der Roboter regelmäßig die Spitzen abschneidet.",
         hiddenFeature: "Der Roboter hat einen eingebauten GPS-Diebstahlschutz. Sobald ihn jemand vom Grundstück trägt, schlägt er lauten Alarm und man kann ihn in der App auf einer Karte tracken.",
         alternatives: [
             { id: "vacuum", name: "Saugroboter für drinnen" }
@@ -1009,7 +1009,7 @@ const PRODUCTS = [
         verdict: "Ein echter Party-Booster und cooler Einrichtungsgegenstand für Küche oder Keller. Für Gastgeber ein absolutes Must-Have.",
         perfectFor: "Party-Gastgeber, Männer-Höhlen-Einrichter und WG-Küchen.",
         notFor: "Schlafzimmer (das Kühlaggregat brummt hörbar).",
-        testerQuote: "Ollis Fazit: Wenn die Kumpels zum Fußballschauen kommen, ist das der absolute Hingucker. Kühles Bier direkt aus der stylischen Glastür greifen zu können, wertet den ganzen Raum auf.",
+        testerQuote: "Kathas Fazit: Wenn die Kumpels zum Fußballschauen kommen, ist das der absolute Hingucker. Kühles Bier direkt aus der stylischen Glastür greifen zu können, wertet den ganzen Raum auf.",
         hiddenFeature: "Man kann die Regalböden einzeln in der Höhe verstellen, um auch große Sekt- oder Weinflaschen stehend zu lagern.",
         alternatives: [
             { id: "sodastream", name: "Wassersprudler" }
@@ -1070,7 +1070,7 @@ const PRODUCTS = [
         verdict: "Wer Ordnung im Papierchaos braucht, wird diese Mappe lieben. Einfach, günstig, robust – und wirklich nützlich im Alltag.",
         perfectFor: "Büroarbeiter, Studenten und Leute, die ihre Rechnungen endlich sortieren wollen.",
         notFor: "Für den Transport von dicken Büchern oder Laptops.",
-        testerQuote: "Mels Fazit: Mein Schreibtisch war immer voll mit losen Zetteln. Diese simple Mappe hat mein Leben verändert. Die drei Klappen halten alles zusammen, ohne dass Papiere an der Seite rausrutschen.",
+        testerQuote: "Ollis Fazit: Mein Schreibtisch war immer voll mit losen Zetteln. Diese simple Mappe hat mein Leben verändert. Die drei Klappen halten alles zusammen, ohne dass Papiere an der Seite rausrutschen.",
         hiddenFeature: "Der Karton lässt sich super mit Filzstiften oder Stickern individualisieren, falls man für jedes Familienmitglied eine eigene Mappe anlegen will.",
         alternatives: [
             { id: "labelprinter", name: "Etikettendrucker (für noch mehr Ordnung)" }
@@ -1095,7 +1095,7 @@ const PRODUCTS = [
         verdict: "Für den Preis ein absolut solides Gerät. Wer einen leisen, effizienten Turmventilator ohne Schnickschnack sucht, macht mit Brandson nichts falsch.",
         perfectFor: "Schlafzimmer, heiße Dachgeschosswohnungen und Home-Office-Tage im Hochsommer.",
         notFor: "Smart-Home-Nerds, die alles über ihr Handy steuern wollen.",
-        testerQuote: "Mitchs Fazit: An heißen Tagen läuft der bei mir durchgehend. Der Timer ist genial fürs Schlafzimmer: Ich stelle ihn auf 2 Stunden, schlafe entspannt bei der leichten Brise ein und er schaltet sich von selbst ab.",
+        testerQuote: "Kathas Fazit: An heißen Tagen läuft der bei mir durchgehend. Der Timer ist genial fürs Schlafzimmer: Ich stelle ihn auf 2 Stunden, schlafe entspannt bei der leichten Brise ein und er schaltet sich von selbst ab.",
         hiddenFeature: "Die Fernbedienung hat auf der Rückseite des Ventilators ein kleines, unscheinbares Geheimfach, damit man sie im Winter nicht verliert.",
         alternatives: [
             { id: "ventilator_philips", name: "Philips Turmventilator (mit Luftreiniger)" }
@@ -1120,7 +1120,7 @@ const PRODUCTS = [
         verdict: "Wer in saubere Luft und Komfort investieren möchte, bekommt mit dem Philips 7000 ein Gerät, das in jeder Hinsicht überzeugt. Premium-Kauf, der sich täglich auszahlt.",
         perfectFor: "Allergiker, Design-Liebhaber und Smart-Home-Fans.",
         notFor: "Studis mit extrem knappem Budget.",
-        testerQuote: "Ollis Fazit: Das Design ohne klassische Rotorblätter sieht aus wie aus der Zukunft. Im Automatikmodus merkt er sofort, wenn beim Kochen Rauch in der Luft liegt und dreht kurz hoch. Der Luftreiniger ist ein echter Mehrwert.",
+        testerQuote: "Kathas Fazit: Das Design ohne klassische Rotorblätter sieht aus wie aus der Zukunft. Im Automatikmodus merkt er sofort, wenn beim Kochen Rauch in der Luft liegt und dreht kurz hoch. Der Luftreiniger ist ein echter Mehrwert.",
         hiddenFeature: "In der App kann man historische Daten zur Luftqualität im Raum abrufen und analysieren, zu welchen Tageszeiten (oder beim Kochen) die Feinstaubbelastung am höchsten war.",
         alternatives: [
             { id: "airpurifier", name: "Reiner Luftreiniger (ohne Kühlung)" }
@@ -1145,7 +1145,7 @@ const PRODUCTS = [
         verdict: "Egal ob als Sammlerstück oder kleines Geschenk – mit The Child und Mando macht man nie etwas falsch. Sieht toll aus und macht gute Laune.",
         perfectFor: "Star Wars Fans, Schreibtisch-Dekorateure und Funko-Sammler.",
         notFor: "Leute, die minimalistische Einrichtungen ohne Deko bevorzugen.",
-        testerQuote: "Kathas Fazit: Grogu ist einfach unfassbar niedlich! Die beiden stehen bei mir direkt neben dem Monitor und zaubern mir an stressigen Arbeitstagen immer ein Lächeln ins Gesicht.",
+        testerQuote: "Mitchs Fazit: Grogu ist einfach unfassbar niedlich! Die beiden stehen bei mir direkt neben dem Monitor und zaubern mir an stressigen Arbeitstagen immer ein Lächeln ins Gesicht.",
         hiddenFeature: "Der kleine Grogu (The Child) ist nicht fest mit Mando verbunden und kann frei positioniert werden.",
         alternatives: [
             { id: "ultimate_grogu", name: "Grogu in Lebensgröße" }
@@ -1188,7 +1188,7 @@ const PRODUCTS = [
         verdict: "Eine tolle Edition für Sammler und Fans, die Monopoly lieben und auf Fußball stehen.",
         perfectFor: "Fußballverrückte Familien und als Geschenk für Kids im Panini-Sammel-Fieber.",
         notFor: "Strenge Monopoly-Puristen, die keine Regeländerungen mögen.",
-        testerQuote: "Mels Fazit: Statt Schlossallee kauft man hier Mbappé! Die Kombination aus klassischem Verhandeln und dem Sammeln der Prizm-Karten hat in unserer Runde für richtig laute Lacher gesorgt.",
+        testerQuote: "Mitchs Fazit: Statt Schlossallee kauft man hier Mbappé! Die Kombination aus klassischem Verhandeln und dem Sammeln der Prizm-Karten hat in unserer Runde für richtig laute Lacher gesorgt.",
         hiddenFeature: "Das Spiel enthält exklusive Panini Prizm Karten, die Sammler sogar separat tauschen oder wertsteigernd aufbewahren könnten.",
         alternatives: [
             { id: "messi_lego", name: "Messi LEGO Set" }
@@ -1231,7 +1231,7 @@ const PRODUCTS = [
         verdict: "Wer Grogu liebt, braucht diese Figur. Sie ist nicht nur ein Spielzeug, sondern ein fantastisches Sammlerstück, das jeden Schreibtisch oder jedes Wohnzimmer aufwertet.",
         perfectFor: "Hardcore Star Wars Fans und alle, die eine Schwäche für süße Aliens haben.",
         notFor: "Kleine Kinder, die eher ein weiches Kuscheltier zum Schlafen suchen (die Mechanik ist hart).",
-        testerQuote: "Ollis Fazit: Als er zum ersten Mal geblinzelt und die Ohren bewegt hat, bin ich fast vom Stuhl gefallen. Er wirkt so lebendig! Die Sounds aus der Serie sind perfekt getroffen.",
+        testerQuote: "Mitchs Fazit: Als er zum ersten Mal geblinzelt und die Ohren bewegt hat, bin ich fast vom Stuhl gefallen. Er wirkt so lebendig! Die Sounds aus der Serie sind perfekt getroffen.",
         hiddenFeature: "Wenn man ihn drei Mal sanft auf den Kopf tippt, aktiviert er die 'Macht' und hebt beide Arme mit dem typischen Soundeffekt.",
         alternatives: [
             { id: "funko_mandalorian", name: "Funko POP (für den kleinen Geldbeutel)" }
