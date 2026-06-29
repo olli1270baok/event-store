@@ -1725,7 +1725,10 @@ function openProductModal(productId) {
             btn.href = product.amazonLink;
             btn.target = "_blank";
             btn.innerHTML = `
-                <img src="assets/amazon_logo.svg" alt="Auf Amazon ansehen" style="height: 22px; object-fit: contain;">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <span style="font-weight: 600; font-size: 0.95rem;">Preis prüfen auf</span>
+                    <img src="assets/amazon_logo.svg" alt="Amazon" style="height: 22px; object-fit: contain; margin-top: 4px;">
+                </div>
             `;
             linksContainer.appendChild(btn);
         }
@@ -2301,8 +2304,9 @@ function renderNativeTrending() {
                 <span class="native-ad-card-price">${product.priceRange}</span>
                 <span class="native-ad-card-stars">★★★★★</span>
             </div>
-            <div class="native-ad-card-cta" style="background: #ffffff; border: 1px solid #FF9900;">
-                <img src="assets/amazon_logo.svg" alt="Auf Amazon ansehen" style="height: 18px; object-fit: contain;">
+            <div class="native-ad-card-cta" style="background: #ffffff; border: 1px solid #FF9900; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                <span style="font-weight: 600; font-size: 0.85rem; color: #1a1c24;">Ansehen auf</span>
+                <img src="assets/amazon_logo.svg" alt="Amazon" style="height: 18px; object-fit: contain; margin-top: 3px;">
             </div>
         `;
         grid.appendChild(card);
