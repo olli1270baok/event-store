@@ -2136,6 +2136,10 @@ button {
     .modal-card {
         padding: 2rem 1.5rem;
     }
+    .modal-image-col {
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .modal-image-col {
