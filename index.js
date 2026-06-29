@@ -52,7 +52,15 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Der Liebling aller Influencer für Party-Fotos.",
-        verdict: "Die beste Sofortbildkamera auf dem Markt."
+        verdict: "Die beste Sofortbildkamera auf dem Markt.",
+        perfectFor: "Party-Gänger, Hochzeiten und Scrapbook-Fans.",
+        notFor: "Profis, die perfekte Bildschärfe und hohe Auflösung erwarten.",
+        testerQuote: "Kathas Fazit: Ich liebe den Look der Kamera! Sie sieht nicht nur schick aus, sondern rettet jede Party. Dass man die Fotos vorher auf dem Handy aussuchen kann, spart extrem viel teuren Film.",
+        hiddenFeature: "Der Selfie-Modus eignet sich auch extrem gut für Makro-Aufnahmen (z.B. von Blumen oder Essen). Probier es aus!",
+        alternatives: [
+            { id: "retro_polaroid", name: "Polaroid Now+ Gen 2" },
+            { id: "retro_kodak", name: "KODAK Mini 2 Retro" }
+        ]
     },
     {
         id: "retro_casio",
@@ -73,7 +81,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Vintage-Look, der nie uncool wird.",
-        verdict: "Ein stylisches Accessoire für wirklich jeden."
+        verdict: "Ein stylisches Accessoire für wirklich jeden.",
+        perfectFor: "Minimalisten, Streetwear-Fans und alle, die keine Apple Watch mehr sehen können.",
+        notFor: "Leute, die Fitness-Tracking oder smarte Benachrichtigungen brauchen.",
+        testerQuote: "Ollis Fazit: Meine absolute Go-To Uhr für den Alltag. Sie wiegt fast nichts, man muss sie nie aufladen und sie verleiht jedem Outfit sofort diesen coolen 80er-Jahre-Vibe.",
+        hiddenFeature: "Das Metall-Armband lässt sich in 10 Sekunden komplett ohne Werkzeug (nur mit einem kleinen Schraubenzieher oder einer Haarklammer) stufenlos verstellen.",
+        alternatives: [
+            { id: "smartwatch_dummy", name: "Moderne Smartwatch" }
+        ]
     },
     {
         id: "retro_smeg",
@@ -94,7 +109,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Must-Have für ästhetische Küchen.",
-        verdict: "Teuer, aber optisch jeden Cent wert."
+        verdict: "Teuer, aber optisch jeden Cent wert.",
+        perfectFor: "Design-Liebhaber mit offenen Küchen, in denen Geräte gesehen werden wollen.",
+        notFor: "Schnäppchenjäger, die einfach nur ihr Toastbrot warm machen wollen.",
+        testerQuote: "Kathas Fazit: Ja, der Preis ist hoch für einen Toaster. Aber er ist wirklich jeden Morgen ein Highlight in meiner Küche. Außerdem bräunt er überraschend gleichmäßig!",
+        hiddenFeature: "Die Bagel-Funktion (Knopf mit dem Bagel-Symbol) röstet das Brötchen nur auf einer Seite an – perfekt für richtig gute, fluffige Burger-Buns!",
+        alternatives: [
+            { id: "retro_bialetti", name: "Bialetti Espressokocher" }
+        ]
     },
     {
         id: "retro_audiotechnica",
@@ -115,7 +137,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Vinyl ist zurück und dieser Player ist die beste Wahl.",
-        verdict: "Der perfekte Plattenspieler für ambitionierte Einsteiger."
+        verdict: "Der perfekte Plattenspieler für ambitionierte Einsteiger.",
+        perfectFor: "Vinyl-Einsteiger und Musikliebhaber, die sich bewusst Zeit für ein Album nehmen wollen.",
+        notFor: "Leute, die lieber alles bequem über Spotify steuern und keine Platten sammeln möchten.",
+        testerQuote: "Ollis Fazit: Das Gewicht und die Verarbeitung fühlen sich extrem premium an. Wer in die Vinyl-Welt einsteigen will, ohne gleich 1000 Euro auszugeben, kommt an diesem Audio-Technica nicht vorbei.",
+        hiddenFeature: "Der eingebaute Vorverstärker lässt sich auf der Rückseite per Schalter ('Phono/Line') abschalten. Das ist genial, falls man später mal auf ein teureres, externes HiFi-System upgraden möchte.",
+        alternatives: [
+            { id: "retro_marshall", name: "Marshall Acton III" }
+        ]
     },
     {
         id: "retro_bialetti",
@@ -136,7 +165,14 @@ const PRODUCTS = [
         hypeScore: 3,
         realityScore: 5,
         hypeComment: "Slow Coffee ist der Gegenentwurf zum Kapsel-Wahnsinn.",
-        verdict: "Ein Muss für jeden Haushalt und Kaffee-Liebhaber."
+        verdict: "Ein Muss für jeden Haushalt und Kaffee-Liebhaber.",
+        perfectFor: "Kaffee-Puristen, Studenten und Liebhaber der italienischen Kultur.",
+        notFor: "Leute, die morgens per Knopfdruck in 5 Sekunden ihren Kaffee wollen.",
+        testerQuote: "Mels Fazit: Ich benutze meine Bialetti jeden Morgen. Es ist ein Ritual, das mich runterbringt. Der Kaffee schmeckt einfach ehrlicher und kräftiger als aus jeder Maschine.",
+        hiddenFeature: "Niemals mit Spüli waschen! Die Kanne baut über die Zeit eine dünne Schicht an Kaffeeölen (Patina) auf, die das Aluminium versiegelt und den Kaffee erst richtig gut macht.",
+        alternatives: [
+            { id: "retro_smeg", name: "Smeg Toaster (fürs Frühstück)" }
+        ]
     },
     {
         id: "retro_kludge",
@@ -157,7 +193,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Mechanische Custom-Keyboards sind ein riesiger Tech-Trend.",
-        verdict: "Macht Home-Office und Gaming sofort stylischer."
+        verdict: "Macht Home-Office und Gaming sofort stylischer.",
+        perfectFor: "Home-Office Worker und Gamer, die das klassische Tipp-Gefühl und 'Thock'-Sound lieben.",
+        notFor: "Leute in extrem ruhigen Großraumbüros (die Tastatur ist hörbar!).",
+        testerQuote: "Mitchs Fazit: Das Tippen auf dieser Tastatur macht fast schon süchtig. Die RGB-Beleuchtung sieht im Dunkeln fantastisch aus, und das Retro-Farbschema der Keycaps ist genau mein Ding.",
+        hiddenFeature: "Die Tastatur ist 'Hot-Swappable'. Das bedeutet, man kann kaputte Schalter in Sekunden selbst mit dem mitgelieferten Tool herausziehen und austauschen, ohne löten zu müssen.",
+        alternatives: [
+            { id: "retro_edison", name: "Vintage Desk Lamp" }
+        ]
     },
     {
         id: "retro_edison",
@@ -178,7 +221,14 @@ const PRODUCTS = [
         hypeScore: 4,
         realityScore: 5,
         hypeComment: "Die Standard-Beleuchtung in jedem hippen Café.",
-        verdict: "Perfekt, um Gemütlichkeit ins Zimmer zu bringen."
+        verdict: "Perfekt, um Gemütlichkeit ins Zimmer zu bringen.",
+        perfectFor: "Gemütliche Wohnzimmer, offene Lampenfassungen und Industrial-Design Fans.",
+        notFor: "Als helle Arbeitsbeleuchtung am Schreibtisch.",
+        testerQuote: "Mels Fazit: Ich habe diese Birnen über meinem Esstisch hängen. Sie blenden nicht und geben dem Raum sofort diese warme, gemütliche Café-Atmosphäre.",
+        hiddenFeature: "Wenn man einen günstigen Dimmer-Stecker (für die Steckdose) dazwischen schaltet, kann man die Leuchtfäden extrem weit runterdimmen, bis sie nur noch wie tiefrotes Bernstein glühen.",
+        alternatives: [
+            { id: "retro_marshall", name: "Marshall Acton III" }
+        ]
     },
     {
         id: "retro_polaroid",
@@ -199,7 +249,15 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 4,
         hypeComment: "Retro-Fotografie boomt auf TikTok.",
-        verdict: "Ein tolles Party-Gadget für echte Nostalgiker."
+        verdict: "Ein tolles Party-Gadget für echte Nostalgiker.",
+        perfectFor: "Nostalgiker und Fans des klassischen, großen quadratischen Polaroid-Looks.",
+        notFor: "Leute, die möglichst günstig viele Fotos drucken wollen (Filme sind teuer).",
+        testerQuote: "Mitchs Fazit: Die Farben sind unberechenbar und genau das macht den Charme aus. Die Bilder sehen aus, als kämen sie direkt aus den 70ern. Die Bluetooth-App ist eine geniale Ergänzung für Light-Painting.",
+        hiddenFeature: "Geheimtipp der Profis: Filme im Kühlschrank lagern! Das hält die Chemikalien frisch. Beim Entwickeln das Foto für 15 Minuten in die dunkle Hosentasche stecken (Wärme sorgt für sattere Farben).",
+        alternatives: [
+            { id: "retro_instax", name: "Fujifilm Instax Mini" },
+            { id: "retro_kodak", name: "KODAK Mini 2 Retro" }
+        ]
     },
     {
         id: "retro_kodak",
@@ -220,7 +278,14 @@ const PRODUCTS = [
         hypeScore: 5,
         realityScore: 5,
         hypeComment: "Der perfekte Begleiter für Scrapbooking und Bullet Journals.",
-        verdict: "Praktisch, stylisch und eine geniale Geschenkidee."
+        verdict: "Praktisch, stylisch und eine geniale Geschenkidee.",
+        perfectFor: "Handy-Fotografen, die ihre Lieblings-Schnappschüsse direkt am Kühlschrank haben wollen.",
+        notFor: "Leute, die große Poster-Ausdrucke suchen.",
+        testerQuote: "Kathas Fazit: Ich liebe diesen kleinen Drucker! Es ist faszinierend zuzusehen, wie er das Papier viermal einzieht und dabei jede Farbschicht einzeln aufträgt. Die Qualität ist für die Größe überragend.",
+        hiddenFeature: "Das verwendete 4-Pass-Druckverfahren überzieht die Fotos im letzten Durchgang mit einer klaren Schutzschicht. Dadurch sind die Bilder komplett wasserfest, wischfest und bleichen nicht aus!",
+        alternatives: [
+            { id: "retro_instax", name: "Fujifilm Instax Mini" }
+        ]
     },
     {
         id: "lego_botanical",
