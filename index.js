@@ -1764,7 +1764,7 @@ const PRODUCTS = [
     "verdict": "Einfach, günstig und extrem effektiv. Eine echte Erleichterung für die Vierbeiner, wenn es draußen brütend heiß ist.",
     "perfectFor": "Alle Hundehaushalte, besonders für Rassen mit dickem Fell.",
     "notFor": "Hunde, die dazu neigen, alles anzuknabbern (Gel im Inneren).",
-    "testerQuote": "Mitchs (Hund) Fazit: Wau! Endlich kein Hecheln mehr auf den heißen Fliesen. Ich liebe meine Zauber-Matte.",
+    "testerQuote": "Bruzzles Fazit: Wuff! Endlich kein Hecheln mehr auf den heißen Fliesen. Ich liebe meine Zauber-Matte.",
     "hiddenFeature": "Leg die Matte vor extremen Hitzewellen für 10 Minuten in den Kühlschrank – das gibt einen extra starken Cooling-Boost!",
     "alternatives": []
 },
@@ -1802,7 +1802,7 @@ const PRODUCTS = [
     "verdict": "Wenn dein Hund Wasser liebt, ist das die beste Sommerinvestition. Hält viel mehr aus als ein normales Kinder-Planschbecken.",
     "perfectFor": "Gartenbesitzer mit wasserliebenden Hunden (wie Retrievern).",
     "notFor": "Wasserscheue Hunde oder kleine Balkone.",
-    "testerQuote": "Ollis Fazit: Mitch (der Hund) springt da rein wie ein Verrückter. Der Pool ist super schnell aufgebaut und extrem kratzfest. Ein riesen Spaß!",
+    "testerQuote": "Bruzzles Fazit: Wuff wuff! Ich springe da rein wie ein Verrückter. Herrchen sagt, der Pool ist super schnell aufgebaut und extrem kratzfest. Ein riesen Spaß!",
     "hiddenFeature": "Man kann den Pool im Herbst auch super als Indoor-Bällebad für den Hund (oder für Kinder) verwenden, wenn er trocken ist.",
     "alternatives": []
 }
@@ -2315,10 +2315,16 @@ function getStampHtml(product) {
     if (!product.testerQuote) return '';
     let testerName = "REDAKTION";
     const quote = product.testerQuote.toLowerCase();
+    
     if (quote.includes("olli")) testerName = "OLLI";
     else if (quote.includes("katha")) testerName = "KATHA";
     else if (quote.includes("mel")) testerName = "MEL";
+    else if (quote.includes("bruzzle")) testerName = "BRUZZLE";
     else if (quote.includes("mitch")) testerName = "MITCH";
+    
+    if (testerName === "BRUZZLE") {
+        return `<div class="tester-stamp" style="color: #4a3628; border-color: #4a3628; transform: rotate(-5deg);">GEPRÜFT 🐾<br><span>VON BRUZZLE</span></div>`;
+    }
     
     return `<div class="tester-stamp">GEPRÜFT<br><span>VON ${testerName}</span></div>`;
 }
@@ -2838,7 +2844,7 @@ const translations = {
         coll_preview_title: "Highlights der Kuration",
         founders_tag: "Das Test-Team",
         founders_title: "Vier Freunde, ein Hund & ehrliche Deals.",
-        founders_text: "Hinter Checkbude24 steht kein unpersönlicher Großkonzern, sondern Olli, Katha, Mel, Mitch und unser Boston Terrier (Head of Paw-Testing).<br><br>Unser Ziel ist es, dir die besten Fundstücke und Gadgets auf Amazon vorzustellen. Wir prüfen und filtern, damit du schnell die richtige Kaufentscheidung triffst.",
+        founders_text: "Hinter Checkbude24 steht kein unpersönlicher Großkonzern, sondern Olli, Katha, Mel, Mitch und Bruzzle, unser Boston Terrier (Head of Paw-Testing).<br><br>Unser Ziel ist es, dir die besten Fundstücke und Gadgets auf Amazon vorzustellen. Wir prüfen und filtern, damit du schnell die richtige Kaufentscheidung triffst.",
         about_tag: "Hinter den Kulissen",
         about_heading: "Das Team von Checkbude24",
         about_lead: "Wir sind vier Freunde mit völlig unterschiedlichen Leidenschaften, die eine Sache verbindet: Die Jagd nach den besten Gadgets und ehrlichsten Deals auf Amazon.",
