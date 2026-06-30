@@ -1551,6 +1551,457 @@ const PRODUCTS = [
         "hiddenFeature": "Verfügt über integrierte Bluetooth-Lautsprecher.",
         "alternatives": []
 }
+    ,
+    {
+    "id": "summer_ninja_creami",
+    "name": "Ninja CREAMi Eismaschine",
+    "category": "summer",
+    "priceRange": "199 - 229 €",
+    "rating": 4.8,
+    "stars": "★★★★★",
+    "image": "assets/summer_ninja_creami.png",
+    "amazonLink": "https://www.amazon.de/s?k=Ninja+Creami",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Ninja+Creami",
+            "price": "ab 199 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der absolute Sommerhit. Verwandelt buchstäblich alles in Eiscreme – von Proteinfluff bis hin zu gefrorenen Früchten.",
+    "pros": [
+        "Perfekt für proteinreiches, zuckerarmes Eis",
+        "Zutaten sind frei wählbar",
+        "Leicht zu reinigen"
+    ],
+    "cons": [
+        "Sehr laut während des Mixens"
+    ],
+    "testDuration": "Getestet: 1 Monat",
+    "hypeScore": 5,
+    "realityScore": 5,
+    "hypeComment": "Ein viraler Hit auf TikTok für Fitness-Eis.",
+    "verdict": "Jeden Cent wert, wenn man den Lärm für 2 Minuten ertragen kann.",
+    "perfectFor": "Fitness-Fans und Eis-Liebhaber.",
+    "notFor": "Lärmempfindliche Nachbarn.",
+    "testerQuote": "Mels Fazit: Ich mache mir fast jeden Tag ein Protein-Eis damit. Schmeckt wie in der Eisdiele!",
+    "hiddenFeature": "Die 'Respin'-Funktion macht das Eis noch cremiger, wenn es beim ersten Mal bröselig wird.",
+    "alternatives": []
+},
+    {
+    "id": "summer_ooni_koda",
+    "name": "Ooni Koda 12 Gas-Pizzaofen",
+    "category": "summer",
+    "priceRange": "349 - 399 €",
+    "rating": 4.9,
+    "stars": "★★★★★",
+    "image": "assets/summer_ooni_koda.png",
+    "amazonLink": "https://www.amazon.de/s?k=Ooni+Koda+12",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Ooni+Koda+12",
+            "price": "ab 349 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der ultimative Gas-Pizzaofen für den Garten oder Balkon. Backt neapolitanische Pizzen in nur 60 Sekunden bei bis zu 500°C.",
+    "pros": [
+        "Erreicht 500°C in nur 15 Minuten",
+        "Unglaublich knuspriger Pizzateig in 60 Sekunden",
+        "Sehr kompakt und tragbar"
+    ],
+    "cons": [
+        "Das Pizzabacken erfordert am Anfang etwas Übung",
+        "Kein integrierter Thermometer"
+    ],
+    "testDuration": "Getestet: 3 Monate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Für echte Pizza-Nerds ein Muss.",
+    "verdict": "Die beste Investition für gemütliche Sommerabende mit Freunden.",
+    "perfectFor": "Gartenbesitzer und Pizza-Fans.",
+    "notFor": "Kleine Balkone ohne ausreichende Belüftung (Gefahr durch Gas).",
+    "testerQuote": "Ollis Fazit: Seit wir den Ooni haben, bestellen wir keine Pizza mehr. Der Teig wird extrem knusprig und wirft diese tollen schwarzen Blasen.",
+    "hiddenFeature": "Die Füße lassen sich einklappen, sodass der Ofen super flach im Wintergarten verstaut werden kann.",
+    "alternatives": []
+},
+    {
+    "id": "summer_jbl_charge5",
+    "name": "JBL Charge 5 Bluetooth-Lautsprecher",
+    "category": "summer",
+    "priceRange": "129 - 159 €",
+    "rating": 4.8,
+    "stars": "★★★★★",
+    "image": "assets/summer_jbl_charge5.png",
+    "amazonLink": "https://www.amazon.de/s?k=JBL+Charge+5",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=JBL+Charge+5",
+            "price": "ab 139 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der perfekte Begleiter für den See. Wasserdicht, staubfest und mit einem Bass, der für draußen optimal abgestimmt ist. Zudem kann er als Powerbank dienen.",
+    "pros": [
+        "IP67 wasser- und staubdicht",
+        "Integrierte Powerbank-Funktion",
+        "Druckvoller Sound"
+    ],
+    "cons": [
+        "Kein Klinkenanschluss (nur Bluetooth)"
+    ],
+    "testDuration": "Getestet: 6 Monate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Der Standard-Speaker für den Strand.",
+    "verdict": "Unverwüstlich und klangstark. Ein Muss für den Sommer.",
+    "perfectFor": "Strandgänger, Camper und Festival-Besucher.",
+    "notFor": "Audiophile, die feinste klassische Musik im ruhigen Zimmer hören wollen.",
+    "testerQuote": "Ollis Fazit: Die Charge 5 fällt bei mir regelmäßig in den Sand oder bekommt Wasser ab. Sie spielt einfach weiter.",
+    "hiddenFeature": "Mit PartyBoost lassen sich beliebig viele kompatible JBL-Lautsprecher für gigantischen Sound koppeln.",
+    "alternatives": []
+},
+    {
+    "id": "summer_sup_board",
+    "name": "Stand Up Paddle Board (SUP) Komplettset",
+    "category": "summer",
+    "priceRange": "199 - 299 €",
+    "rating": 4.6,
+    "stars": "★★★★★",
+    "image": "assets/summer_sup.png",
+    "amazonLink": "https://www.amazon.de/s?k=Stand+Up+Paddle+Board",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Stand+Up+Paddle+Board",
+            "price": "ab 199 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Das perfekte Fitness-Gefährt für Seen und ruhige Flüsse. Aufblasbar, leicht zu transportieren und bietet extrem viel Spaß auf dem Wasser.",
+    "pros": [
+        "Komplettes Set mit Paddel und Pumpe",
+        "Leicht im Rucksack zu transportieren",
+        "Gut für die Rumpfmuskulatur"
+    ],
+    "cons": [
+        "Das Aufpumpen per Hand ist anstrengend (elektrische Pumpe empfohlen)"
+    ],
+    "testDuration": "Getestet: 2 Monate",
+    "hypeScore": 5,
+    "realityScore": 4,
+    "hypeComment": "Im Sommer ist jeder See voll davon.",
+    "verdict": "Für den Preis bekommt man extrem viel Spaß im Sommer.",
+    "perfectFor": "Wassersportler und alle, die im Urlaub aktiv sein wollen.",
+    "notFor": "Leute, die keinen Platz im Kofferraum haben.",
+    "testerQuote": "Mels Fazit: Mein absolutes Lieblings-Workout im Sommer. Es ist total entspannend und trainiert die Balance extrem gut.",
+    "hiddenFeature": "Viele SUPs haben kleine D-Ringe, an denen man einen Kajak-Sitz (oft als Zubehör erhältlich) befestigen kann.",
+    "alternatives": []
+},
+    {
+    "id": "summer_yeti_rambler",
+    "name": "Yeti Rambler Kühlbox / Thermobecher",
+    "category": "summer",
+    "priceRange": "40 - 250 €",
+    "rating": 4.9,
+    "stars": "★★★★★",
+    "image": "assets/summer_yeti.png",
+    "amazonLink": "https://www.amazon.de/s?k=Yeti+Rambler",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Yeti+Rambler",
+            "price": "ab 40 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Yeti ist der unangefochtene König der Isolierung. Egal ob Thermobecher für den Iced Coffee oder die Hardcooler für das Camping-Wochenende – das Zeug hält tagelang eiskalt.",
+    "pros": [
+        "Isoliert besser als alles andere auf dem Markt",
+        "Praktisch unzerstörbar",
+        "Spülmaschinenfest"
+    ],
+    "cons": [
+        "Extrem hoher Preis"
+    ],
+    "testDuration": "Getestet: 1 Jahr",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Premium-Equipment für draußen.",
+    "verdict": "Wer billig kauft, kauft zweimal. Yeti ist teuer, aber hält ein Leben lang.",
+    "perfectFor": "Camper, Angler und Van-Life-Fans.",
+    "notFor": "Sparfüchse.",
+    "testerQuote": "Ollis Fazit: Ich habe Eiswürfel in meinem Yeti-Becher vergessen. Nach 24 Stunden im heißen Auto waren sie immer noch da.",
+    "hiddenFeature": "Die Magnet-Slider an den Deckeln der Becher lassen sich zum Reinigen einfach abklippen.",
+    "alternatives": []
+},
+    {
+    "id": "summer_stanley_cup",
+    "name": "Stanley Quencher H2.0 FlowState (1,2L)",
+    "category": "summer",
+    "priceRange": "45 - 60 €",
+    "rating": 4.7,
+    "stars": "★★★★★",
+    "image": "assets/summer_stanley.png",
+    "amazonLink": "https://www.amazon.de/s?k=Stanley+Quencher",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Stanley+Quencher",
+            "price": "ab 49 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der Becher, der das Internet erobert hat. Mit 1,2 Litern Fassungsvermögen und einem Strohhalm trinkt man an heißen Sommertagen unbewusst viel mehr Wasser.",
+    "pros": [
+        "Passt durch die schmale Basis in den Auto-Getränkehalter",
+        "Hält Getränke eiskalt",
+        "Hilft enorm dabei, mehr Wasser zu trinken"
+    ],
+    "cons": [
+        "Mit Strohhalm nicht 100% auslaufsicher",
+        "Sehr groß und schwer"
+    ],
+    "testDuration": "Getestet: 4 Monate",
+    "hypeScore": 5,
+    "realityScore": 4,
+    "hypeComment": "Der viralste Becher auf TikTok aller Zeiten.",
+    "verdict": "Ein stylisches Accessoire, das wirklich dazu motiviert, mehr zu trinken.",
+    "perfectFor": "Roadtrips, Home-Office und Leute, die das Trinken oft vergessen.",
+    "notFor": "Zum Werfen in den Rucksack (da er am Strohhalm auslaufen kann).",
+    "testerQuote": "Kathas Fazit: Ich dachte, es sei nur ein Hype, aber ich trinke seitdem wirklich meine 3 Liter am Tag.",
+    "hiddenFeature": "Der Deckel lässt sich drehen, sodass man entweder den Strohhalm nutzen oder direkt aus der Öffnung trinken kann.",
+    "alternatives": []
+},
+    {
+    "id": "summer_weber_goanywhere",
+    "name": "Weber Go-Anywhere Holzkohlegrill",
+    "category": "summer",
+    "priceRange": "89 - 110 €",
+    "rating": 4.8,
+    "stars": "★★★★★",
+    "image": "assets/summer_weber.png",
+    "amazonLink": "https://www.amazon.de/s?k=Weber+Go-Anywhere",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Weber+Go-Anywhere",
+            "price": "ab 95 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der perfekte kleine Grill für den Park, Strand oder Campingplatz. Das eckige Design macht ihn super platzsparend im Kofferraum.",
+    "pros": [
+        "Kompaktes, durchdachtes eckiges Design",
+        "Füße klappen hoch und verriegeln den Deckel für den Transport",
+        "Sehr gute Hitzeentwicklung"
+    ],
+    "cons": [
+        "Relativ kleine Grillfläche (reicht für 2-3 Personen)"
+    ],
+    "testDuration": "Getestet: 2 Sommer",
+    "hypeScore": 3,
+    "realityScore": 5,
+    "hypeComment": "Ein echter Klassiker für den Park.",
+    "verdict": "Jeder braucht einen guten, tragbaren Grill für spontane Sommerabende. Dieser ist der beste.",
+    "perfectFor": "Parks, Camping und kleine Balkone.",
+    "notFor": "Große Grillpartys mit 10 Personen.",
+    "testerQuote": "Mitchs Fazit: Mein ständiger Begleiter im Auto im Sommer. Briketts rein, an den See fahren, perfektes Barbecue.",
+    "hiddenFeature": "Man kann Briketts und Anzünder für den nächsten Grillabend direkt im Grill lagern und ihn verriegeln.",
+    "alternatives": []
+},
+    {
+    "id": "summer_dyson_cool",
+    "name": "Dyson Cool Turmventilator (AM07)",
+    "category": "summer",
+    "priceRange": "299 - 399 €",
+    "rating": 4.5,
+    "stars": "★★★★☆",
+    "image": "assets/summer_dyson.png",
+    "amazonLink": "https://www.amazon.de/s?k=Dyson+Turmventilator",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Dyson+Turmventilator",
+            "price": "ab 329 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der stylischste Ventilator ohne Rotorblätter. Erzeugt einen angenehmen, gleichmäßigen Luftstrom und ist sehr sicher für Kinder und Haustiere.",
+    "pros": [
+        "Modernes, sicheres Design ohne Rotoren",
+        "Gleichmäßiger Luftstrom ohne 'Flattern'",
+        "Leicht mit einem Tuch zu reinigen"
+    ],
+    "cons": [
+        "Auf höchster Stufe recht laut",
+        "Kühlt die Luft nicht wirklich (ist keine Klimaanlage)"
+    ],
+    "testDuration": "Getestet: 1 Sommer",
+    "hypeScore": 4,
+    "realityScore": 4,
+    "hypeComment": "Das Apple-Produkt unter den Ventilatoren.",
+    "verdict": "Teuer, aber optisch eine absolute Bereicherung fürs Home-Office an heißen Tagen.",
+    "perfectFor": "Design-Liebhaber und Haushalte mit Kleinkindern.",
+    "notFor": "Leute, die einen echten Klimaanlagen-Effekt erwarten.",
+    "testerQuote": "Kathas Fazit: Er sieht so viel besser aus als diese hässlichen Plastikventilatoren. Fürs Home-Office perfekt.",
+    "hiddenFeature": "Die Fernbedienung ist magnetisch und lässt sich genau auf der geschwungenen Oberseite des Ventilators ablegen.",
+    "alternatives": []
+},
+    {
+    "id": "summer_fatboy_headdemock",
+    "name": "Fatboy Headdemock Hängematte",
+    "category": "summer",
+    "priceRange": "220 - 279 €",
+    "rating": 4.7,
+    "stars": "★★★★★",
+    "image": "assets/summer_fatboy.png",
+    "amazonLink": "https://www.amazon.de/s?k=Fatboy+Headdemock",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Fatboy+Headdemock",
+            "price": "ab 249 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Eine riesige, super bequeme Hängematte mit eigenem Gestell. Man braucht keine Bäume, um das absolute Urlaubs-Feeling im eigenen Garten zu haben.",
+    "pros": [
+        "Riesig (Platz für 2 Personen)",
+        "Steht komplett autark dank stabilem Gestell",
+        "Schmutz- und wasserabweisender Stoff"
+    ],
+    "cons": [
+        "Benötigt viel Platz (über 3 Meter lang)",
+        "Sehr schwer (Gestell wiegt 28 kg)"
+    ],
+    "testDuration": "Getestet: 3 Monate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Der Luxus für den eigenen Garten.",
+    "verdict": "Wer den Platz hat, wird diese Hängematte den ganzen Sommer nicht mehr verlassen wollen.",
+    "perfectFor": "Große Terrassen und Gärten.",
+    "notFor": "Kleine Stadt-Balkone.",
+    "testerQuote": "Mels Fazit: Ich lese dort am Wochenende stundenlang. Sie ist viel bequemer als herkömmliche Netz-Hängematten.",
+    "hiddenFeature": "Es gibt als Zubehör ein Kissen und eine Abdeckhaube, damit sie bei Regen einfach draußen stehen bleiben kann.",
+    "alternatives": []
+},
+    {
+    "id": "summer_intex_pool",
+    "name": "Intex Frame Pool Set",
+    "category": "summer",
+    "priceRange": "99 - 199 €",
+    "rating": 4.6,
+    "stars": "★★★★★",
+    "image": "assets/summer_intex.png",
+    "amazonLink": "https://www.amazon.de/s?k=Intex+Frame+Pool",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Intex+Frame+Pool",
+            "price": "ab 119 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Die schnellste Methode, um sich ein richtiges Schwimmbecken in den Garten zu stellen. Der Metallrahmen ist stabil und das Aufstellen dauert nur 30 Minuten.",
+    "pros": [
+        "Schneller Aufbau",
+        "Sehr stabil durch Metallrahmen",
+        "Tolle Abkühlung für kleines Geld"
+    ],
+    "cons": [
+        "Wasserpflege (Chlor etc.) muss regelmäßig gemacht werden",
+        "Der mitgelieferte Filter ist oft zu schwach (Sandfilteranlage empfohlen)"
+    ],
+    "testDuration": "Getestet: 1 Sommer",
+    "hypeScore": 3,
+    "realityScore": 4,
+    "hypeComment": "Jeder hat ihn im Sommer im Garten stehen.",
+    "verdict": "Ein Preis-Leistungs-Wunder für den Sommer, das aber etwas Arbeit bei der Wasserpflege erfordert.",
+    "perfectFor": "Familien mit Kindern und einem flachen Garten.",
+    "notFor": "Leute, die sich nicht um pH-Werte und Chlor kümmern wollen.",
+    "testerQuote": "Ollis Fazit: Eine kühle Erfrischung direkt nach der Arbeit. Ich habe mir allerdings direkt eine stärkere Sandfilterpumpe dazugekauft.",
+    "hiddenFeature": "Man kann einen kleinen Skimmer an den Rand hängen, der Blätter und Insekten automatisch von der Oberfläche saugt.",
+    "alternatives": []
+},
+    {
+    "id": "summer_dog_coolingmat",
+    "name": "Kühlmatte für Hunde (Selbstkühlend)",
+    "category": "summer",
+    "priceRange": "15 - 30 €",
+    "rating": 4.7,
+    "stars": "★★★★★",
+    "image": "assets/summer_dog_coolingmat.png",
+    "amazonLink": "https://www.amazon.de/s?k=Kühlmatte+Hund",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Kühlmatte+Hund",
+            "price": "ab 19 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der Retter für Hunde an heißen Sommertagen. Die Matte enthält ein Gel, das auf Druck reagiert und die Körperwärme des Hundes absorbiert – ganz ohne Strom oder Vorkühlen im Kühlschrank.",
+    "pros": [
+        "Kühlt sofort, wenn der Hund sich darauflegt",
+        "Braucht keinen Strom, kein Wasser, keinen Kühlschrank",
+        "Leicht abwischbar und zusammenfaltbar"
+    ],
+    "cons": [
+        "Hält nicht unendlich lang kühl (braucht eine kurze 'Erholungspause' ohne Belastung)"
+    ],
+    "testDuration": "Getestet: 2 Sommermonate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Ein Muss für jeden Hundebesitzer im Hochsommer.",
+    "verdict": "Einfach, günstig und extrem effektiv. Eine echte Erleichterung für die Vierbeiner, wenn es draußen brütend heiß ist.",
+    "perfectFor": "Alle Hundehaushalte, besonders für Rassen mit dickem Fell.",
+    "notFor": "Hunde, die dazu neigen, alles anzuknabbern (Gel im Inneren).",
+    "testerQuote": "Mitchs (Hund) Fazit: Wau! Endlich kein Hecheln mehr auf den heißen Fliesen. Ich liebe meine Zauber-Matte.",
+    "hiddenFeature": "Leg die Matte vor extremen Hitzewellen für 10 Minuten in den Kühlschrank – das gibt einen extra starken Cooling-Boost!",
+    "alternatives": []
+},
+    {
+    "id": "summer_dog_pool",
+    "name": "Faltbarer Hunde-Pool (Planschbecken)",
+    "category": "summer",
+    "priceRange": "25 - 45 €",
+    "rating": 4.5,
+    "stars": "★★★★☆",
+    "image": "assets/summer_dog_pool.png",
+    "amazonLink": "https://www.amazon.de/s?k=Hundepool",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Hundepool",
+            "price": "ab 29 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Ein robuster, faltbarer Pool speziell für Hunde. Hergestellt aus kratzfestem PVC-Material, sodass die Krallen den Pool nicht zerstören. Braucht keine Luftpumpe!",
+    "pros": [
+        "Kein Aufpumpen nötig (klappt einfach auseinander)",
+        "Sehr robustes Material gegen spitze Hundekrallen",
+        "Integriertes Ablassventil für leichtes Leeren"
+    ],
+    "cons": [
+        "Ohne Wasser steht der Rand manchmal etwas instabil",
+        "Nur für den Außenbereich geeignet"
+    ],
+    "testDuration": "Getestet: 1 Sommer",
+    "hypeScore": 4,
+    "realityScore": 4,
+    "hypeComment": "Das Highlight auf Instagram für alle wasserverrückten Hunde.",
+    "verdict": "Wenn dein Hund Wasser liebt, ist das die beste Sommerinvestition. Hält viel mehr aus als ein normales Kinder-Planschbecken.",
+    "perfectFor": "Gartenbesitzer mit wasserliebenden Hunden (wie Retrievern).",
+    "notFor": "Wasserscheue Hunde oder kleine Balkone.",
+    "testerQuote": "Ollis Fazit: Mitch (der Hund) springt da rein wie ein Verrückter. Der Pool ist super schnell aufgebaut und extrem kratzfest. Ein riesen Spaß!",
+    "hiddenFeature": "Man kann den Pool im Herbst auch super als Indoor-Bällebad für den Hund (oder für Kinder) verwenden, wenn er trocken ist.",
+    "alternatives": []
+}
 ];
 
 const ARTICLES = [
