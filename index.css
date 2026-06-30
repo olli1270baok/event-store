@@ -5,22 +5,20 @@
 /* --- CSS Custom Properties (Design System Tokens) --- */
 :root {
     /* Color Palette - Sand & Ocean Theme */
-    --color-bg-primary: #1c1511;      /* Warm Sand Beige */
-    --color-bg-secondary: #e6d3ba;    /* Pure White for Cards */
-    --color-bg-tertiary: #cfb99d;     /* Slightly darker sand for hover */
-    --color-text-primary: #2b1f1a;    /* Deep Navy Blue */
-    --color-text-secondary: #4a362a;  /* Medium Blue-Gray */
-    --color-text-light: #705544;      /* Muted Slate */
-    --color-accent: #a33211;          /* Royal Blue */
+    --color-bg-primary: #f4ece2;      /* Warm Sand Beige */
+    --color-bg-secondary: #fffcf8;    /* Pure White for Cards */
+    --color-bg-tertiary: #e6d8c3;     /* Slightly darker sand for hover */
+    --color-text-primary: #3e2723;    /* Deep Navy Blue */
+    --color-text-secondary: #5d4037;  /* Medium Blue-Gray */
+    --color-text-light: #8d6e63;      /* Muted Slate */
+    --color-accent: #d35400;          /* Royal Blue */
     --color-accent-light: #c0392b;    /* Signal Red for highlights/prices */
-    --color-border: #8b6b55;          /* Light Gray-Blue */
+    --color-border: #8d6e63;          /* Light Gray-Blue */
     --color-white: #ffffff;
     --color-black: #000000;
     
     /* Typography */
-    --font-heading: 'Staatliches', Impact, sans-serif;
-    --font-stamp: 'Special Elite', 'Courier Prime', monospace;
-    --font-hand: 'Permanent Marker', cursive;
+    --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     
     /* Transitions & Animations */
@@ -52,7 +50,7 @@ body {
     font-family: var(--font-body);
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
-    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -135,12 +133,7 @@ button {
 }
 
 .section-tag {
-    font-family: var(--font-stamp);
-    background-color: rgba(255,255,255,0.2);
-    padding: 4px 8px;
-    border: 2px solid var(--color-accent);
-    display: inline-block;
-    transform: rotate(-2deg);
+    font-family: var(--font-heading);
     font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -152,9 +145,7 @@ button {
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    color: #ebdcb2;
-    text-shadow: 2px 2px 0px #000;
+    font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     color: var(--color-text-primary);
@@ -186,10 +177,9 @@ button {
 
 /* --- Header & Navigation --- */
 .main-header {
-    background-color: rgba(28, 21, 17, 0.95);
-    background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png");
-    border-bottom: 4px solid #000;
-    border-bottom: 4px solid #000;
+    background-color: rgba(244, 236, 226, 0.95);
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    border-bottom: 3px solid var(--color-border);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
@@ -234,8 +224,6 @@ button {
 
 .nav-link {
     font-family: var(--font-heading);
-    font-size: 1.1rem;
-    color: #fff;
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -274,10 +262,10 @@ button {
 
 .logo {
     font-family: var(--font-heading);
-    font-size: 2.8rem;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 800;
     letter-spacing: 0.05em;
-    color: #fff;
+    color: var(--color-text-primary);
     transition: var(--transition-smooth);
     text-transform: uppercase;
 }
@@ -443,13 +431,11 @@ button {
 
 .btn-primary {
     background-color: var(--color-accent);
-    color: #fff;
-    border: 3px solid #000;
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.7);
-    border-radius: 2px;
-    font-family: var(--font-heading);
-    font-size: 1.2rem;
-    letter-spacing: 2px;
+    color: var(--color-black);
+    border: 3px solid var(--color-text-primary);
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.5);
+    border-radius: 4px;
+    font-weight: 800;
 }
 
 .btn-primary:hover {
@@ -463,13 +449,336 @@ button {
 .btn-secondary {
     background-color: transparent;
     color: var(--color-text-primary);
-    border: 4px solid #5a4435;
+    border: 3px solid var(--color-border);
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.3);
+    border-radius: 4px;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-accent);
+}
+
+.text-link-btn {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-primary);
+    position: relative;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: var(--transition-fast);
+}
+
+.text-link-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+/* --- Dynamic Views System --- */
+.view {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.view.active {
+    display: block;
+    opacity: 1;
+}
+
+/* --- Hero Banner --- */
+.hero-banner {
+    position: relative;
+    height: calc(90vh - var(--header-height));
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--color-bg-primary);
+}
+
+.hero-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(10, 11, 13, 0.75) 0%, rgba(10, 11, 13, 0.55) 50%, rgba(247, 245, 240, 0.85) 100%);
+    z-index: 2;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+    transform: scale(1.02);
+    transition: transform 12s ease-out;
+}
+
+.hero-banner:hover .hero-image {
+    transform: scale(1.06);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+    text-align: center;
+    color: var(--color-white);
+    padding: 2rem;
+}
+
+.hero-subtitle-tag {
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12), 0 0 10px rgba(37, 99, 235, 0.2);
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+    opacity: 1;
+    line-height: 1.7;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.85);
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .hero-description {
+        font-size: 0.95rem;
+    }
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    .hero-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+.hero-actions .btn-secondary {
+    color: var(--color-white);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.hero-actions .btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: var(--color-white);
+}
+
+/* --- Category Cards Grid --- */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 900px) {
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.category-card {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--color-bg-secondary);
+    overflow: hidden;
+    border-radius: var(--border-radius-md);
+    transition: var(--transition-smooth);
+    border: 1px solid var(--color-border);
+}
+
+.category-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.05);
+}
+
+.card-img-wrapper {
+    width: 100%;
+    aspect-ratio: 4/5;
+    overflow: hidden;
+    background-color: var(--color-bg-tertiary);
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.category-card:hover .card-image {
+    transform: scale(1.05);
+}
+
+.card-content {
+    padding: 1.75rem 1.5rem;
+    border-top: 1px solid var(--color-border);
+}
+
+.card-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.card-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    margin-bottom: 1.25rem;
+}
+
+.card-link {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-primary);
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 2px;
+    transition: var(--transition-fast);
+}
+
+.category-card:hover .card-link {
+    color: var(--color-accent);
+}
+
+/* --- Brand Values Section --- */
+.values-section {
+    background-color: var(--color-bg-secondary);
+    padding: 5rem 0;
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}
+
+.value-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--color-bg-tertiary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-accent);
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--color-border);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.value-item h3 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.value-item p {
+    font-size: 0.85rem;
+    color: var(--color-text-secondary);
+    max-width: 250px;
+    line-height: 1.5;
+}
+
+/* --- Interactive Bestsellers Preview --- */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-card {
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    border: 3px solid var(--color-border);
     background-color: var(--color-bg-secondary);
     padding: 1rem;
-    border-radius: 2px;
-    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
-    position: relative;
-    background-image: url("https://www.transparenttextures.com/patterns/old-wall.png");
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.2);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
 }
 
 .product-card:hover {
@@ -3250,29 +3559,3 @@ button {
     line-height: 1.5;
 }
 
-
-.product-card::before, .product-card::after {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: linear-gradient(45deg, transparent 40%, #111 40%, #111 60%, transparent 60%), radial-gradient(circle, #777 40%, #222 100%);
-    border-radius: 50%;
-    box-shadow: inset 0 1px 2px rgba(255,255,255,0.4), 1px 1px 2px rgba(0,0,0,0.6);
-    z-index: 10;
-}
-.product-card::before { top: 8px; left: 8px; transform: rotate(15deg); }
-.product-card::after { top: 8px; right: 8px; transform: rotate(-25deg); }
-
-.tape {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%) rotate(-2deg);
-    width: 100px;
-    height: 30px;
-    background-color: rgba(226, 218, 188, 0.7);
-    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-    z-index: 20;
-    border-radius: 2px;
-}
