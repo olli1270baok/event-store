@@ -5,15 +5,15 @@
 /* --- CSS Custom Properties (Design System Tokens) --- */
 :root {
     /* Color Palette - Sand & Ocean Theme */
-    --color-bg-primary: #f7f5f0;      /* Warm Sand Beige */
-    --color-bg-secondary: #ffffff;    /* Pure White for Cards */
-    --color-bg-tertiary: #f0ede6;     /* Slightly darker sand for hover */
-    --color-text-primary: #0f172a;    /* Deep Navy Blue */
-    --color-text-secondary: #475569;  /* Medium Blue-Gray */
-    --color-text-light: #94a3b8;      /* Muted Slate */
-    --color-accent: #2563eb;          /* Royal Blue */
-    --color-accent-light: #ef4444;    /* Signal Red for highlights/prices */
-    --color-border: #e2e8f0;          /* Light Gray-Blue */
+    --color-bg-primary: #f4ece2;      /* Warm Sand Beige */
+    --color-bg-secondary: #fffcf8;    /* Pure White for Cards */
+    --color-bg-tertiary: #e6d8c3;     /* Slightly darker sand for hover */
+    --color-text-primary: #3e2723;    /* Deep Navy Blue */
+    --color-text-secondary: #5d4037;  /* Medium Blue-Gray */
+    --color-text-light: #8d6e63;      /* Muted Slate */
+    --color-accent: #d35400;          /* Royal Blue */
+    --color-accent-light: #c0392b;    /* Signal Red for highlights/prices */
+    --color-border: #8d6e63;          /* Light Gray-Blue */
     --color-white: #ffffff;
     --color-black: #000000;
     
@@ -50,6 +50,7 @@ body {
     font-family: var(--font-body);
     color: var(--color-text-primary);
     background-color: var(--color-bg-primary);
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -176,7 +177,9 @@ button {
 
 /* --- Header & Navigation --- */
 .main-header {
-    background-color: rgba(247, 245, 240, 0.85);
+    background-color: rgba(244, 236, 226, 0.95);
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    border-bottom: 3px solid var(--color-border);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
@@ -429,20 +432,26 @@ button {
 .btn-primary {
     background-color: var(--color-accent);
     color: var(--color-black);
-    border: 1px solid var(--color-accent);
+    border: 3px solid var(--color-text-primary);
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.5);
+    border-radius: 4px;
+    font-weight: 800;
 }
 
 .btn-primary:hover {
-    background-color: transparent;
-    color: var(--color-accent);
-    border-color: var(--color-accent);
-    box-shadow: 0 0 15px rgba(37, 99, 235, 0.4);
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border-color: var(--color-text-primary);
+    transform: translateY(-2px) rotate(-1deg);
+    box-shadow: 6px 6px 0px rgba(62, 39, 35, 0.6);
 }
 
 .btn-secondary {
     background-color: transparent;
     color: var(--color-text-primary);
-    border: 1px solid var(--color-border);
+    border: 3px solid var(--color-border);
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.3);
+    border-radius: 4px;
 }
 
 .btn-secondary:hover {
@@ -764,16 +773,18 @@ button {
 .product-card {
     cursor: pointer;
     transition: var(--transition-smooth);
-    border: 1px solid var(--color-border);
+    border: 3px solid var(--color-border);
     background-color: var(--color-bg-secondary);
     padding: 1rem;
-    border-radius: var(--border-radius-md);
+    border-radius: 4px;
+    box-shadow: 4px 4px 0px rgba(62, 39, 35, 0.2);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
 }
 
 .product-card:hover {
     border-color: var(--color-accent);
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.03);
+    transform: translateY(-4px) rotate(1deg);
+    box-shadow: 6px 8px 0px rgba(62, 39, 35, 0.3);
 }
 
 .product-img-wrapper {
