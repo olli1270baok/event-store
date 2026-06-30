@@ -317,7 +317,7 @@ const PRODUCTS = [
         priceRange: "89 - 119 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/airfryer.png",
+        image: "assets/airfryer.jpg",
         amazonLink: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21", price: "ab 99 €", type: "amazon" },
@@ -2075,7 +2075,7 @@ const ARTICLES = [
         date: "25. Juni 2026",
         tag: "Küche & Haushalt",
         readTime: "6 Min. Lesezeit",
-        image: "assets/airfryer.png",
+        image: "assets/airfryer.jpg",
         content: `
             <p>Gefühlt hat inzwischen jeder einen Airfryer in der Küche stehen. Auf TikTok gibt es Millionen von Rezepten, von knusprigen Pommes bis hin zu gebackenen Haferflocken. Aber was ist dran am Hype?</p>
             
@@ -2087,7 +2087,7 @@ const ARTICLES = [
             </ul>
 
             <div class="article-product-embed">
-                <img src="assets/airfryer.png" alt="Cosori Airfryer">
+                <img src="assets/airfryer.jpg" alt="Cosori Airfryer">
                 <div class="article-product-info">
                     <h4>COSORI Heißluftfritteuse 5.5L</h4>
                     <p>Unser unangefochtener Testsieger. Bietet genug Platz für 4 Personen und lässt sich super leicht reinigen.</p>
