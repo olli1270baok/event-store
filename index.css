@@ -899,7 +899,10 @@ button {
 .shop-intro-text {
     max-width: 600px;
     margin: 1rem auto 0 auto;
-    color: var(--color-text-secondary);
+    color: #f4ecd8;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 1.1rem;
+    font-weight: 500;
 }
 
 .spreadshop-container-card {
@@ -2709,8 +2712,9 @@ button {
 .shop-search-bar {
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-bg-secondary);
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    border: 2px solid #b59f84;
     border-radius: 50px;
     padding: 0.5rem 1rem;
     margin-top: 1.5rem;
@@ -2718,6 +2722,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     transition: all 0.3s ease;
+    box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
 }
 .shop-search-bar:focus-within {
     border-color: var(--color-accent);
