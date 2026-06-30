@@ -2140,6 +2140,13 @@ button {
         position: relative;
         z-index: 1;
     }
+    .modal-title {
+        font-size: 1.6rem;
+    }
+    .modal-related-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
 }
 
 .modal-image-col {
