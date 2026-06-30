@@ -824,20 +824,46 @@ button {
     transform: scale(1.04);
 }
 
-.badge {
+.tape-badge {
     position: absolute;
     top: 15px;
-    left: 15px;
-    background-color: var(--color-accent);
-    color: var(--color-black);
-    font-family: var(--font-heading);
-    font-size: 0.7rem;
-    font-weight: 700;
+    left: 10px;
+    background-color: #e8dcc4;
+    color: #1a1a1a;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 0.35rem 0.75rem;
-    border-radius: var(--border-radius-sm);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+    padding: 0.3rem 0.8rem;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transform: rotate(-3deg);
+    z-index: 5;
+    border: 1px dashed rgba(0,0,0,0.08);
+}
+
+.tester-stamp {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    border: 3px solid #b71c1c;
+    color: #b71c1c;
+    font-family: 'Special Elite', cursive;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 0.2rem 0.5rem;
+    transform: rotate(-15deg);
+    opacity: 0.9;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1.1;
+    z-index: 6;
+    background: rgba(255,255,255,0.7);
+    box-shadow: inset 0 0 5px rgba(183, 28, 28, 0.2), 0 2px 4px rgba(0,0,0,0.3);
+    pointer-events: none;
+    letter-spacing: 1px;
+}
+.tester-stamp span {
+    font-size: 0.85rem;
 }
 
 .product-details {
@@ -1751,6 +1777,115 @@ button {
 
 .search-suggestions span:hover {
     color: var(--color-accent);
+}
+
+/* --- Newsletter Clipboard Box --- */
+.newsletter-section {
+    padding: 4rem 2rem 0;
+    background-color: var(--color-bg-primary);
+    display: flex;
+    justify-content: center;
+}
+
+.clipboard-box {
+    position: relative;
+    background: #fdfbf7;
+    background-image: url("https://www.transparenttextures.com/patterns/cream-paper.png");
+    max-width: 500px;
+    width: 100%;
+    padding: 3rem 2rem 2.5rem;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5), inset 0 0 40px rgba(0,0,0,0.05);
+    border: 1px solid rgba(0,0,0,0.1);
+    transform: rotate(1deg);
+    margin-bottom: -3rem; /* overlap with footer */
+    z-index: 10;
+}
+
+.clipboard-box::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+    background-color: #8c6b5d;
+    z-index: -1;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+.clip {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 35px;
+    background: linear-gradient(to bottom, #d4d4d4, #9a9a9a);
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4), inset 0 2px 2px rgba(255,255,255,0.8);
+    border: 1px solid #777;
+    z-index: 2;
+}
+
+.clip::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 10px;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.newsletter-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.newsletter-desc {
+    font-family: 'Special Elite', cursive;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: 2px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    border-radius: 4px;
+    outline: none;
+    transition: var(--transition-fast);
+}
+
+.newsletter-form input:focus {
+    border-color: var(--color-accent);
+    background: #fff;
+}
+
+@media (max-width: 600px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
 }
 
 /* --- Main Footer --- */
@@ -3542,11 +3677,12 @@ button {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('assets/schraube.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #888;
+    mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    -webkit-mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    border-radius: 50%;
     z-index: 10;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8), inset -1px -1px 3px rgba(255,255,255,0.4);
 }
 .team-card::before { top: 8px; left: 8px; transform: rotate(-35deg); }
 .team-card::after { top: 8px; right: 8px; transform: rotate(115deg); }
@@ -3603,11 +3739,12 @@ button {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('assets/schraube.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #888;
+    mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    -webkit-mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    border-radius: 50%;
     z-index: 10;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8), inset -1px -1px 3px rgba(255,255,255,0.4);
 }
 .product-card::before { top: 8px; left: 8px; transform: rotate(15deg); }
 .product-card::after { top: 8px; right: 8px; transform: rotate(-85deg); }
@@ -3617,11 +3754,12 @@ button {
     position: absolute;
     width: 24px;
     height: 24px;
-    background-image: url('assets/schraube.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: #888;
+    mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    -webkit-mask-image: radial-gradient(circle, #000 40%, transparent 41%);
+    border-radius: 50%;
     z-index: 10;
-    filter: drop-shadow(2px 2px 2px rgba(0,0,0,0.5));
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.8), inset -1px -1px 3px rgba(255,255,255,0.4);
 }
 .category-card::before { top: 8px; left: 8px; transform: rotate(45deg); }
 .category-card::after { top: 8px; right: 8px; transform: rotate(-15deg); }

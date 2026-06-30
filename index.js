@@ -11,7 +11,7 @@ const PRODUCTS = [
         priceRange: "200 - 270 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/mh_marshall_acton.jpg",
+        image: "assets/mh_marshall_acton.webp",
         amazonLink: "https://www.amazon.de/s?k=Marshall+Acton+III",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Marshall+Acton+III", price: "ab 229 €", type: "amazon" }
@@ -40,7 +40,7 @@ const PRODUCTS = [
         priceRange: "160 - 200 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/mh_fujifilm_instax.jpg",
+        image: "assets/mh_fujifilm_instax.webp",
         amazonLink: "https://www.amazon.de/s?k=Fujifilm+Instax+Mini+Evo",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Fujifilm+Instax+Mini+Evo", price: "ab 179 €", type: "amazon" }
@@ -69,7 +69,7 @@ const PRODUCTS = [
         priceRange: "30 - 50 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/mh_casio_vintage.jpg",
+        image: "assets/mh_casio_vintage.webp",
         amazonLink: "https://www.amazon.de/s?k=Casio+Vintage+Collection",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Casio+Vintage+Collection", price: "ab 35 €", type: "amazon" }
@@ -97,7 +97,7 @@ const PRODUCTS = [
         priceRange: "140 - 180 €",
         rating: 4.6,
         stars: "★★★★★",
-        image: "assets/mh_smeg_toaster.jpg",
+        image: "assets/mh_smeg_toaster.webp",
         amazonLink: "https://www.amazon.de/s?k=Smeg+Toaster",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Smeg+Toaster", price: "ab 149 €", type: "amazon" }
@@ -125,7 +125,7 @@ const PRODUCTS = [
         priceRange: "280 - 350 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/mh_audiotechnica.jpg",
+        image: "assets/mh_audiotechnica.webp",
         amazonLink: "https://www.amazon.de/s?k=Audio-Technica+LP120XUSB",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Audio-Technica+LP120XUSB", price: "ab 299 €", type: "amazon" }
@@ -153,7 +153,7 @@ const PRODUCTS = [
         priceRange: "20 - 40 €",
         rating: 4.9,
         stars: "★★★★★",
-        image: "assets/mh_bialetti.jpg",
+        image: "assets/mh_bialetti.webp",
         amazonLink: "https://www.amazon.de/s?k=Bialetti+Moka+Express",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Bialetti+Moka+Express", price: "ab 25 €", type: "amazon" }
@@ -181,7 +181,7 @@ const PRODUCTS = [
         priceRange: "70 - 100 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/mh_r98_keyboard.jpg",
+        image: "assets/mh_r98_keyboard.webp",
         amazonLink: "https://www.amazon.de/s?k=RK+ROYAL+KLUDGE+R98+Pro",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=RK+ROYAL+KLUDGE+R98+Pro", price: "ab 89 €", type: "amazon" }
@@ -209,7 +209,7 @@ const PRODUCTS = [
         priceRange: "15 - 30 €",
         rating: 4.6,
         stars: "★★★★★",
-        image: "assets/mh_edison_bulbs.jpg",
+        image: "assets/mh_edison_bulbs.webp",
         amazonLink: "https://www.amazon.de/s?k=Vintage+Glühbirne+LED",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Vintage+Glühbirne+LED", price: "ab 19 €", type: "amazon" }
@@ -237,7 +237,7 @@ const PRODUCTS = [
         priceRange: "120 - 150 €",
         rating: 4.5,
         stars: "★★★★☆",
-        image: "assets/mh_polaroid_now.jpg",
+        image: "assets/mh_polaroid_now.webp",
         amazonLink: "https://www.amazon.de/s?k=Polaroid+Now+Gen+2",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=Polaroid+Now+Gen+2", price: "ab 129 €", type: "amazon" }
@@ -266,7 +266,7 @@ const PRODUCTS = [
         priceRange: "90 - 120 €",
         rating: 4.6,
         stars: "★★★★★",
-        image: "assets/mh_kodak_printer.jpg",
+        image: "assets/mh_kodak_printer.webp",
         amazonLink: "https://www.amazon.de/s?k=KODAK+Mini+2+Retro",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=KODAK+Mini+2+Retro", price: "ab 99 €", type: "amazon" }
@@ -294,7 +294,7 @@ const PRODUCTS = [
         priceRange: "40 - 50 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/lego_botanical_product.jpg",
+        image: "assets/lego_botanical_product.webp",
         amazonLink: "https://www.amazon.de/s?k=lego+wildblumenstrauss&tag=baokmedia21-21",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=lego+wildblumenstrauss&tag=baokmedia21-21", price: "ab 43 €", type: "amazon" },
@@ -317,7 +317,7 @@ const PRODUCTS = [
         priceRange: "89 - 119 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/airfryer.jpg",
+        image: "assets/airfryer.webp",
         amazonLink: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21",
         shops: [
             { name: "Amazon", url: "https://www.amazon.de/s?k=COSORI+Heissluftfritteuse+5.5L&tag=baokmedia21-21", price: "ab 99 €", type: "amazon" },
@@ -347,7 +347,7 @@ const PRODUCTS = [
         priceRange: "25 - 35 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/diffuser.png",
+        image: "assets/diffuser.webp",
         amazonLink: "https://www.amazon.de/s?k=ASAKUKI+500ml+Aroma+Diffuser&tag=baokmedia21-21",
         review: "Ein absoluter Pinterest-Liebling für ein gemütliches Zuhause. Dieser 5-in-1 Ultraschall-Aromadiffusor verfügt über einen großen, leicht zu reinigenden 500-ml-Wassertank, 7 verschiedene LED-Lichtfarben und einen Sicherheits-Autoschalter, der das Überhitzen bei leerem Tank verhindert. Perfekt geeignet, um Raumluft zu befeuchten und mit ätherischen Ölen zu beduften.",
         pros: ["Hält mit einer Füllung problemlos die ganze Nacht durch (bis zu 16 Std.)", "Sehr leiser Plätschern, das beim Einschlafen überhaupt nicht stört", "Schöne, warme LED-Farben, die sich dimmen lassen"],
@@ -372,7 +372,7 @@ const PRODUCTS = [
         priceRange: "199 - 249 €",
         rating: 4.9,
         stars: "★★★★★",
-        image: "assets/headphones.png",
+        image: "assets/headphones.webp",
         amazonLink: "https://www.amazon.de/s?k=Sony+WH-1000XM4&tag=baokmedia21-21",
         review: "Die ungeschlagene Referenz im Bereich Active Noise Cancelling (ANC). Diese Kopfhörer blenden Außengeräusche in Flugzeug, Bahn oder Büro fast vollständig aus. Der Sound ist extrem ausgewogen und warm. Features wie 'Speak-to-Chat' (schaltet die Musik stumm, sobald man spricht) und eine Akkulaufzeit von bis zu 30 Stunden machen sie zum perfekten Reise- und Arbeits-Gadget.",
         pros: ["Das beste Noise Cancelling auf dem Markt – blendet Stimmen und Rauschen fast komplett aus", "Super bequem, drückt auch nach stundenlangem Tragen nicht am Kopf", "Lässt sich platzsparend in das mitgelieferte Case falten"],
@@ -397,7 +397,7 @@ const PRODUCTS = [
         priceRange: "22 - 29 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/waterbottle.png",
+        image: "assets/waterbottle.webp",
         amazonLink: "https://www.amazon.de/s?k=720+degree+trinkflasche&tag=baokmedia21-21",
         review: "Die doppelwandige Vakuum-Isolierung dieser robusten Edelstahlflasche hält Getränke bis zu 24 Stunden eiskalt und 12 Stunden heiß. Sie ist zu 100% auslaufsicher, geschmacksneutral und frei von BPA. Die matte Pulverbeschichtung verleiht der Flasche eine edle Haptik und sorgt für einen sicheren Griff beim Sport oder Outdoor-Aktivitäten.",
         pros: ["Hervorragende Isolierung – kaltes Wasser bleibt auch im heißen Auto stundenlang kühl", "Sehr griffige, matte Pulverbeschichtung, die keine Kratzer bekommt", "Absolut auslaufsicher, selbst bei kohlensäurehaltigen Getränken"],
@@ -422,7 +422,7 @@ const PRODUCTS = [
         priceRange: "649 - 799 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/vacuum.png",
+        image: "assets/vacuum.webp",
         amazonLink: "https://www.amazon.de/s?k=Roborock+Q+Revo&tag=baokmedia21-21",
         review: "Ein absolutes High-End-Haushaltsgerät, das das Wischen und Saugen vollkommen automatisiert. Die All-in-One-Dockingstation entleert den Staubbehälter, wäscht die rotierenden Mopps mit heißem Wasser und trocknet sie anschließend mit Heißluft. Mit 5500 Pa Saugleistung und modernster LiDAR-Navigation umfährt er Hindernisse präzise und reinigt porentief.",
         pros: ["Die rotierenden Wischmopps entfernen auch getrocknete Kaffeeflecken mühelos", "Wäscht und trocknet seine Mopps vollautomatisch mit Heißluft gegen Gerüche", "Geniale App mit präziser Raumkarte und No-Go-Zonen"],
@@ -447,7 +447,7 @@ const PRODUCTS = [
         priceRange: "549 - 629 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/coffeemaker.png",
+        image: "assets/coffeemaker.webp",
         amazonLink: "https://www.amazon.de/s?k=Philips+LatteGo+5400&tag=baokmedia21-21",
         review: "Der Traum für Kaffeeliebhaber: Dieser Vollautomat bereitet 12 Kaffeespezialitäten auf Knopfdruck frisch zu. Das Highlight ist das LatteGo-Milchsystem, welches vollkommen ohne Schläuche auskommt und in weniger als 15 Sekunden unter fließendem Wasser gereinigt werden kann. Über das intuitive Touch-Display lassen sich Kaffeestärke und Menge im Handumdrehen anpassen.",
         pros: ["Das einfachste Milchsystem überhaupt – in 15 Sekunden unter fließendem Wasser sauber", "Intuitive Bedienung über das Touch-Display mit 12 Kaffeespezialitäten", "Speichert eigene Profile für Kaffeestärke und Kaffeemenge"],
@@ -472,7 +472,7 @@ const PRODUCTS = [
         priceRange: "119 - 149 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/chargingstation.png",
+        image: "assets/chargingstation.webp",
         amazonLink: "https://www.amazon.de/s?k=Anker+3+in+1+MagSafe&tag=baokmedia21-21",
         review: "Das ultimative Upgrade für deinen Nachttisch oder Schreibtisch. Diese ultrakompakte Ladestation lädt dein iPhone mit vollen 15W per MagSafe, deine Apple Watch (inkl. Schnellladefunktion) und deine AirPods gleichzeitig kabellos auf. Dank des cleveren Klapp-Designs lässt sie sich auf die Größe eines Kartenspiels zusammenfalten – perfekt für Reisen.",
         pros: ["Offizielle MagSafe-Zertifizierung für schnelles Laden mit 15 Watt", "Lässt sich extrem kompakt auf Kartenspiel-Größe für Reisen zusammenfalten", "Lädt iPhone, Apple Watch und AirPods gleichzeitig über nur ein Kabel"],
@@ -522,7 +522,7 @@ const PRODUCTS = [
         priceRange: "24 - 34 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/chopper.png",
+        image: "assets/chopper.webp",
         amazonLink: "https://www.amazon.de/s?k=Fullstar+Gemueseschneider&tag=baokmedia21-21",
         review: "Ein absoluter TikTok-Kult! Dieser Gemüseschneider spart enorm viel Zeit beim Kochen und Meal-Prep. Mit seinen austauschbaren Klingen schneidet, würfelt und raspelt er Zwiebeln, Tomaten, Gurken und Käse in Sekundenschnelle direkt in den praktischen Auffangbehälter. Das clevere Design schützt die Finger und lässt sich einfach reinigen.",
         pros: ["Schneidet Zwiebeln und Gemüse in Sekunden in gleichmäßige Würfel", "Praktischer Auffangbehälter sorgt dafür, dass nichts daneben geht", "Viele nützliche Einsätze für Scheiben, Streifen und Spiralen im Set"],
@@ -547,7 +547,7 @@ const PRODUCTS = [
         priceRange: "15 - 25 €",
         rating: 4.6,
         stars: "★★★★☆",
-        image: "assets/sunsetlamp.png",
+        image: "assets/sunsetlamp.webp",
         amazonLink: "https://www.amazon.de/s?k=Sunset+Lamp+RGB&tag=baokmedia21-21",
         review: "Dieses kleine Gadget bringt die perfekte Pinterest-Stimmung in jedes Zimmer. Die Sonnenuntergangslampe projiziert ein warmes, weiches Licht an Wand oder Decke, das an einen echten Sonnenuntergang erinnert. Sie verfügt über 16 verschiedene Farben, eine App-Steuerung und lässt sich um 360 Grad drehen, um die Lichtstimmung flexibel anzupassen.",
         pros: ["Wunderschöne, intensive Lichtfarben, die sich per App steuern lassen", "Perfekt als indirekte Beleuchtung oder als Hintergrund für Fotos/Videos", "Der Lampenkopf lässt sich flexibel um 360 Grad drehen"],
@@ -572,7 +572,7 @@ const PRODUCTS = [
         priceRange: "60 - 85 €",
         rating: 3.2,
         stars: "★★★☆☆",
-        image: "assets/miniprojector.png",
+        image: "assets/miniprojector.webp",
         amazonLink: "https://www.amazon.de/s?k=Mini+Beamer+HY300&tag=baokmedia21-21",
         review: "Dieser portable Mini-Beamer wird auf Social Media massiv gehypt. Er läuft mit Android TV und projiziert dank des 180° schwenkbaren Designs an Decken oder Wände. Aber Vorsicht: Die Erwartungen sollten bei diesem Preis sehr niedrig gehalten werden. Die Bildqualität und Helligkeit sind extrem schwach.",
         pros: ["180° schwenkbarer Fuß ist praktisch (Bild an die Decke)", "Integriertes Android TV", "Sehr günstiger Einstiegspreis"],
@@ -597,7 +597,7 @@ const PRODUCTS = [
         priceRange: "199 - 249 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/walkingpad.png",
+        image: "assets/walkingpad.webp",
         amazonLink: "https://www.amazon.de/s?k=Citysports+Walking+Pad&tag=baokmedia21-21",
         review: "Das perfekte Gadget für alle im Homeoffice. Dieses ultra-flache Walking Pad lässt sich problemlos unter dem Schreibtisch platzieren, um während der Arbeit, in Telefonaten oder beim Serienschauen Schritte zu sammeln. Dank Transportrollen und einer Dicke von nur 12 cm lässt es sich nach dem Training platzsparend unter dem Sofa verstauen.",
         pros: ["Passt mit nur 12 cm Höhe problemlos unter die meisten Sofas oder Betten", "Sehr leiser Betrieb – man kann nebenbei problemlos telefonieren oder fernsehen", "Einfache Steuerung über eine kleine Fernbedienung in der Hand"],
@@ -622,7 +622,7 @@ const PRODUCTS = [
         priceRange: "70 - 90 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/sodastream.png",
+        image: "assets/sodastream.webp",
         amazonLink: "https://www.amazon.de/s?k=SodaStream+Terra&tag=baokmedia21-21",
         review: "Der absolute Marktführer unter den Wassersprudlern. Mit dem neuen Quick-Connect-System lassen sich die CO2-Zylinder einklicken statt eindrehen, was die Handhabung massiv erleichtert. Er sprudelt Leitungswasser in Sekundenschnelle auf und spart das lästige Schleppen von Kisten. Die Flaschen sind spülmaschinenfest.",
         pros: ["Sehr einfache Bedienung dank Quick-Connect Zylindereinkauf", "Spülmaschinenfeste Flaschen sparen lästiges Spülen per Hand", "Umweltfreundlich, da Plastikflaschen gespart werden"],
@@ -647,7 +647,7 @@ const PRODUCTS = [
         priceRange: "55 - 65 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/vacuumsealer.png",
+        image: "assets/vacuumsealer.webp",
         amazonLink: "https://www.amazon.de/s?k=Caso+VC10+Vakuumierer&tag=baokmedia21-21",
         review: "Das ideale Küchengadget für Meal-Prep, Sous-Vide-Garen oder um Lebensmittel einfach länger frisch zu halten. Der Caso VC10 zieht die Luft vollautomatisch aus den Spezialbeuteln und verschweißt sie mit einer doppelten Schweißnaht. So bleiben Vitamine und Aromen perfekt erhalten und Gefrierbrand hat keine Chance.",
         pros: ["Lebensmittel bleiben bis zu 8x länger frisch", "Sehr starke Vakuumleistung für diese Preisklasse", "Inklusive Stopp-Taste für empfindliche Lebensmittel (wie Beeren)"],
@@ -672,7 +672,7 @@ const PRODUCTS = [
         priceRange: "25 - 35 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/labelprinter.png",
+        image: "assets/labelprinter.webp",
         amazonLink: "https://www.amazon.de/s?k=Phomemo+D30+Etikettendrucker&tag=baokmedia21-21",
         review: "Dieses kleine, akkubetriebene Beschriftungsgerät druckt Thermodirekt-Etiketten ganz ohne Tinte. Über die zugehörige Smartphone-App lassen sich Schriftarten, Symbole und Rahmen kinderleicht gestalten. Perfekt geeignet, um Gewürzgläser, Vorratsdosen, Kabel oder Schulhefte übersichtlich und einheitlich zu beschriften.",
         pros: ["Thermodruckverfahren benötigt keinerlei teure Tinte oder Toner", "Sehr intuitive App-Bedienung über Bluetooth", "Ultrakompakt und passt in jede Schreibtischschublade"],
@@ -697,7 +697,7 @@ const PRODUCTS = [
         priceRange: "90 - 110 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/airpurifier.png",
+        image: "assets/airpurifier.webp",
         amazonLink: "https://www.amazon.de/s?k=Levoit+Core+300S&tag=baokmedia21-21",
         review: "Ein smarter Luftreiniger mit echtem HEPA-H13-Filter, der 99,97% aller Hausstaubmilben, Pollen, Tierhaare und Gerüche aus der Luft filtert. Dank App-Steuerung und Kompatibilität mit Alexa lässt sich das Gerät bequem programmieren. Der integrierte Sensor misst die Luftqualität in Echtzeit und passt die Lüfterstufe automatisch an.",
         pros: ["Hocheffizienter 3-stufiger Filter, spürbar bessere Luft für Allergiker", "Extrem leiser Schlafmodus (nur 22 dB) stört nicht in der Nacht", "Echtzeit-Luftqualitätsanzeige und smarte App-Steuerung"],
@@ -722,7 +722,7 @@ const PRODUCTS = [
         priceRange: "70 - 80 €",
         rating: 4.6,
         stars: "★★★★☆",
-        image: "assets/tvbacklight.png",
+        image: "assets/tvbacklight.webp",
         amazonLink: "https://www.amazon.de/s?k=Govee+TV+Hintergrundbeleuchtung&tag=baokmedia21-21",
         review: "Mit diesem smarten LED-Kit rüstest du jedes Fernsehgerät mit farbcodiertem Ambilight nach. Eine kleine Kamera erfasst die Farben auf dem Bildschirm und synchronisiert die LED-Leiste hinter dem Fernseher in Echtzeit. Das sorgt für ein tieferes Eintauchen beim Filmschauen und schont gleichzeitig die Augen im dunklen Raum.",
         pros: ["Reagiert extrem schnell auf Farbwechsel auf dem Bildschirm", "Einfache Installation und Steuerung per App oder Sprachbefehl", "Viel günstiger als ein echter Ambilight-Fernseher"],
@@ -747,7 +747,7 @@ const PRODUCTS = [
         priceRange: "40 - 60 €",
         rating: 3.8,
         stars: "★★★★☆",
-        image: "assets/neckpillow.png",
+        image: "assets/neckpillow.webp",
         amazonLink: "https://www.amazon.de/s?k=Third+of+Life+Nackenstuetzkissen&tag=baokmedia21-21",
         review: "Ein ergonomisches Visco-Schaum-Kissen, das speziell für Seiten- und Rückenschläfer entwickelt wurde. Der viskoelastische Schaum passt sich unter Körperwärme der Nacken- und Kopfkontur an. Allerdings scheiden sich bei diesem Kissen die Geister.",
         pros: ["Hervorragende Druckentlastung für reine Rückenschläfer", "Bezug lässt sich hygienisch waschen"],
@@ -772,7 +772,7 @@ const PRODUCTS = [
         priceRange: "25 - 35 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/powerbank.png",
+        image: "assets/powerbank.webp",
         amazonLink: "https://www.amazon.de/s?k=Anker+PowerCore+20000&tag=baokmedia21-21",
         review: "Die wohl beliebteste Powerbank auf Amazon bietet mit 20.000 mAh genug Kapazität, um ein iPhone oder Samsung-Smartphone ca. 4- bis 5-mal voll aufzuladen. Dank der PowerIQ-Technologie passt sich der Ladestrom automatisch an das Gerät an. Die Powerbank ist robust gebaut und verfügt über mehrere Sicherheitsmechanismen gegen Überlastung.",
         pros: ["Riesige Kapazität reicht problemlos für ein ganzes Wochenende ohne Steckdose", "Sehr robustes, kratzfestes Gehäuse", "Lädt zwei Geräte gleichzeitig auf"],
@@ -797,7 +797,7 @@ const PRODUCTS = [
         priceRange: "60 - 80 €",
         rating: 4.6,
         stars: "★★★★☆",
-        image: "assets/floorlamp.png",
+        image: "assets/floorlamp.webp",
         amazonLink: "https://www.amazon.de/s?k=Govee+RGBIC+Stehlampe&tag=baokmedia21-21",
         review: "Diese minimalistische Ecken-Stehlampe projiziert dank RGBIC-Technologie mehrere Farben gleichzeitig an die Wand. Über die Govee-App lassen sich unzählige Lichtszenen, Timer und ein Musik-Synchronisations-Modus steuern. Mit ihr filigranes Design passt sie perfekt in ungenutzte Raumecken und sorgt für eine tolle Atmosphäre.",
         pros: ["Wunderschöne Farbverläufe und dynamische Effekte an der Wand", "Sehr platzsparendes Design, passt hinter jedes Sofa", "Kompatibel mit Alexa und Google Home"],
@@ -822,7 +822,7 @@ const PRODUCTS = [
         priceRange: "22 - 27 €",
         rating: 4.5,
         stars: "★★★★☆",
-        image: "assets/keyfinder.png",
+        image: "assets/keyfinder.webp",
         amazonLink: "https://www.amazon.de/s?k=Tile+Mate&tag=baokmedia21-21",
         review: "Der vielseitige Bluetooth-Tracker lässt sich einfach am Schlüsselbund, Rucksack oder Katzenhalsband befestigen. Über die Smartphone-App lässt sich der Tracker orten oder ein lauter Ton abspielen. Findet man sein Handy nicht, kann man durch Drücken des Buttons am Tile das Handy (selbst im Lautlos-Modus) klingeln lassen.",
         pros: ["Zwei-Wege-Suche: Findet den Schlüsselbund ODER das Smartphone", "Wasserabweisendes Gehäuse und lange Akkulaufzeit (bis zu 3 Jahre)", "Funktioniert sowohl mit iOS als auch mit Android einwandfrei"],
@@ -847,7 +847,7 @@ const PRODUCTS = [
         priceRange: "20 - 30 €",
         rating: 3.5,
         stars: "★★★☆☆",
-        image: "assets/bluetoothsender.png",
+        image: "assets/bluetoothsender.webp",
         amazonLink: "https://www.amazon.de/s?k=Bluetooth+Transmitter+Receiver&tag=baokmedia21-21",
         review: "Ein 2-in-1 Bluetooth Adapter, der alte Fernseher oder Stereoanlagen bluetoothfähig machen soll. Auf dem Papier eine tolle Idee, in der Praxis leider oft mit frustrierenden Verbindungsproblemen verbunden.",
         pros: ["Sehr günstig", "Akkubetrieb für den mobilen Einsatz möglich"],
@@ -872,7 +872,7 @@ const PRODUCTS = [
         priceRange: "100 - 140 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/neckmassager.png",
+        image: "assets/neckmassager.webp",
         amazonLink: "https://www.amazon.de/s?k=Donnerberg+Nackenmassagegeraet&tag=baokmedia21-21",
         review: "Ein Shiatsu-Massagegerät mit zuschaltbarer Infrarotwärme und Vibrationsfunktion. Die 8 rotierenden Massageköpfe fühlen sich an wie eine echte Handmassage. Durch die Schlaufen an den Enden kann man den Druck auf den Nacken- oder Schulterbereich stufenlos selbst regulieren. Ideal zur Linderung von Verspannungen nach langen Bürotagen.",
         pros: ["Sehr kräftige Massage, die Verspannungen wirklich tiefenwirksam löst", "Zuschaltbare Wärme regt die Durchblutung zusätzlich an", "Vielseitig einsetzbar auch für Rücken, Beine oder Bauch"],
@@ -897,7 +897,7 @@ const PRODUCTS = [
         priceRange: "8 - 12 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/resistancebands.png",
+        image: "assets/resistancebands.webp",
         amazonLink: "https://www.amazon.de/s?k=Gritin+Fitnessbaender&tag=baokmedia21-21",
         review: "Ein Set aus 5 verschiedenen Premium-Latexbändern mit unterschiedlichen Zugstärken (von leicht bis extra schwer). Perfekt geeignet für Krafttraining, Yoga, Pilates, Stretching oder Physiotherapie zu Hause. Die Bänder sind hautfreundlich, extrem reißfest und kommen in einem praktischen kleinen Transportbeutel.",
         pros: ["Extrem günstiges Trainingstool für den ganzen Körper", "Sehr platzsparend und ideal für unterwegs oder im Urlaub", "5 verschiedene Zugstärken bieten das passende Level für jede Übung"],
@@ -922,7 +922,7 @@ const PRODUCTS = [
         priceRange: "20 - 30 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/picnicblanket.png",
+        image: "assets/picnicblanket.webp",
         amazonLink: "https://www.amazon.de/s?k=Outdoor+Picknickdecke+wasserdicht&tag=baokmedia21-21",
         review: "Eine dreischichtige, wasserdichte Picknickdecke mit den Maßen 200 x 200 cm, die genug Platz für 4-6 Personen bietet. Die Unterseite besteht aus feuchtigkeitsbeständigem PEVA, das Nässe und Kälte vom Boden abhält. Die Oberseite besteht aus weichem Fleece für optimalen Liegekomfort. Die Decke lässt sich kompakt zusammenfalten und mit dem Tragegriff leicht transportieren.",
         pros: ["100% wasserdichte Unterseite hält trocken, selbst auf feuchtem Gras", "Sehr großzügiges Liegeplatz-Angebot bei geringem Packmaß", "Schöne, moderne Muster im Vergleich zu klassischen Karo-Decken"],
@@ -947,7 +947,7 @@ const PRODUCTS = [
         priceRange: "1.200 - 1.800 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/maehroboter.png",
+        image: "assets/maehroboter.webp",
         amazonLink: "https://www.amazon.de/s?k=husqvarna+automower+m%C3%A4hroboter&tag=baokmedia21-21",
         review: "Der Husqvarna Automower 430X ist das Flaggschiff unter den Mährobotern und mäht vollautomatisch Rasenflächen bis zu 3.200 m². Dank GPS-gestützter Navigation, App-Steuerung und Diebstahlschutz ist er der unangefochtene Profi für anspruchsvolle Gärten. Einmal eingerichtet, kümmert er sich komplett selbstständig um deinen Rasen – jeden Tag, bei jedem Wetter.",
         pros: ["Vollautomatisches Mähen auf bis zu 3.200 m² – kein manuelles Eingreifen nötig", "GPS-Navigation und App-Steuerung per Smartphone in Echtzeit", "Integrierter Diebstahlschutz und PIN-Code-Sicherung"],
@@ -972,7 +972,7 @@ const PRODUCTS = [
         priceRange: "280 - 380 €",
         rating: 4.9,
         stars: "★★★★★",
-        image: "assets/kopfhoerer.png",
+        image: "assets/kopfhoerer.webp",
         amazonLink: "https://www.amazon.de/s?k=sony+wh-1000xm5+kopfh%C3%B6rer&tag=baokmedia21-21",
         review: "Die Sony WH-1000XM5 sind schlicht die besten Noise-Cancelling-Kopfhörer auf dem Markt. Mit 8 Mikrofonen, dem neuen HD Noise Cancelling Processor QN2 und bis zu 30 Stunden Akkulaufzeit setzen sie Maßstäbe in ihrer Klasse. Der Klang ist warm, detailreich und absolut makellos – egal ob Musik, Podcasts oder Calls.",
         pros: ["Branchenführendes Noise Cancelling filtert selbst Bahnlärm zuverlässig raus", "30 Stunden Akku + Schnellladefunktion (3 Min = 3 Stunden)", "Extrem bequemes, leichtes Design für stundenlangen Tragekomfort"],
@@ -997,7 +997,7 @@ const PRODUCTS = [
         priceRange: "200 - 300 €",
         rating: 4.6,
         stars: "★★★★½",
-        image: "assets/getraenkekuehlschrank.png",
+        image: "assets/getraenkekuehlschrank.webp",
         amazonLink: "https://www.amazon.de/s?k=klarstein+getr%C3%A4nkek%C3%BChlschrank+glast%C3%BCr&tag=baokmedia21-21",
         review: "Der Klarstein Beersafe L ist ein freistehender Getränkekühlschrank mit Glastür, LED-Beleuchtung und einem Fassungsvermögen für bis zu 62 Dosen oder 16 Standard-Flaschen. Die Temperatur lässt sich präzise von 5 bis 10 °C einstellen. Das elegante schwarze Gehäuse mit Chromgriffen passt in jede moderne Küche, Bar oder jeden Partyraum.",
         pros: ["Perfekte Kühltemperatur für Bier, Softdrinks und Wein bei sehr leisem Betrieb", "LED-Beleuchtung lässt den Inhalt attraktiv in Szene setzen", "Kompakte Bauform passt unter Theken oder in kleine Räume"],
@@ -1022,7 +1022,7 @@ const PRODUCTS = [
         priceRange: "700 - 850 €",
         rating: 4.9,
         stars: "★★★★★",
-        image: "assets/lego.png",
+        image: "assets/lego.webp",
         amazonLink: "https://www.amazon.de/s?k=lego+star+wars+millennium+falcon+75192&tag=baokmedia21-21",
         review: "Der LEGO Star Wars Millennium Falcon (Set 75192) ist mit 7.541 Teilen eines der größten und detailliertesten LEGO-Sets überhaupt. Das fertige Modell misst beeindruckende 84 cm Länge und reproduziert den Schnellen Falken aus Episode IV-VII mit absoluter Liebe zum Detail – inklusive detaillierter Innenräume, Minifiguren und abnehmbarer Panele.",
         pros: ["Atemberaubendes Detaillevel mit 7.541 Teilen – ein Meisterwerk der LEGO-Baukunst", "Enormer Displaywert: Ist ein echtes Regal-Statement für jeden Star Wars Fan", "Werthaltiges Sammlerstück – bestimmte Sets steigen im Wert stark an"],
@@ -1040,7 +1040,7 @@ const PRODUCTS = [
         priceRange: "30 - 40 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/messi_lego.jpg",
+        image: "assets/messi_lego.webp",
         amazonLink: "https://www.amazon.de/s?k=LEGO+Lionel+Messi+43015&tag=baokmedia21-21",
         review: "Das LEGO Icons Lionel Messi Set (43015) ist eine detailgetreue Hommage an die lebende Fußballlegende. Das Set umfasst eine detaillierte LEGO-Figur von Messi im argentinischen Trikot, eine Trophäen-Vitrine und zahlreiche ikonische Accessoires aus seiner Karriere. Mit 1.420 Teilen ist es ein Premium-Sammlerstück für Fußballfans und LEGO-Enthusiasten gleichermaßen.",
         pros: ["Einzigartiges Sammlerstück – Messi als LEGO-Set ist ein absolutes Highlight für jeden Fan", "Hoher Detailgrad: Argentinisches Trikot, Ballon d'Or-Trophäen und Karriere-Highlights", "Fairer Preis für ein offizielles LEGO-Lizenzprodukt dieser Qualität"],
@@ -1058,7 +1058,7 @@ const PRODUCTS = [
         priceRange: "8 - 15 €",
         rating: 4.5,
         stars: "★★★★½",
-        image: "assets/postmappe.png",
+        image: "assets/postmappe.webp",
         amazonLink: "https://www.amazon.de/s?k=postmappe+colorspan+DIN+A4+3+Innenklappen&tag=baokmedia21-21",
         review: "Diese Postmappe aus extra starkem Colorspan-Karton bietet mit ihren 3 Innenklappen strukturierte Ordnung für DIN A4-Dokumente, Rechnungen und Briefe. Der robuste Karton hält auch intensivem Alltagsgebrauch stand. Das schlichte, professionelle Design passt sowohl ins Büro als auch ins Home-Office – ein praktisches Organisations-Must-Have für unter 15 Euro.",
         pros: ["Extrem günstiger Preis für die gebotene Qualität und Stabilität", "Drei Innenklappen bieten strukturierte Unterteilung für verschiedene Dokumenttypen", "Robuster Colorspan-Karton – deutlich langlebiger als Standard-Papierboxen"],
@@ -1083,7 +1083,7 @@ const PRODUCTS = [
         priceRange: "60 - 90 €",
         rating: 4.4,
         stars: "★★★★½",
-        image: "assets/ventilator_brandson.png",
+        image: "assets/ventilator_brandson.webp",
         amazonLink: "https://www.amazon.de/s?k=brandson+turmventilator+fernbedienung&tag=baokmedia21-21",
         review: "Der Brandson Turmventilator überzeugt durch sein schlankes Design, leisen Betrieb und die bequeme Fernbedienung. Mit 3 Windgeschwindigkeiten, Timer-Funktion und 70°-Oszillation kühlt er effektiv große Räume. Das LED-Display ermöglicht die Bedienung auch bei Dunkelheit, und der 12-Stunden-Timer macht ihn zum idealen Schlafzimmer-Begleiter im Sommer.",
         pros: ["Sehr leiser Betrieb – auch im Schlafzimmer angenehm nutzbar", "Fernbedienung mit Timer-Funktion für maximalen Komfort", "Schlankes Standdesign passt in jede Zimmerecke"],
@@ -1108,7 +1108,7 @@ const PRODUCTS = [
         priceRange: "200 - 280 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/ventilator_philips.jpg",
+        image: "assets/ventilator_philips.webp",
         amazonLink: "https://www.amazon.de/s?k=philips+turmventilator+7000+series&tag=baokmedia21-21",
         review: "Der Philips Air Performer 7000 (AMF765) ist mehr als ein Ventilator – er ist gleichzeitig ein leistungsstarker Luftreiniger mit HEPA-Filter. Das elegante, säulenartige Design ohne Rotorblätter sorgt für gleichmäßigen, sanften Luftstrom. Über die Philips Air+ App lässt er sich vollständig per Smartphone steuern und zeigt Echtzeit-Luftqualitätsdaten an.",
         pros: ["2-in-1: Ventilator und Luftreiniger mit HEPA-Filter in einem eleganten Gerät", "Smart-Home-Integration mit App-Steuerung und Echtzeit-Luftqualitätsanzeige", "Extrem leiser Betrieb (nur 20 dB im Schlafmodus)"],
@@ -1133,7 +1133,7 @@ const PRODUCTS = [
         priceRange: "15 - 25 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/funko_mandalorian.jpg",
+        image: "assets/funko_mandalorian.webp",
         amazonLink: "https://www.amazon.de/s?k=Funko+POP+Mandalorian+The+Child&tag=baokmedia21-21",
         review: "Ein absolutes Must-Have für jeden Star Wars Fan. Die Funko POP! Figur vom Mandalorianer zusammen mit The Child (Grogu) ist extrem detailliert und ein toller Hingucker fürs Regal oder den Schreibtisch.",
         pros: ["Tolle Verarbeitung und viele Details", "Zwei Figuren in einem (Mando & Grogu)", "Perfektes Geschenk für Star Wars Fans"],
@@ -1158,7 +1158,7 @@ const PRODUCTS = [
         priceRange: "25 - 35 €",
         rating: 4.7,
         stars: "★★★★★",
-        image: "assets/lego_clone_trooper.jpg",
+        image: "assets/lego_clone_trooper.webp",
         amazonLink: "https://www.amazon.de/s?k=LEGO+Star+Wars+75372&tag=baokmedia21-21",
         review: "Ein geniales Battle Pack für den perfekten Aufbau einer eigenen Klonkrieger-Armee. Es enthält spannende Minifiguren und kleine, gut durchdachte Fahrzeuge, die sofort zum Spielen oder Ausstellen einladen.",
         pros: ["Tolle Auswahl an Klonkriegern und Droiden in einem Set", "Super Preis-Leistungs-Verhältnis für Army-Building", "Detailreiche Drucke auf den Figuren"],
@@ -1176,7 +1176,7 @@ const PRODUCTS = [
         priceRange: "30 - 45 €",
         rating: 4.5,
         stars: "★★★★☆",
-        image: "assets/monopoly_fifa.jpg",
+        image: "assets/monopoly_fifa.webp",
         amazonLink: "https://www.amazon.de/s?k=Monopoly+Panini+Prizm+FIFA&tag=baokmedia21-21",
         review: "Die perfekte Symbiose für Fußball- und Brettspielfans. Diese Monopoly Edition verbindet das klassische Gameplay mit der Sammelleidenschaft von Panini Prizm Karten. Ein toller Twist für den nächsten Spieleabend.",
         pros: ["Cooles Design im Panini-Stil", "Spielfiguren sind Fußball-Themen (z.B. Schuh, Ball)", "Großer Spaß für Fußball-Fans jeden Alters"],
@@ -1201,7 +1201,7 @@ const PRODUCTS = [
         priceRange: "100 - 130 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/lego_razor_crest.jpg",
+        image: "assets/lego_razor_crest.webp",
         amazonLink: "https://www.amazon.de/s?k=LEGO+Star+Wars+Razor+Crest&tag=baokmedia21-21",
         review: "Das kultige Raumschiff des Mandalorianers als extrem detailreiches LEGO-Set. Mit Transportraum, Schlafkabine und aufklappbaren Seitenwänden bietet das Schiff enorm viele Spielfunktionen und sieht im Regal beeindruckend aus.",
         pros: ["Tolle Minifiguren (Mando, Grogu, Greef Karga, Scout Trooper)", "Sehr stabil gebaut und gut bespielbar", "Kultstatus unter Star Wars Fans"],
@@ -1219,7 +1219,7 @@ const PRODUCTS = [
         priceRange: "80 - 120 €",
         rating: 4.9,
         stars: "★★★★★",
-        image: "assets/ultimate_grogu.jpg",
+        image: "assets/ultimate_grogu.webp",
         amazonLink: "https://www.amazon.de/s?k=Star+Wars+Ultimate+Grogu+Hasbro&tag=baokmedia21-21",
         review: "Der absolute Wahnsinn für jeden Star Wars Fan! Diese Ultimate Grogu Figur von Hasbro ist im 1:1 Maßstab (lebensgroß) und kommt mit realistischen Bewegungen und Sounds. Er reagiert auf Berührungen und sieht unglaublich echt aus.",
         pros: ["Lebensgroß (1:1 Maßstab) - wirkt wie echt", "Tolle Animatronic-Bewegungen (Augen, Ohren, Kopf)", "Sehr weiches Gewand und hochwertige Verarbeitung"],
@@ -1244,7 +1244,7 @@ const PRODUCTS = [
         "priceRange": "50 - 80 €",
         "rating": 4.6,
         "stars": "★★★★½",
-        "image": "assets/headphones.png",
+        "image": "assets/headphones.webp",
         "amazonLink": "https://www.amazon.de/s?k=Soundcore+Life+Q30&tag=baokmedia21-21",
         "review": "Der ungeschlagene Preis-Leistungs-König. Bietet ANC, das zwar nicht an Sony rankommt, aber für den Alltag im Zug oder Büro völlig ausreicht.",
         "pros": [
@@ -1274,7 +1274,7 @@ const PRODUCTS = [
         "priceRange": "90 - 120 €",
         "rating": 4.3,
         "stars": "★★★★☆",
-        "image": "assets/vacuum.png",
+        "image": "assets/vacuum.webp",
         "amazonLink": "https://www.amazon.de/s?k=Lefant+M210&tag=baokmedia21-21",
         "review": "Ein kompakter, reiner Saugroboter ohne Schnickschnack. Ideal für kleine Wohnungen oder als Einstiegsgerät, um das Konzept Saugroboter auszuprobieren.",
         "pros": [
@@ -1304,7 +1304,7 @@ const PRODUCTS = [
         "priceRange": "160 - 220 €",
         "rating": 4.8,
         "stars": "★★★★★",
-        "image": "assets/airfryer.jpg",
+        "image": "assets/airfryer.webp",
         "amazonLink": "https://www.amazon.de/s?k=Ninja+Foodi+Dual+Zone&tag=baokmedia21-21",
         "review": "Der König unter den Heißluftfritteusen mit zwei separaten Garzonen. Man kann Pommes und Hähnchen gleichzeitig bei unterschiedlichen Temperaturen zubereiten, und beide werden auf die Sekunde genau gleichzeitig fertig.",
         "pros": [
@@ -1334,7 +1334,7 @@ const PRODUCTS = [
         "priceRange": "60 - 90 €",
         "rating": 4.5,
         "stars": "★★★★½",
-        "image": "assets/massagegun.jpg",
+        "image": "assets/massagegun.webp",
         "amazonLink": "https://www.amazon.de/s?k=Renpho+Massagepistole&tag=baokmedia21-21",
         "review": "Eine kompakte, günstige Alternative zu den teuren Profi-Geräten. Sie bietet genug Kraft für Hobbysportler und hat einen leisen bürstenlosen Motor.",
         "pros": [
@@ -1363,7 +1363,7 @@ const PRODUCTS = [
     "priceRange": "199 - 229 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_ninja_creami.jpg",
+    "image": "assets/summer_ninja_creami.webp",
     "amazonLink": "https://www.amazon.de/s?k=Ninja+Creami",
     "shops": [
         {
@@ -1400,7 +1400,7 @@ const PRODUCTS = [
     "priceRange": "349 - 399 €",
     "rating": 4.9,
     "stars": "★★★★★",
-    "image": "assets/summer_ooni_koda.jpg",
+    "image": "assets/summer_ooni_koda.webp",
     "amazonLink": "https://www.amazon.de/s?k=Ooni+Koda+12",
     "shops": [
         {
@@ -1438,7 +1438,7 @@ const PRODUCTS = [
     "priceRange": "129 - 159 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_jbl_charge5.jpg",
+    "image": "assets/summer_jbl_charge5.webp",
     "amazonLink": "https://www.amazon.de/s?k=JBL+Charge+5",
     "shops": [
         {
@@ -1475,7 +1475,7 @@ const PRODUCTS = [
     "priceRange": "199 - 299 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/summer_sup.jpg",
+    "image": "assets/summer_sup.webp",
     "amazonLink": "https://www.amazon.de/s?k=Stand+Up+Paddle+Board",
     "shops": [
         {
@@ -1512,7 +1512,7 @@ const PRODUCTS = [
     "priceRange": "40 - 250 €",
     "rating": 4.9,
     "stars": "★★★★★",
-    "image": "assets/summer_yeti.jpg",
+    "image": "assets/summer_yeti.webp",
     "amazonLink": "https://www.amazon.de/s?k=Yeti+Rambler",
     "shops": [
         {
@@ -1549,7 +1549,7 @@ const PRODUCTS = [
     "priceRange": "45 - 60 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_stanley.jpg",
+    "image": "assets/summer_stanley.webp",
     "amazonLink": "https://www.amazon.de/s?k=Stanley+Quencher",
     "shops": [
         {
@@ -1587,7 +1587,7 @@ const PRODUCTS = [
     "priceRange": "89 - 110 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_weber.jpg",
+    "image": "assets/summer_weber.webp",
     "amazonLink": "https://www.amazon.de/s?k=Weber+Go-Anywhere",
     "shops": [
         {
@@ -1624,7 +1624,7 @@ const PRODUCTS = [
     "priceRange": "299 - 399 €",
     "rating": 4.5,
     "stars": "★★★★☆",
-    "image": "assets/summer_dyson.jpg",
+    "image": "assets/summer_dyson.webp",
     "amazonLink": "https://www.amazon.de/s?k=Dyson+Turmventilator",
     "shops": [
         {
@@ -1662,7 +1662,7 @@ const PRODUCTS = [
     "priceRange": "220 - 279 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_fatboy.jpg",
+    "image": "assets/summer_fatboy.webp",
     "amazonLink": "https://www.amazon.de/s?k=Fatboy+Headdemock",
     "shops": [
         {
@@ -1700,7 +1700,7 @@ const PRODUCTS = [
     "priceRange": "99 - 199 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/summer_intex.jpg",
+    "image": "assets/summer_intex.webp",
     "amazonLink": "https://www.amazon.de/s?k=Intex+Frame+Pool",
     "shops": [
         {
@@ -1738,7 +1738,7 @@ const PRODUCTS = [
     "priceRange": "15 - 30 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_dog_coolingmat.jpg",
+    "image": "assets/summer_dog_coolingmat.webp",
     "amazonLink": "https://www.amazon.de/s?k=Kühlmatte+Hund",
     "shops": [
         {
@@ -1814,7 +1814,7 @@ const PRODUCTS = [
     "priceRange": "50 - 70 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/babyliss_hydro_fusion.jpg",
+    "image": "assets/babyliss_hydro_fusion.webp",
     "amazonLink": "https://www.amazon.de/s?k=BaByliss+Hydro+Fusion",
     "shops": [
         {
@@ -1851,7 +1851,7 @@ const PRODUCTS = [
     "priceRange": "250 - 300 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/shark_flexstyle.jpg",
+    "image": "assets/shark_flexstyle.webp",
     "amazonLink": "https://www.amazon.de/s?k=Shark+FlexStyle",
     "shops": [
         {
@@ -1889,7 +1889,7 @@ const PRODUCTS = [
     "priceRange": "180 - 250 €",
     "rating": 4.5,
     "stars": "★★★★☆",
-    "image": "assets/citysports_laufband.jpg",
+    "image": "assets/citysports_laufband.webp",
     "amazonLink": "https://www.amazon.de/s?k=CITYSPORTS+Laufband",
     "shops": [
         {
@@ -1927,7 +1927,7 @@ const PRODUCTS = [
     "priceRange": "300 - 400 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/urevo_walking_pad.jpg",
+    "image": "assets/urevo_walking_pad.webp",
     "amazonLink": "https://www.amazon.de/s?k=UREVO+Walking+Pad+Steigung",
     "shops": [
         {
@@ -1965,7 +1965,7 @@ const PRODUCTS = [
     "priceRange": "140 - 180 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/delonghi_dedica.jpg",
+    "image": "assets/delonghi_dedica.webp",
     "amazonLink": "https://www.amazon.de/s?k=DeLonghi+Dedica",
     "shops": [
         {
@@ -2003,7 +2003,7 @@ const PRODUCTS = [
     "priceRange": "500 - 650 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/sage_barista.jpg",
+    "image": "assets/sage_barista.webp",
     "amazonLink": "https://www.amazon.de/s?k=Sage+Barista+Express",
     "shops": [
         {
@@ -2044,14 +2044,14 @@ const ARTICLES = [
         date: "28. Juni 2026",
         tag: "LEGO & Spielzeug",
         readTime: "4 Min. Lesezeit",
-        image: "assets/lego_botanical.png",
+        image: "assets/lego_botanical.webp",
         content: `
             <p>LEGO hat sich in den letzten Jahren rasant gewandelt. Was früher hauptsächlich in Kinderzimmern stattfand, ist heute ein Premium-Hobby für Erwachsene geworden. Besonders die Botanical Collection, Architektur-Sets und gigantische Star Wars Modelle haben es uns angetan.</p>
             
             <h3>1. Die Botanical Collection: Pflanzen, die nie verwelken</h3>
             <p>Einer der größten Hypes auf Instagram und Pinterest sind die LEGO Blumensträuße und Bonsai-Bäume. Sie sehen nicht nur stylisch aus, sondern bieten auch ein extrem entspannendes Bau-Erlebnis. Wer keinen grünen Daumen hat, bekommt hier die perfekte Deko für den Schreibtisch.</p>
             <div class="article-product-embed">
-                <img src="assets/lego_botanical.png" alt="LEGO Blumenstrauß">
+                <img src="assets/lego_botanical.webp" alt="LEGO Blumenstrauß">
                 <div class="article-product-info">
                     <h4>LEGO Icons Wildblumenstrauß</h4>
                     <p>Wunderschöne Deko-Alternative zu echten Pflanzen. Sieht im Regal extrem hochwertig aus.</p>
@@ -2075,7 +2075,7 @@ const ARTICLES = [
         date: "25. Juni 2026",
         tag: "Küche & Haushalt",
         readTime: "6 Min. Lesezeit",
-        image: "assets/airfryer.jpg",
+        image: "assets/airfryer.webp",
         content: `
             <p>Gefühlt hat inzwischen jeder einen Airfryer in der Küche stehen. Auf TikTok gibt es Millionen von Rezepten, von knusprigen Pommes bis hin zu gebackenen Haferflocken. Aber was ist dran am Hype?</p>
             
@@ -2087,7 +2087,7 @@ const ARTICLES = [
             </ul>
 
             <div class="article-product-embed">
-                <img src="assets/airfryer.jpg" alt="Cosori Airfryer">
+                <img src="assets/airfryer.webp" alt="Cosori Airfryer">
                 <div class="article-product-info">
                     <h4>COSORI Heißluftfritteuse 5.5L</h4>
                     <p>Unser unangefochtener Testsieger. Bietet genug Platz für 4 Personen und lässt sich super leicht reinigen.</p>
@@ -2311,6 +2311,18 @@ function initProductCatalog() {
     renderNativeTrending();
 }
 
+function getStampHtml(product) {
+    if (!product.testerQuote) return '';
+    let testerName = "REDAKTION";
+    const quote = product.testerQuote.toLowerCase();
+    if (quote.includes("olli")) testerName = "OLLI";
+    else if (quote.includes("katha")) testerName = "KATHA";
+    else if (quote.includes("mel")) testerName = "MEL";
+    else if (quote.includes("mitch")) testerName = "MITCH";
+    
+    return `<div class="tester-stamp">GEPRÜFT<br><span>VON ${testerName}</span></div>`;
+}
+
 function renderProductCatalog(filter) {
     const grid = document.getElementById('catalog-products-grid');
     if (!grid) return;
@@ -2334,7 +2346,8 @@ function renderProductCatalog(filter) {
         card.innerHTML = `
             <div class="product-img-wrapper">
                 <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
-                <span class="badge">${product.category.toUpperCase()}</span>
+                <span class="tape-badge">${product.category.toUpperCase()}</span>
+                ${getStampHtml(product)}
             </div>
             <div class="product-details">
                 <h3 class="product-name">${product.name}</h3>
@@ -2661,7 +2674,8 @@ function handleSearchSubmit(event) {
                 card.innerHTML = `
                     <div class="product-img-wrapper">
                         <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
-                        <span class="badge">${product.category.toUpperCase()}</span>
+                        <span class="tape-badge">${product.category.toUpperCase()}</span>
+                        ${getStampHtml(product)}
                     </div>
                     <div class="product-details">
                         <h3 class="product-name">${product.name}</h3>
@@ -2758,7 +2772,8 @@ function loadBestsellers() {
         card.innerHTML = `
             <div class="product-img-wrapper">
                 <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
-                <span class="badge">TREND</span>
+                <span class="tape-badge">TREND</span>
+                ${getStampHtml(product)}
             </div>
             <div class="product-details">
                 <h3 class="product-name">${product.name}</h3>
@@ -3255,7 +3270,8 @@ function initInlineSearch() {
             card.innerHTML = `
                 <div class="product-img-wrapper">
                     <img src="${product.image}" alt="${product.name}" class="product-image" loading="lazy">
-                    <span class="badge">${product.category.toUpperCase()}</span>
+                    <span class="tape-badge">${product.category.toUpperCase()}</span>
+                    ${getStampHtml(product)}
                 </div>
                 <div class="product-details">
                     <h3 class="product-name">${product.name}</h3>
