@@ -2002,6 +2002,234 @@ const PRODUCTS = [
     "hiddenFeature": "Man kann den Pool im Herbst auch super als Indoor-Bällebad für den Hund (oder für Kinder) verwenden, wenn er trocken ist.",
     "alternatives": []
 }
+    ,
+    {
+    "id": "babyliss_hydro_fusion",
+    "name": "BaByliss Hydro Fusion Warmluftbürste",
+    "category": "gadgets",
+    "priceRange": "50 - 70 €",
+    "rating": 4.6,
+    "stars": "★★★★★",
+    "image": "assets/babyliss_hydro_fusion.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=BaByliss+Hydro+Fusion",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=BaByliss+Hydro+Fusion",
+            "price": "ab 59 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Die Geheimwaffe für ein perfektes Blowout zu Hause. Die rotierende Bürste zaubert Volumen und Glanz wie frisch vom Friseur.",
+    "pros": [
+        "Rotierende Bürste für einfaches Styling",
+        "Ionen-Technologie gegen Frizz",
+        "Gutes Preis-Leistungs-Verhältnis"
+    ],
+    "cons": [
+        "Erfordert anfangs etwas Übung bei der Rotation"
+    ],
+    "testDuration": "Getestet: 2 Monate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Ein viraler Hit für den Dyson-Blowout-Look zum kleinen Preis.",
+    "verdict": "Wer nicht hunderte Euro für Styling-Tools ausgeben will, ist hier goldrichtig.",
+    "perfectFor": "Alle mit feinem bis normalem Haar, die sich mehr Volumen wünschen.",
+    "notFor": "Extrem kurzes Haar.",
+    "testerQuote": "Kathas Fazit: Ich brauche morgens nur noch 10 Minuten für meine Haare. Das Volumen hält den ganzen Tag!",
+    "hiddenFeature": "Zwei Rotationsgeschwindigkeiten und eine Kühltaste zur Fixierung des Stylings.",
+    "alternatives": []
+},
+    {
+    "id": "shark_flexstyle",
+    "name": "Shark FlexStyle 5-in-1 Styler",
+    "category": "gadgets",
+    "priceRange": "250 - 300 €",
+    "rating": 4.8,
+    "stars": "★★★★★",
+    "image": "assets/shark_flexstyle.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=Shark+FlexStyle",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Shark+FlexStyle",
+            "price": "ab 279 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der wohl größte Konkurrent des Dyson Airwrap. Ein vielseitiger Multi-Styler, der sich mit einem Klick von einem Föhn in einen Lockenstab verwandelt.",
+    "pros": [
+        "Enorme Saugkraft für Locken ohne Hitze-Schäden",
+        "Kompakter und leichter als die Konkurrenz",
+        "Gelenkfunktion zum abgewinkelten Föhnen"
+    ],
+    "cons": [
+        "Kühllufttaste muss gedrückt gehalten werden",
+        "Relativ laut auf höchster Stufe"
+    ],
+    "testDuration": "Getestet: 3 Monate",
+    "hypeScore": 5,
+    "realityScore": 5,
+    "hypeComment": "Auf TikTok wird er als der ultimative Airwrap-Dupe gefeiert.",
+    "verdict": "Ein fantastisches Gerät, das professionelles Styling zu Hause ermöglicht und dabei günstiger ist als der Platzhirsch.",
+    "perfectFor": "Beauty-Liebhaber und Leute, die verschiedene Styles ausprobieren wollen.",
+    "notFor": "Sparfüchse, die nur ihre Haare trocken pusten möchten.",
+    "testerQuote": "Mels Fazit: Ich liebe die Aufsätze! Die Locken halten bei mir besser als mit jedem anderen Gerät.",
+    "hiddenFeature": "Mit einem einfachen Dreh lässt sich der Stab in einen leistungsstarken Haartrockner verwandeln.",
+    "alternatives": []
+},
+    {
+    "id": "citysports_laufband",
+    "name": "CITYSPORTS Laufband / Walking Pad",
+    "category": "fitness",
+    "priceRange": "180 - 250 €",
+    "rating": 4.5,
+    "stars": "★★★★☆",
+    "image": "assets/citysports_laufband.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=CITYSPORTS+Laufband",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=CITYSPORTS+Laufband",
+            "price": "ab 199 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Ein schlankes, leises Walking Pad, das perfekt unter den höhenverstellbaren Schreibtisch passt. So kommt man im Home-Office locker auf seine 10.000 Schritte.",
+    "pros": [
+        "Sehr flach und leicht zu verstauen",
+        "Integrierte Bluetooth-Lautsprecher",
+        "Leiser Motor"
+    ],
+    "cons": [
+        "Nur für Gehen/Walken geeignet (max. Geschwindigkeit begrenzt)",
+        "Keine Haltestange"
+    ],
+    "testDuration": "Getestet: 4 Monate",
+    "hypeScore": 4,
+    "realityScore": 4,
+    "hypeComment": "Das Home-Office-Upgrade schlechthin.",
+    "verdict": "Eine tolle Lösung, um während der Arbeit in Bewegung zu bleiben, ohne dass es zu viel Platz wegnimmt.",
+    "perfectFor": "Remote-Worker und alle, die im Alltag mehr Schritte sammeln wollen.",
+    "notFor": "Marathonläufer, die Sprints trainieren wollen.",
+    "testerQuote": "Ollis Fazit: Ich laufe beim Beantworten von Mails jeden Tag 5 Kilometer. Es stört überhaupt nicht und man fühlt sich abends weniger platt.",
+    "hiddenFeature": "Zeigt auf dem LED-Display direkt Schritte, Kalorien, Zeit und Distanz an.",
+    "alternatives": []
+},
+    {
+    "id": "urevo_walking_pad",
+    "name": "UREVO Walking Pad mit automatischer Steigung",
+    "category": "fitness",
+    "priceRange": "300 - 400 €",
+    "rating": 4.7,
+    "stars": "★★★★★",
+    "image": "assets/urevo_walking_pad.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=UREVO+Walking+Pad+Steigung",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=UREVO+Walking+Pad+Steigung",
+            "price": "ab 349 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Die nächste Stufe der Walking Pads: Mit integrierter, automatischer Steigung für ein noch intensiveres Workout beim Arbeiten oder Serien schauen.",
+    "pros": [
+        "Motorisierte Steigungsfunktion (erhöht den Kalorienverbrauch massiv)",
+        "Sehr stabil und robust gebaut",
+        "Steuerung per Fernbedienung"
+    ],
+    "cons": [
+        "Etwas schwerer und dicker als flache Modelle",
+        "Preisintensiver"
+    ],
+    "testDuration": "Getestet: 2 Monate",
+    "hypeScore": 4,
+    "realityScore": 5,
+    "hypeComment": "Für alle, denen normales Gehen zu langweilig geworden ist.",
+    "verdict": "Wer beim Walken ordentlich ins Schwitzen kommen will, kommt an diesem Modell nicht vorbei.",
+    "perfectFor": "Fortgeschrittene Home-Office-Walker.",
+    "notFor": "Sehr kleine Schreibtische ohne Platz nach oben.",
+    "testerQuote": "Mitchs Fazit: Die 5% Steigung machen einen unglaublichen Unterschied. Mein Puls ist deutlich höher und das Workout viel effektiver.",
+    "hiddenFeature": "Die Steigung lässt sich stufenlos direkt über die kleine Handgelenk-Fernbedienung anpassen.",
+    "alternatives": []
+},
+    {
+    "id": "delonghi_dedica",
+    "name": "De'Longhi Dedica Style Siebträger",
+    "category": "kitchen",
+    "priceRange": "140 - 180 €",
+    "rating": 4.6,
+    "stars": "★★★★★",
+    "image": "assets/delonghi_dedica.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=DeLonghi+Dedica",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=DeLonghi+Dedica",
+            "price": "ab 159 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der absolute Einstiegs-Klassiker in die Welt der Siebträgermaschinen. Mit nur 15 cm Breite passt sie in wirklich jede noch so kleine Küche.",
+    "pros": [
+        "Extrem platzsparendes Design",
+        "Schnelle Aufheizzeit (ca. 40 Sekunden)",
+        "Guter Espresso für Einsteiger"
+    ],
+    "cons": [
+        "Die mitgelieferte Milchschaumdüse ist eher mittelmäßig (Panarello)",
+        "Siebträger und Zubehör sind aus leichtem Material"
+    ],
+    "testDuration": "Getestet: 1 Jahr",
+    "hypeScore": 3,
+    "realityScore": 4,
+    "hypeComment": "Die wohl meistverkaufte Siebträgermaschine für Anfänger.",
+    "verdict": "Wer erste Schritte im Espresso-Handwerk gehen will, ohne viel Geld auszugeben, wird hier sehr glücklich.",
+    "perfectFor": "Espresso-Einsteiger und kleine Küchen.",
+    "notFor": "Barista-Profis, die absolute Temperaturstabilität und perfekten Mikroschaum suchen.",
+    "testerQuote": "Kathas Fazit: Meine erste Siebträgermaschine! Man lernt super viel und sie nimmt fast keinen Platz weg.",
+    "hiddenFeature": "Die Wassermenge für den perfekten Espresso lässt sich individuell programmieren und speichern.",
+    "alternatives": []
+},
+    {
+    "id": "sage_barista_express",
+    "name": "Sage The Barista Express",
+    "category": "kitchen",
+    "priceRange": "500 - 650 €",
+    "rating": 4.8,
+    "stars": "★★★★★",
+    "image": "assets/sage_barista.jpg",
+    "amazonLink": "https://www.amazon.de/s?k=Sage+Barista+Express",
+    "shops": [
+        {
+            "name": "Amazon",
+            "url": "https://www.amazon.de/s?k=Sage+Barista+Express",
+            "price": "ab 549 €",
+            "type": "amazon"
+        }
+    ],
+    "review": "Der König unter den All-in-One Siebträgern. Mit integriertem Kegelmahlwerk,PID-Temperaturregelung und professioneller Dampflanze für echten Barista-Kaffee zu Hause.",
+    "pros": [
+        "Eingebautes, hochwertiges Mahlwerk",
+        "Exzellente Verarbeitung aus gebürstetem Edelstahl",
+        "Manometer zur Druckkontrolle beim Extrahieren"
+    ],
+    "cons": [
+        "Erfordert Zeit und Geduld, um den perfekten Mahlgrad zu finden",
+        "Nimmt ordentlich Platz auf der Arbeitsfläche ein"
+    ],
+    "testDuration": "Getestet: 6 Monate",
+    "hypeScore": 5,
+    "realityScore": 5,
+    "hypeComment": "Das ultimative Upgrade für Home-Baristas auf Social Media.",
+    "verdict": "Eine Maschine für Kaffeeliebhaber, die sich jeden Morgen wie im Lieblingscafé fühlen wollen.",
+    "perfectFor": "Kaffee-Nerds, die das volle Barista-Erlebnis suchen.",
+    "notFor": "Leute, die morgens einfach nur auf einen Knopf drücken wollen.",
+    "testerQuote": "Ollis Fazit: Seitdem ich die Barista Express habe, ist mein Morgen-Kaffee zum richtigen Ritual geworden. Der Mikroschaum gelingt perfekt für Latte Art.",
+    "hiddenFeature": "Auf der Rückseite ist ein magnetischer Tamper versteckt, der immer griffbereit ist.",
+    "alternatives": []
+}
 ];
 
 const ARTICLES = [
