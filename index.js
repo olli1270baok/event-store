@@ -497,7 +497,7 @@ const PRODUCTS = [
         priceRange: "279 - 329 €",
         rating: 4.8,
         stars: "★★★★★",
-        image: "assets/massagegun.png",
+        image: "assets/massagegun.webp",
         amazonLink: "https://www.amazon.de/s?k=Hyperice+Hypervolt+2+Pro&tag=baokmedia21-21",
         review: "Die Wahl der Profi-Athleten für Regeneration und Muskeltherapie. Die Hypervolt 2 Pro verfügt über einen kraftvollen 90W-Motor mit 5 Geschwindigkeitsstufen. Sie dringt tief ins Muskelgewebe ein, um Verspannungen zu lösen und die Durchblutung zu fördern. Per Bluetooth verbindet sie sich mit der Hyperice-App für geführte Warm-up- und Recovery-Routinen.",
         pros: ["Enorme Tiefenwirkung durch den kraftvollen 90-Watt-Motor", "Die Hyperice-App steuert die Frequenz passend zu Video-Routinen", "Sehr leise im Betrieb trotz der enormen Durchschlagskraft"],
@@ -1775,7 +1775,7 @@ const PRODUCTS = [
     "priceRange": "25 - 45 €",
     "rating": 4.5,
     "stars": "★★★★☆",
-    "image": "assets/summer_dog_pool.jpg",
+    "image": "assets/summer_dog_pool.webp",
     "amazonLink": "https://www.amazon.de/s?k=Hundepool",
     "shops": [
         {
