@@ -1559,7 +1559,7 @@ const PRODUCTS = [
     "priceRange": "199 - 229 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_ninja_creami.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Ninja+Creami",
     "shops": [
         {
@@ -1596,7 +1596,7 @@ const PRODUCTS = [
     "priceRange": "349 - 399 €",
     "rating": 4.9,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_ooni_koda.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Ooni+Koda+12",
     "shops": [
         {
@@ -1634,7 +1634,7 @@ const PRODUCTS = [
     "priceRange": "129 - 159 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_jbl_charge5.jpg",
     "amazonLink": "https://www.amazon.de/s?k=JBL+Charge+5",
     "shops": [
         {
@@ -1671,7 +1671,7 @@ const PRODUCTS = [
     "priceRange": "199 - 299 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_sup.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Stand+Up+Paddle+Board",
     "shops": [
         {
@@ -1708,7 +1708,7 @@ const PRODUCTS = [
     "priceRange": "40 - 250 €",
     "rating": 4.9,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_yeti.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Yeti+Rambler",
     "shops": [
         {
@@ -1745,7 +1745,7 @@ const PRODUCTS = [
     "priceRange": "45 - 60 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_stanley.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Stanley+Quencher",
     "shops": [
         {
@@ -1783,7 +1783,7 @@ const PRODUCTS = [
     "priceRange": "89 - 110 €",
     "rating": 4.8,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_weber.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Weber+Go-Anywhere",
     "shops": [
         {
@@ -1820,7 +1820,7 @@ const PRODUCTS = [
     "priceRange": "299 - 399 €",
     "rating": 4.5,
     "stars": "★★★★☆",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_dyson.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Dyson+Turmventilator",
     "shops": [
         {
@@ -1858,7 +1858,7 @@ const PRODUCTS = [
     "priceRange": "220 - 279 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_fatboy.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Fatboy+Headdemock",
     "shops": [
         {
@@ -1896,7 +1896,7 @@ const PRODUCTS = [
     "priceRange": "99 - 199 €",
     "rating": 4.6,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_intex.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Intex+Frame+Pool",
     "shops": [
         {
@@ -1934,7 +1934,7 @@ const PRODUCTS = [
     "priceRange": "15 - 30 €",
     "rating": 4.7,
     "stars": "★★★★★",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_dog_coolingmat.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Kühlmatte+Hund",
     "shops": [
         {
@@ -1971,7 +1971,7 @@ const PRODUCTS = [
     "priceRange": "25 - 45 €",
     "rating": 4.5,
     "stars": "★★★★☆",
-    "image": "assets/summer_.jpg",
+    "image": "assets/summer_dog_pool.jpg",
     "amazonLink": "https://www.amazon.de/s?k=Hundepool",
     "shops": [
         {
