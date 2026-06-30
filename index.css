@@ -280,7 +280,7 @@ button {
     font-weight: 400;
     letter-spacing: 0.05em;
     color: #fff;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 2px 2px 0px #000, 3px 3px 0px rgba(0,0,0,0.2);
     transition: var(--transition-smooth);
     text-transform: uppercase;
 }
@@ -3637,6 +3637,20 @@ button {
         margin-bottom: 1rem;
     }
     .hero-title {
-        font-size: 3.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .hero-banner {
+        height: auto;
+        padding: 4rem 1rem;
+    }
+    .hero-description {
+        font-size: 1rem;
+    }
+    .header-container {
+        padding: 0 1rem;
     }
 }
