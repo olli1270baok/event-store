@@ -3075,7 +3075,7 @@ function initDealTicker() {
     // Pick a random product as the "Deal of the day"
     const randomProduct = PRODUCTS[Math.floor(Math.random() * PRODUCTS.length)];
     
-    tickerText.innerHTML = `Amazon Blitzangebot: <strong>${randomProduct.name}</strong> – Nur für kurze Zeit!`;
+    tickerText.innerHTML = `Deal der Woche: <strong>${randomProduct.name}</strong> – Unsere Empfehlung!`;
     const cta = document.getElementById('deal-ticker-cta');
     if(cta) cta.href = randomProduct.amazonLink;
 }
