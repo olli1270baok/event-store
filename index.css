@@ -406,7 +406,7 @@ button {
 
 .mobile-nav-link {
     font-family: var(--font-heading);
-    font-size: 1.25rem;
+    font-size: 2.2rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -2302,7 +2302,8 @@ button {
         padding: 2rem 1.5rem;
     }
     .modal-image-col {
-        position: relative;
+        position: relative !important;
+        top: auto !important;
         z-index: 1;
     }
     .modal-title {
